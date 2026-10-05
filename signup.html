@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Account — AURELIS Knowledge Network</title>
+  <meta name="description" content="Join AURELIS to personalize your fine jewelry and luxury watches knowledge feed and access downloadable checklists.">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+
+  <!-- Mandatory Navbar -->
+  <header class="aurelis-header">
+    <div class="container-custom nav-wrapper">
+      <a href="index.html" class="brand-logo" aria-label="Aurelis Homepage">
+        <span class="brand-name">AURELIS</span>
+        <span class="brand-tagline-micro">Knowledge Network</span>
+      </a>
+
+      <div class="nav-actions ms-auto">
+        <button type="button" class="btn-icon-action theme-toggle-btn" aria-label="Toggle Theme">
+          <i class="bi bi-moon-stars-fill"></i>
+        </button>
+        <a href="login.html" class="btn-aurelis btn-aurelis-outline btn-aurelis-sm">Already a Member? Login</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="d-flex align-items-center justify-content-center py-5">
+    <div class="container-custom" style="max-width: 580px;">
+      <div class="p-4 p-md-5 bg-surface-custom border border-subtle-custom rounded shadow-lg">
+        
+        <div class="text-center mb-4">
+          <span class="eyebrow justify-content-center">Join The Knowledge Network</span>
+          <h2 class="mb-1">Create Your AURELIS Account</h2>
+          <p class="small text-secondary mb-0">Select your research interests to tailor your personalized knowledge feed.</p>
+        </div>
+
+        <form id="signupForm">
+          <div class="row g-3">
+            <div class="col-md-6">
+              <label class="aurelis-label" for="signupName">Full Name</label>
+              <input type="text" id="signupName" class="aurelis-input" placeholder="e.g. Julian Vance" required>
+            </div>
+            
+            <div class="col-md-6">
+              <label class="aurelis-label" for="signupEmail">Email Address</label>
+              <input type="email" id="signupEmail" class="aurelis-input" placeholder="julian@collector.org" required>
+            </div>
+
+            <div class="col-md-6">
+              <label class="aurelis-label" for="signupPassword">Create Password</label>
+              <input type="password" id="signupPassword" class="aurelis-input" placeholder="At least 8 characters" required minlength="8">
+            </div>
+
+            <div class="col-md-6">
+              <label class="aurelis-label" for="signupConfirm">Confirm Password</label>
+              <input type="password" id="signupConfirm" class="aurelis-input" placeholder="Repeat password" required minlength="8">
+            </div>
+
+            <!-- Areas of Interest -->
+            <div class="col-12 mt-4">
+              <label class="aurelis-label mb-2"><i class="bi bi-stars text-bronze me-1"></i> Tailor Your Research Interests (Optional)</label>
+              <div class="row g-2 font-ui small">
+                <div class="col-6">
+                  <label class="p-2 border border-subtle-custom rounded bg-secondary-custom d-flex align-items-center gap-2 cursor-pointer w-100">
+                    <input type="checkbox" name="interest" value="Fine Jewelry" class="form-check-input mt-0" checked>
+                    <span>Fine Jewelry</span>
+                  </label>
+                </div>
+                <div class="col-6">
+                  <label class="p-2 border border-subtle-custom rounded bg-secondary-custom d-flex align-items-center gap-2 cursor-pointer w-100">
+                    <input type="checkbox" name="interest" value="Luxury Watches" class="form-check-input mt-0" checked>
+                    <span>Luxury Watches</span>
+                  </label>
+                </div>
+                <div class="col-6">
+                  <label class="p-2 border border-subtle-custom rounded bg-secondary-custom d-flex align-items-center gap-2 cursor-pointer w-100">
+                    <input type="checkbox" name="interest" value="Gemstones" class="form-check-input mt-0" checked>
+                    <span>Gemstones & 4Cs</span>
+                  </label>
+                </div>
+                <div class="col-6">
+                  <label class="p-2 border border-subtle-custom rounded bg-secondary-custom d-flex align-items-center gap-2 cursor-pointer w-100">
+                    <input type="checkbox" name="interest" value="Movements" class="form-check-input mt-0" checked>
+                    <span>Watch Movements</span>
+                  </label>
+                </div>
+                <div class="col-6">
+                  <label class="p-2 border border-subtle-custom rounded bg-secondary-custom d-flex align-items-center gap-2 cursor-pointer w-100">
+                    <input type="checkbox" name="interest" value="Precious Metals" class="form-check-input mt-0">
+                    <span>Precious Metals</span>
+                  </label>
+                </div>
+                <div class="col-6">
+                  <label class="p-2 border border-subtle-custom rounded bg-secondary-custom d-flex align-items-center gap-2 cursor-pointer w-100">
+                    <input type="checkbox" name="interest" value="Care & Restoration" class="form-check-input mt-0">
+                    <span>Care & Restoration</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 mt-3">
+              <label class="d-flex align-items-center gap-2 cursor-pointer small font-ui">
+                <input type="checkbox" id="newsletterCheck" class="form-check-input mt-0" checked>
+                <span>Receive monthly peer-reviewed technical teardowns and alerts</span>
+              </label>
+            </div>
+
+            <div class="col-12">
+              <label class="d-flex align-items-center gap-2 cursor-pointer small font-ui">
+                <input type="checkbox" id="termsCheck" class="form-check-input mt-0" required>
+                <span>I agree to the <a href="about.html#terms" class="text-bronze">Editorial Terms</a> and <a href="about.html#privacy" class="text-bronze">Privacy Policy</a></span>
+              </label>
+            </div>
+
+            <div class="col-12 mt-4">
+              <button type="submit" class="btn-aurelis btn-aurelis-primary w-100 justify-content-center py-2">
+                Create Account & Access Knowledge
+              </button>
+            </div>
+          </div>
+        </form>
+
+        <div class="text-center pt-3 mt-4 border-top border-subtle-custom small text-secondary">
+          Already have an account? <a href="login.html" class="text-bronze fw-semibold">Sign In</a>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <footer class="py-3 text-center border-top border-subtle-custom small text-muted-custom bg-secondary-custom">
+    © 2026 AURELIS. Understand What You Wear. Know What You Own.
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/theme.js"></script>
+  <script src="assets/js/notifications.js"></script>
+  <script src="assets/js/auth.js"></script>
+  <script src="assets/js/favorites.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const form = document.getElementById('signupForm');
+      if (form) {
+        form.addEventListener('submit', (e) => {
+          e.preventDefault();
+          const name = document.getElementById('signupName').value.trim();
+          const email = document.getElementById('signupEmail').value.trim();
+          const pass = document.getElementById('signupPassword').value;
+          const confirmPass = document.getElementById('signupConfirm').value;
+
+          if (pass !== confirmPass) {
+            AurelisNotifications.show('Passwords do not match.', 'error');
+            return;
+          }
+
+          const selectedInterests = Array.from(document.querySelectorAll('input[name="interest"]:checked')).map(cb => cb.value);
+
+          AurelisAuth.signup(name, email, pass, selectedInterests);
+
+          setTimeout(() => {
+            window.location.href = 'explore.html';
+          }, 800);
+        });
+      }
+    });
+  </script>
+</body>
+</html>

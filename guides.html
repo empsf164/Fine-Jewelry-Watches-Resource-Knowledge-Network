@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Curated Expert Editorial Guides — AURELIS</title>
+  <meta name="description" content="Curated long-form editorial guides on fine jewelry, mechanical watch collecting, gemstone quality, and metallurgical standards.">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+
+  <!-- Mandatory Navbar -->
+  <header class="aurelis-header">
+    <div class="container-custom nav-wrapper">
+      <a href="index.html" class="brand-logo" aria-label="Aurelis Homepage">
+        <span class="brand-name">AURELIS</span>
+        <span class="brand-tagline-micro">Knowledge Network</span>
+      </a>
+
+      <nav aria-label="Main Navigation" class="d-none d-lg-block">
+        <ul class="nav-menu-desktop">
+          <li class="nav-item"><a href="index.html" class="nav-link-custom">Home</a></li>
+          <li class="nav-item"><a href="explore.html" class="nav-link-custom">Explore</a></li>
+          <li class="nav-item"><a href="knowledge.html" class="nav-link-custom">Knowledge</a></li>
+          <li class="nav-item"><a href="resources.html" class="nav-link-custom">Resources</a></li>
+          <li class="nav-item"><a href="videos.html" class="nav-link-custom">Videos</a></li>
+          <li class="nav-item"><a href="community.html" class="nav-link-custom">Community</a></li>
+          <li class="nav-item"><a href="guides.html" class="nav-link-custom active">Guides</a></li>
+          <li class="nav-item"><a href="about.html" class="nav-link-custom">About</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button type="button" class="search-trigger-btn" aria-label="Open search engine">
+          <i class="bi bi-search text-bronze"></i>
+          <span>Search</span>
+          <kbd>/</kbd>
+        </button>
+        <button type="button" class="btn-icon-action theme-toggle-btn" aria-label="Toggle Theme">
+          <i class="bi bi-moon-stars-fill"></i>
+        </button>
+        <div class="auth-nav-container d-none d-sm-block">
+          <a href="login.html" class="btn-aurelis btn-aurelis-outline btn-aurelis-sm">Login</a>
+          <a href="signup.html" class="btn-aurelis btn-aurelis-primary btn-aurelis-sm">Sign Up</a>
+        </div>
+        <button type="button" class="hamburger-btn" id="hamburgerBtn" aria-label="Open mobile menu">
+          <i class="bi bi-list"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-nav-backdrop" id="mobileNavBackdrop"></div>
+  <div class="mobile-nav-drawer" id="mobileNavDrawer">
+    <div class="mobile-drawer-header">
+      <div class="brand-logo">
+        <span class="brand-name">AURELIS</span>
+        <span class="brand-tagline-micro">Knowledge Network</span>
+      </div>
+      <button type="button" class="btn-icon-action" id="closeMobileDrawerBtn"><i class="bi bi-x-lg"></i></button>
+    </div>
+    <div class="mobile-drawer-body">
+      <ul class="mobile-menu-list">
+        <li class="mobile-menu-item"><a href="index.html" class="mobile-menu-link">Home</a></li>
+        <li class="mobile-menu-item"><a href="explore.html" class="mobile-menu-link">Explore Discovery</a></li>
+        <li class="mobile-menu-item"><a href="knowledge.html" class="mobile-menu-link">Knowledge Base</a></li>
+        <li class="mobile-menu-item"><a href="resources.html" class="mobile-menu-link">Resources</a></li>
+        <li class="mobile-menu-item"><a href="videos.html" class="mobile-menu-link">Videos</a></li>
+        <li class="mobile-menu-item"><a href="community.html" class="mobile-menu-link">Community</a></li>
+        <li class="mobile-menu-item"><a href="glossary.html" class="mobile-menu-link">Glossary</a></li>
+        <li class="mobile-menu-item"><a href="guides.html" class="mobile-menu-link active">Guides</a></li>
+        <li class="mobile-menu-item"><a href="about.html" class="mobile-menu-link">About</a></li>
+        <li class="mobile-menu-item"><a href="contact.html" class="mobile-menu-link">Contact</a></li>
+      </ul>
+      <div class="mobile-auth-container mt-auto pt-3 border-top border-subtle-custom"></div>
+    </div>
+  </div>
+
+  <main>
+    <!-- HEADER -->
+    <section class="section-padding-sm bg-secondary-custom border-bottom border-subtle-custom">
+      <div class="container-custom">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb small font-ui mb-2">
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Curated Guides</li>
+          </ol>
+        </nav>
+        <span class="eyebrow">Editorial Master Series</span>
+        <h1>Curated Expert Guides</h1>
+        <p class="lead mb-0" style="max-width: 840px;">Foundational, multi-chapter reference manuals written for serious collectors, gemology students, and horological enthusiasts.</p>
+      </div>
+    </section>
+
+    <!-- GUIDES LIST -->
+    <section class="section-padding">
+      <div class="container-custom">
+        <div class="d-flex flex-column gap-5">
+          
+          <!-- Guide 1 -->
+          <div class="article-card-featured">
+            <div class="article-featured-media d-flex align-items-center justify-content-center p-4 bg-secondary-custom">
+              <i class="bi bi-gem text-bronze" style="font-size: 5rem;"></i>
+            </div>
+            <div class="article-featured-content">
+              <div class="card-top-meta">
+                <span class="aurelis-badge">Foundational Master Guide • 6 Chapters</span>
+                <button class="btn-bookmark-action" data-id="guide-1" data-type="article" data-title="A Beginner's Guide to Fine Jewelry"><i class="bi bi-bookmark"></i></button>
+              </div>
+              <h3><a href="knowledge-details.html?id=jewelry-settings" class="text-primary">A Beginner’s Guide to Fine Jewelry: Metals, Stones & Settings</a></h3>
+              <p class="text-secondary mb-3">
+                Everything you need to know before buying or collecting fine jewelry. Learn how to distinguish between hollow and solid gold, evaluate prong thicknesses under a 10x loupe, and identify assay hallmarks.
+              </p>
+              <div class="d-flex align-items-center justify-content-between pt-3 border-top border-subtle-custom">
+                <span class="small font-mono text-muted-custom">Published by AURELIS Editorial</span>
+                <a href="knowledge-details.html?id=jewelry-settings" class="btn-aurelis btn-aurelis-primary btn-aurelis-sm">Read Master Guide →</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Guide 2 -->
+          <div class="article-card-featured">
+            <div class="article-featured-media d-flex align-items-center justify-content-center p-4 bg-secondary-custom">
+              <i class="bi bi-watch text-bronze" style="font-size: 5rem;"></i>
+            </div>
+            <div class="article-featured-content">
+              <div class="card-top-meta">
+                <span class="aurelis-badge">Horology Master Series • 8 Chapters</span>
+                <button class="btn-bookmark-action" data-id="guide-2" data-type="article" data-title="Mechanical Watches: A Complete Introduction"><i class="bi bi-bookmark"></i></button>
+              </div>
+              <h3><a href="knowledge-details.html?id=automatic-movements" class="text-primary">Mechanical Watches: A Complete Introduction for the Curious Collector</a></h3>
+              <p class="text-secondary mb-3">
+                From manual wind calibers to high-frequency automatic movements. Explore escapements, hairspring isochronism, shock protection, power reserve efficiency, and case finishing standards.
+              </p>
+              <div class="d-flex align-items-center justify-content-between pt-3 border-top border-subtle-custom">
+                <span class="small font-mono text-muted-custom">Published by AURELIS Horology Board</span>
+                <a href="knowledge-details.html?id=automatic-movements" class="btn-aurelis btn-aurelis-primary btn-aurelis-sm">Read Master Guide →</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Guide 3 -->
+          <div class="article-card-featured">
+            <div class="article-featured-media d-flex align-items-center justify-content-center p-4 bg-secondary-custom">
+              <i class="bi bi-shield-check text-bronze" style="font-size: 5rem;"></i>
+            </div>
+            <div class="article-featured-content">
+              <div class="card-top-meta">
+                <span class="aurelis-badge">Laboratory Reference • 5 Chapters</span>
+                <button class="btn-bookmark-action" data-id="guide-3" data-type="article" data-title="Understanding Gemstone Quality & Treatments"><i class="bi bi-bookmark"></i></button>
+              </div>
+              <h3><a href="knowledge-details.html?id=gemstone-reports" class="text-primary">Understanding Gemstone Quality, Heat Treatments & Origin Signatures</a></h3>
+              <p class="text-secondary mb-3">
+                How to read certified gemological reports from GIA, SSEF, and Gübelin. Understanding natural vs lab-created stones, clarity plots, and thermal modification indicators.
+              </p>
+              <div class="d-flex align-items-center justify-content-between pt-3 border-top border-subtle-custom">
+                <span class="small font-mono text-muted-custom">Published by AURELIS Gemology Board</span>
+                <a href="knowledge-details.html?id=gemstone-reports" class="btn-aurelis btn-aurelis-primary btn-aurelis-sm">Read Master Guide →</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="aurelis-footer">
+    <div class="container-custom">
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6 footer-brand">
+          <a href="index.html" class="brand-logo mb-3">
+            <span class="brand-name">AURELIS</span>
+            <span class="brand-tagline-micro">Knowledge Network</span>
+          </a>
+          <p>“Understand What You Wear. Know What You Own.” An independent, authoritative resource and documentation network.</p>
+        </div>
+        <div class="col-lg-2 col-md-6">
+          <div class="footer-heading">Explore</div>
+          <ul class="footer-links">
+            <li><a href="explore.html?cat=jewelry">Fine Jewelry</a></li>
+            <li><a href="explore.html?cat=watches">Luxury Watches</a></li>
+            <li><a href="explore.html?cat=gemstones">Gemstones</a></li>
+            <li><a href="explore.html?cat=movements">Movements</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-6">
+          <div class="footer-heading">Learn</div>
+          <ul class="footer-links">
+            <li><a href="knowledge.html">Knowledge Base</a></li>
+            <li><a href="guides.html">Curated Guides</a></li>
+            <li><a href="videos.html">Video Masterclasses</a></li>
+            <li><a href="resources.html">Resources</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="footer-heading">Editorial Dispatch</div>
+          <div class="footer-newsletter-box">
+            <p class="small text-secondary mb-3">Subscribe for peer-reviewed technical teardowns and gemstone grading papers.</p>
+            <form class="newsletter-form">
+              <div class="input-group">
+                <input type="email" class="aurelis-input" placeholder="Your email" required>
+                <button class="btn-aurelis btn-aurelis-primary" type="submit">Subscribe</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>© 2026 AURELIS Knowledge Network.</div>
+        <div class="footer-legal-links">
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+          <a href="about.html#privacy">Privacy</a>
+          <a href="about.html#terms">Terms</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="assets/js/theme.js"></script>
+  <script src="assets/js/notifications.js"></script>
+  <script src="assets/js/auth.js"></script>
+  <script src="assets/js/favorites.js"></script>
+  <script src="assets/js/search.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

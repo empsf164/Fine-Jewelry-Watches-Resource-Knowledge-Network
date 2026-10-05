@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Explore Knowledge Discovery Engine — AURELIS</title>
+  <meta name="description" content="Search and discover fine jewelry, luxury watches, gemstone grading, movements, and precious metals documentation.">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+
+  <!-- Mandatory Navbar -->
+  <header class="aurelis-header">
+    <div class="container-custom nav-wrapper">
+      <a href="index.html" class="brand-logo" aria-label="Aurelis Homepage">
+        <span class="brand-name">AURELIS</span>
+        <span class="brand-tagline-micro">Knowledge Network</span>
+      </a>
+
+      <nav aria-label="Main Navigation" class="d-none d-lg-block">
+        <ul class="nav-menu-desktop">
+          <li class="nav-item"><a href="index.html" class="nav-link-custom">Home</a></li>
+          
+          <li class="nav-item">
+            <a href="explore.html" class="nav-link-custom active" aria-expanded="false">
+              Explore <i class="bi bi-chevron-down dropdown-arrow"></i>
+            </a>
+            <div class="dropdown-menu-custom dropdown-grid-2col">
+              <a href="explore.html?cat=jewelry" class="dropdown-item-custom"><i class="bi bi-gem"></i> Fine Jewelry</a>
+              <a href="explore.html?cat=watches" class="dropdown-item-custom"><i class="bi bi-watch"></i> Watches</a>
+              <a href="explore.html?cat=gemstones" class="dropdown-item-custom"><i class="bi bi-suit-diamond"></i> Gemstones</a>
+              <a href="explore.html?cat=metals" class="dropdown-item-custom"><i class="bi bi-shield-check"></i> Precious Metals</a>
+              <a href="explore.html?cat=movements" class="dropdown-item-custom"><i class="bi bi-gear-wide-connected"></i> Watch Movements</a>
+              <a href="explore.html?cat=jewelry-care" class="dropdown-item-custom"><i class="bi bi-stars"></i> Jewelry Care</a>
+              <a href="explore.html?cat=watch-care" class="dropdown-item-custom"><i class="bi bi-droplet-half"></i> Watch Care</a>
+              <a href="explore.html?cat=buying" class="dropdown-item-custom"><i class="bi bi-journal-check"></i> Buying Knowledge</a>
+            </div>
+          </li>
+
+          <li class="nav-item">
+            <a href="knowledge.html" class="nav-link-custom" aria-expanded="false">
+              Knowledge <i class="bi bi-chevron-down dropdown-arrow"></i>
+            </a>
+            <div class="dropdown-menu-custom dropdown-grid-2col">
+              <a href="knowledge.html#jewelry" class="dropdown-item-custom"><i class="bi bi-book"></i> Jewelry Encyclopedia</a>
+              <a href="knowledge.html#watches" class="dropdown-item-custom"><i class="bi bi-clock-history"></i> Watch Encyclopedia</a>
+              <a href="knowledge.html#gemstones" class="dropdown-item-custom"><i class="bi bi-prism"></i> Gemstone Guide</a>
+              <a href="knowledge.html#materials" class="dropdown-item-custom"><i class="bi bi-layers"></i> Metal Guide</a>
+              <a href="knowledge.html#movements" class="dropdown-item-custom"><i class="bi bi-cpu"></i> Movement Guide</a>
+              <a href="glossary.html?cat=jewelry" class="dropdown-item-custom"><i class="bi bi-translate"></i> Jewelry Terminology</a>
+              <a href="glossary.html?cat=horology" class="dropdown-item-custom"><i class="bi bi-compass"></i> Horology Terminology</a>
+              <a href="knowledge.html#care" class="dropdown-item-custom"><i class="bi bi-heart-pulse"></i> Care & Maintenance</a>
+            </div>
+          </li>
+
+          <li class="nav-item">
+            <a href="resources.html" class="nav-link-custom" aria-expanded="false">
+              Resources <i class="bi bi-chevron-down dropdown-arrow"></i>
+            </a>
+            <div class="dropdown-menu-custom dropdown-grid-2col">
+              <a href="resources.html?type=guides" class="dropdown-item-custom"><i class="bi bi-file-earmark-text"></i> Downloadable Guides</a>
+              <a href="resources.html?type=checklists" class="dropdown-item-custom"><i class="bi bi-check2-square"></i> Checklists</a>
+              <a href="resources.html?type=sheets" class="dropdown-item-custom"><i class="bi bi-table"></i> Reference Sheets</a>
+              <a href="resources.html?type=templates" class="dropdown-item-custom"><i class="bi bi-file-spreadsheet"></i> Templates</a>
+              <a href="resources.html?type=comparison" class="dropdown-item-custom"><i class="bi bi-layout-split"></i> Comparison Sheets</a>
+              <a href="resources.html?type=measurement" class="dropdown-item-custom"><i class="bi bi-rulers"></i> Measurement Guides</a>
+              <a href="resources.html?type=care-cards" class="dropdown-item-custom"><i class="bi bi-card-heading"></i> Care Cards</a>
+              <a href="resources.html?type=collector" class="dropdown-item-custom"><i class="bi bi-award"></i> Collector Resources</a>
+            </div>
+          </li>
+
+          <li class="nav-item"><a href="videos.html" class="nav-link-custom">Videos</a></li>
+          <li class="nav-item"><a href="community.html" class="nav-link-custom">Community</a></li>
+          <li class="nav-item"><a href="guides.html" class="nav-link-custom">Guides</a></li>
+          <li class="nav-item"><a href="about.html" class="nav-link-custom">About</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button type="button" class="search-trigger-btn" aria-label="Open search engine">
+          <i class="bi bi-search text-bronze"></i>
+          <span>Search</span>
+          <kbd>/</kbd>
+        </button>
+        <button type="button" class="btn-icon-action theme-toggle-btn" aria-label="Toggle Theme">
+          <i class="bi bi-moon-stars-fill"></i>
+        </button>
+        <div class="auth-nav-container d-none d-sm-block">
+          <a href="login.html" class="btn-aurelis btn-aurelis-outline btn-aurelis-sm">Login</a>
+          <a href="signup.html" class="btn-aurelis btn-aurelis-primary btn-aurelis-sm">Sign Up</a>
+        </div>
+        <button type="button" class="hamburger-btn" id="hamburgerBtn" aria-label="Open mobile menu">
+          <i class="bi bi-list"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-nav-backdrop" id="mobileNavBackdrop"></div>
+  <div class="mobile-nav-drawer" id="mobileNavDrawer">
+    <div class="mobile-drawer-header">
+      <div class="brand-logo">
+        <span class="brand-name">AURELIS</span>
+        <span class="brand-tagline-micro">Knowledge Network</span>
+      </div>
+      <button type="button" class="btn-icon-action" id="closeMobileDrawerBtn"><i class="bi bi-x-lg"></i></button>
+    </div>
+    <div class="mobile-drawer-body">
+      <ul class="mobile-menu-list">
+        <li class="mobile-menu-item"><a href="index.html" class="mobile-menu-link">Home</a></li>
+        <li class="mobile-menu-item"><a href="explore.html" class="mobile-menu-link active">Explore Discovery</a></li>
+        <li class="mobile-menu-item"><a href="knowledge.html" class="mobile-menu-link">Knowledge Base</a></li>
+        <li class="mobile-menu-item"><a href="resources.html" class="mobile-menu-link">Resources</a></li>
+        <li class="mobile-menu-item"><a href="videos.html" class="mobile-menu-link">Videos</a></li>
+        <li class="mobile-menu-item"><a href="community.html" class="mobile-menu-link">Community</a></li>
+        <li class="mobile-menu-item"><a href="glossary.html" class="mobile-menu-link">Glossary</a></li>
+        <li class="mobile-menu-item"><a href="guides.html" class="mobile-menu-link">Guides</a></li>
+        <li class="mobile-menu-item"><a href="about.html" class="mobile-menu-link">About</a></li>
+        <li class="mobile-menu-item"><a href="contact.html" class="mobile-menu-link">Contact</a></li>
+      </ul>
+      <div class="mobile-auth-container mt-auto pt-3 border-top border-subtle-custom"></div>
+    </div>
+  </div>
+
+  <main>
+    <!-- EXPLORE HEADER -->
+    <section class="section-padding-sm bg-secondary-custom border-bottom border-subtle-custom">
+      <div class="container-custom">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb small font-ui mb-2">
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Explore Knowledge</li>
+          </ol>
+        </nav>
+        
+        <div class="row align-items-center g-3">
+          <div class="col-lg-8">
+            <span class="eyebrow">Discovery Engine</span>
+            <h1>Explore Fine Jewelry & Watches</h1>
+            <p class="lead mb-0">Search and filter across technical teardowns, gemological grading papers, metallurgy reports, and collector resources.</p>
+          </div>
+          <div class="col-lg-4 text-lg-end">
+            <button type="button" class="btn-aurelis btn-aurelis-outline mobile-filter-trigger d-lg-none" id="openFilterDrawerBtn">
+              <i class="bi bi-funnel"></i> Filters & Sort
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPLORE BODY & FILTERS -->
+    <section class="section-padding">
+      <div class="container-custom">
+        <div class="row g-4">
+          <!-- Sidebar Filters Desktop / Drawer Mobile -->
+          <div class="col-lg-3 filter-sidebar-wrapper">
+            <div class="p-3 bg-surface-custom border border-subtle-custom rounded sticky-top" style="top: 100px;" id="exploreFilterSidebar">
+              <div class="d-flex align-items-center justify-content-between mb-3 pb-2 border-bottom border-subtle-custom">
+                <h5 class="mb-0 font-ui fw-bold"><i class="bi bi-sliders me-1 text-bronze"></i> Filter Engine</h5>
+                <button type="button" class="btn btn-sm btn-link text-bronze p-0 clear-all-filters-btn text-decoration-none">Clear All</button>
+                <button type="button" class="btn-icon-action d-lg-none" id="closeFilterDrawerBtn"><i class="bi bi-x-lg"></i></button>
+              </div>
+
+              <!-- Keyword Search within filters -->
+              <div class="mb-3">
+                <label class="aurelis-label">Keyword Query</label>
+                <input type="text" class="aurelis-input filter-search-input" placeholder="Search keywords...">
+              </div>
+
+              <!-- Category Filter -->
+              <div class="mb-4">
+                <label class="aurelis-label">Category</label>
+                <div class="d-flex flex-column gap-2 small">
+                  <label class="d-flex align-items-center gap-2 cursor-pointer">
+                    <input type="checkbox" data-filter="category" value="jewelry" class="form-check-input mt-0"> Fine Jewelry
+                  </label>
+                  <label class="d-flex align-items-center gap-2 cursor-pointer">
+                    <input type="checkbox" data-filter="category" value="watches" class="form-check-input mt-0"> Watches
+                  </label>
+                  <label class="d-flex align-items-center gap-2 cursor-pointer">
+                    <input type="checkbox" data-filter="category" value="gemstones" class="form-check-input mt-0"> Gemstones
+                  </label>
+                  <label class="d-flex align-items-center gap-2 cursor-pointer">
+                    <input type="checkbox" data-filter="category" value="metals" class="form-check-input mt-0"> Precious Metals
+                  </label>
+                  <label class="d-flex align-items-center gap-2 cursor-pointer">
+                    <input type="checkbox" data-filter="category" value="movements" class="form-check-input mt-0"> Movements
+                  </label>
+                  <label class="d-flex align-items-center gap-2 cursor-pointer">
+                    <input type="checkbox" data-filter="category" value="care" class="form-check-input mt-0"> Care & Maintenance
+                  </label>
+                </div>
+              </div>
+
+              <!-- Difficulty Filter -->
+              <div class="mb-4">
+                <label class="aurelis-label">Difficulty Level</label>
+                <div class="d-flex flex-column gap-2 small">
+                  <label class="d-flex align-items-center gap-2 cursor-pointer">
+                    <input type="checkbox" data-filter="difficulty" value="beginner" class="form-check-input mt-0"> Beginner / Foundational
+                  </label>
+                  <label class="d-flex align-items-center gap-2 cursor-pointer">
+                    <input type="checkbox" data-filter="difficulty" value="intermediate" class="form-check-input mt-0"> Intermediate / Collector
+                  </label>
+                  <label class="d-flex align-items-center gap-2 cursor-pointer">
+                    <input type="checkbox" data-filter="difficulty" value="advanced" class="form-check-input mt-0"> Advanced / Horologist
+                  </label>
+                </div>
+              </div>
+
+              <!-- Content Format Filter -->
+              <div class="mb-4">
+                <label class="aurelis-label">Content Format</label>
+                <div class="d-flex flex-column gap-2 small">
+                  <label class="d-flex align-items-center gap-2 cursor-pointer">
+                    <input type="checkbox" data-filter="format" value="article" class="form-check-input mt-0"> Knowledge Articles
+                  </label>
+                  <label class="d-flex align-items-center gap-2 cursor-pointer">
+                    <input type="checkbox" data-filter="format" value="video" class="form-check-input mt-0"> Video Tutorials
+                  </label>
+                  <label class="d-flex align-items-center gap-2 cursor-pointer">
+                    <input type="checkbox" data-filter="format" value="resource" class="form-check-input mt-0"> Downloadable Sheets
+                  </label>
+                  <label class="d-flex align-items-center gap-2 cursor-pointer">
+                    <input type="checkbox" data-filter="format" value="discussion" class="form-check-input mt-0"> Community Discussions
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Results Grid Area -->
+          <div class="col-lg-9">
+            <!-- Results Header Controls -->
+            <div class="d-flex align-items-center justify-content-between flex-wrap gap-2 mb-4 p-3 bg-surface-custom border border-subtle-custom rounded">
+              <div class="font-mono small text-secondary" id="exploreResultsCount">Showing 8 results</div>
+              <div class="d-flex align-items-center gap-2">
+                <label for="filterSortSelect" class="small font-ui text-muted-custom mb-0 d-none d-sm-inline">Sort by:</label>
+                <select class="aurelis-input py-1 px-2 font-ui small" id="filterSortSelect" style="width: auto;">
+                  <option value="recommended">Recommended</option>
+                  <option value="updated">Recently Updated</option>
+                  <option value="views">Most Viewed</option>
+                  <option value="saved">Most Saved</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- Personalized Feed Banner (If logged in) -->
+            <div id="personalizedFeedContainer">
+              <div id="personalizedFeedBanner"></div>
+            </div>
+
+            <!-- Items List -->
+            <div class="row g-4" id="exploreResultsGrid">
+              
+              <!-- Item 1 -->
+              <div class="col-md-6 filterable-item" data-category="movements" data-difficulty="intermediate" data-format="article" data-title="Understanding Automatic Watch Movements">
+                <div class="knowledge-card">
+                  <div class="knowledge-card-media d-flex align-items-center justify-content-center p-3 bg-secondary-custom">
+                    <i class="bi bi-gear-wide text-bronze" style="font-size: 2.5rem;"></i>
+                  </div>
+                  <div class="knowledge-card-body">
+                    <div class="card-top-meta">
+                      <span class="aurelis-badge badge-difficulty-intermediate">Intermediate • Article</span>
+                      <button class="btn-bookmark-action" data-id="art-1" data-type="article" data-title="Understanding Automatic Watch Movements" data-category="Watch Movements"><i class="bi bi-bookmark"></i></button>
+                    </div>
+                    <h5><a href="knowledge-details.html?id=automatic-movements" class="text-primary">Understanding Automatic Watch Movements</a></h5>
+                    <p class="small text-secondary mb-3">Kinetic rotor, mainspring winding geometry, Swiss lever escapement regulation, and power reserve decay.</p>
+                    <div class="mt-auto pt-2 border-top border-subtle-custom d-flex justify-content-between align-items-center">
+                      <span class="small font-mono text-muted-custom">Watch Movements</span>
+                      <a href="knowledge-details.html?id=automatic-movements" class="small text-bronze fw-semibold">Read Article →</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Item 2 -->
+              <div class="col-md-6 filterable-item" data-category="gemstones" data-difficulty="beginner" data-format="article" data-title="How to Read a Certified Gemstone Report">
+                <div class="knowledge-card">
+                  <div class="knowledge-card-media d-flex align-items-center justify-content-center p-3 bg-secondary-custom">
+                    <i class="bi bi-prism text-bronze" style="font-size: 2.5rem;"></i>
+                  </div>
+                  <div class="knowledge-card-body">
+                    <div class="card-top-meta">
+                      <span class="aurelis-badge badge-difficulty-beginner">Beginner • Article</span>
+                      <button class="btn-bookmark-action" data-id="art-2" data-type="article" data-title="How to Read a Certified Gemstone Report" data-category="Gemstones"><i class="bi bi-bookmark"></i></button>
+                    </div>
+                    <h5><a href="knowledge-details.html?id=gemstone-reports" class="text-primary">How to Read a Certified Gemstone Report</a></h5>
+                    <p class="small text-secondary mb-3">Decoding GIA & SSEF lab certificates: diamond clarity plots, feather inclusions, and heat treatment indications.</p>
+                    <div class="mt-auto pt-2 border-top border-subtle-custom d-flex justify-content-between align-items-center">
+                      <span class="small font-mono text-muted-custom">Gemstones</span>
+                      <a href="knowledge-details.html?id=gemstone-reports" class="small text-bronze fw-semibold">Read Article →</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Item 3 -->
+              <div class="col-md-6 filterable-item" data-category="metals" data-difficulty="beginner" data-format="article" data-title="Gold Purity & Hallmarks Explained">
+                <div class="knowledge-card">
+                  <div class="knowledge-card-media d-flex align-items-center justify-content-center p-3 bg-secondary-custom">
+                    <i class="bi bi-shield-check text-bronze" style="font-size: 2.5rem;"></i>
+                  </div>
+                  <div class="knowledge-card-body">
+                    <div class="card-top-meta">
+                      <span class="aurelis-badge badge-difficulty-beginner">Beginner • Article</span>
+                      <button class="btn-bookmark-action" data-id="art-3" data-type="article" data-title="Gold Purity & Hallmarks Explained" data-category="Precious Metals"><i class="bi bi-bookmark"></i></button>
+                    </div>
+                    <h5><a href="knowledge-details.html?id=gold-purity" class="text-primary">Precious Metals & Gold Purity Explained</a></h5>
+                    <p class="small text-secondary mb-3">Analysis of 18K yellow, white, and rose gold alloys vs 950 Platinum, tensile strengths, and assay office stamping.</p>
+                    <div class="mt-auto pt-2 border-top border-subtle-custom d-flex justify-content-between align-items-center">
+                      <span class="small font-mono text-muted-custom">Precious Metals</span>
+                      <a href="knowledge-details.html?id=gold-purity" class="small text-bronze fw-semibold">Read Article →</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Item 4 -->
+              <div class="col-md-6 filterable-item" data-category="jewelry" data-difficulty="intermediate" data-format="article" data-title="Anatomy of Fine Jewelry Settings">
+                <div class="knowledge-card">
+                  <div class="knowledge-card-media d-flex align-items-center justify-content-center p-3 bg-secondary-custom">
+                    <i class="bi bi-gem text-bronze" style="font-size: 2.5rem;"></i>
+                  </div>
+                  <div class="knowledge-card-body">
+                    <div class="card-top-meta">
+                      <span class="aurelis-badge badge-difficulty-intermediate">Intermediate • Article</span>
+                      <button class="btn-bookmark-action" data-id="art-4" data-type="article" data-title="Anatomy of Fine Jewelry Settings" data-category="Fine Jewelry"><i class="bi bi-bookmark"></i></button>
+                    </div>
+                    <h5><a href="knowledge-details.html?id=jewelry-settings" class="text-primary">Anatomy of Fine Jewelry Settings</a></h5>
+                    <p class="small text-secondary mb-3">Comparing structural security, light entry, and longevity of prong, pavé, bezel, channel, and tension settings.</p>
+                    <div class="mt-auto pt-2 border-top border-subtle-custom d-flex justify-content-between align-items-center">
+                      <span class="small font-mono text-muted-custom">Fine Jewelry</span>
+                      <a href="knowledge-details.html?id=jewelry-settings" class="small text-bronze fw-semibold">Read Article →</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Item 5: Video -->
+              <div class="col-md-6 filterable-item" data-category="movements" data-difficulty="intermediate" data-format="video" data-title="How a Mechanical Watch Movement Works">
+                <div class="video-card">
+                  <div class="video-thumb-container d-flex align-items-center justify-content-center">
+                    <i class="bi bi-gear-wide-connected text-muted-custom" style="font-size: 3rem;"></i>
+                    <a href="video-details.html?id=movement-works" class="video-play-badge"><i class="bi bi-play-fill"></i></a>
+                    <span class="video-duration-pill">14:28</span>
+                  </div>
+                  <div class="knowledge-card-body">
+                    <div class="card-top-meta">
+                      <span class="aurelis-badge badge-difficulty-intermediate">Intermediate • Video</span>
+                      <button class="btn-bookmark-action" data-id="vid-1" data-type="video" data-title="How a Mechanical Movement Works" data-category="Movements"><i class="bi bi-bookmark"></i></button>
+                    </div>
+                    <h5><a href="video-details.html?id=movement-works" class="text-primary">How a Mechanical Movement Works (4K Teardown)</a></h5>
+                    <p class="small text-secondary mb-3">Macro teardown of automatic caliber components and isochronism regulation.</p>
+                    <div class="mt-auto pt-2 border-top border-subtle-custom d-flex justify-content-between align-items-center">
+                      <span class="small font-mono text-muted-custom"><i class="bi bi-eye me-1"></i> 48.2K</span>
+                      <a href="video-details.html?id=movement-works" class="small text-bronze fw-semibold">Watch Video →</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Item 6: Resource -->
+              <div class="col-md-6 filterable-item" data-category="watches" data-difficulty="beginner" data-format="resource" data-title="Watch Buying Due Diligence Checklist">
+                <div class="resource-card">
+                  <div class="d-flex align-items-center justify-content-between mb-2">
+                    <span class="resource-format-tag"><i class="bi bi-file-earmark-pdf"></i> PDF Checklist</span>
+                    <span class="font-mono text-muted-custom small">2.4 MB</span>
+                  </div>
+                  <h5><a href="resource-details.html?id=watch-checklist" class="text-primary">Watch Due Diligence Checklist</a></h5>
+                  <p class="small text-secondary mb-3">18-point verification guide for case polishing, dial patina, and amplitude metrics.</p>
+                  <div class="mt-auto pt-2 border-top border-subtle-custom">
+                    <button type="button" class="btn-aurelis btn-aurelis-primary btn-aurelis-sm w-100 btn-download-trigger" data-id="res-watch-checklist" data-title="Watch Due Diligence Checklist" data-format="PDF">
+                      <i class="bi bi-download"></i> Download PDF
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Item 7: Community Discussion -->
+              <div class="col-md-6 filterable-item" data-category="care" data-difficulty="intermediate" data-format="discussion" data-title="How often should a mechanical watch be serviced?">
+                <div class="glossary-card">
+                  <div class="d-flex align-items-center justify-content-between mb-2">
+                    <span class="aurelis-badge">Discussion</span>
+                    <span class="font-mono small text-muted-custom">24 Replies</span>
+                  </div>
+                  <h5><a href="discussion-details.html?id=servicing-interval" class="text-primary">How often should a mechanical watch be serviced?</a></h5>
+                  <p class="small text-secondary mb-3">Examining synthetic oil lifespan vs 5-year manufacturer recommendations.</p>
+                  <div class="mt-auto pt-2 border-top border-subtle-custom d-flex justify-content-between align-items-center">
+                    <span class="small font-mono text-bronze"><i class="bi bi-hand-thumbs-up me-1"></i> 42 Upvotes</span>
+                    <a href="discussion-details.html?id=servicing-interval" class="small text-bronze fw-semibold">Join Thread →</a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Item 8: High Complications Article -->
+              <div class="col-md-6 filterable-item" data-category="movements" data-difficulty="advanced" data-format="article" data-title="The Tourbillon & High Complications">
+                <div class="knowledge-card">
+                  <div class="knowledge-card-media d-flex align-items-center justify-content-center p-3 bg-secondary-custom">
+                    <i class="bi bi-cpu text-bronze" style="font-size: 2.5rem;"></i>
+                  </div>
+                  <div class="knowledge-card-body">
+                    <div class="card-top-meta">
+                      <span class="aurelis-badge badge-difficulty-advanced">Advanced • Article</span>
+                      <button class="btn-bookmark-action" data-id="art-5" data-type="article" data-title="The Tourbillon & High Complications" data-category="Horology Complications"><i class="bi bi-bookmark"></i></button>
+                    </div>
+                    <h5><a href="knowledge-details.html?id=tourbillon-complications" class="text-primary">The Tourbillon & High Complications</a></h5>
+                    <p class="small text-secondary mb-3">Multi-axis rotating cages, gravitational compensation, perpetual calendars, and resonance balance wheels.</p>
+                    <div class="mt-auto pt-2 border-top border-subtle-custom d-flex justify-content-between align-items-center">
+                      <span class="small font-mono text-muted-custom">Complications</span>
+                      <a href="knowledge-details.html?id=tourbillon-complications" class="small text-bronze fw-semibold">Read Article →</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Filter Empty State -->
+            <div id="filterEmptyState" class="text-center py-5" style="display: none;">
+              <i class="bi bi-funnel text-muted-custom" style="font-size: 2.5rem;"></i>
+              <h4 class="mt-3">No matching records found</h4>
+              <p class="small text-muted-custom">Try relaxing your filter criteria or click clear all.</p>
+              <button class="btn-aurelis btn-aurelis-outline btn-aurelis-sm clear-all-filters-btn">Clear All Filters</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Download Modal -->
+  <div class="aurelis-modal-backdrop" id="downloadModalBackdrop">
+    <div class="aurelis-modal-card">
+      <button type="button" class="modal-close-btn" aria-label="Close modal"><i class="bi bi-x-lg"></i></button>
+      <span class="eyebrow">Document Generator</span>
+      <h4 id="downloadModalTitle" class="mb-3">Preparing Resource</h4>
+      <div class="progress mb-3" style="height: 6px; background-color: var(--bg-secondary);">
+        <div class="progress-bar" id="downloadModalProgressBar" role="progressbar" style="width: 0%; background-color: var(--accent-bronze) !important;"></div>
+      </div>
+      <p class="small text-secondary" id="downloadModalStatus">Compiling vector diagrams & documentation...</p>
+      <div class="mt-4 pt-3 border-top border-subtle-custom text-end">
+        <button type="button" class="btn-aurelis btn-aurelis-primary" id="downloadModalActionBtn" style="display: none;">Save Document</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mandatory Footer -->
+  <footer class="aurelis-footer">
+    <div class="container-custom">
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6 footer-brand">
+          <a href="index.html" class="brand-logo mb-3">
+            <span class="brand-name">AURELIS</span>
+            <span class="brand-tagline-micro">Knowledge Network</span>
+          </a>
+          <p>“Understand What You Wear. Know What You Own.” An independent, authoritative resource and documentation network.</p>
+        </div>
+        <div class="col-lg-2 col-md-6">
+          <div class="footer-heading">Explore</div>
+          <ul class="footer-links">
+            <li><a href="explore.html?cat=jewelry">Fine Jewelry</a></li>
+            <li><a href="explore.html?cat=watches">Luxury Watches</a></li>
+            <li><a href="explore.html?cat=gemstones">Gemstones</a></li>
+            <li><a href="explore.html?cat=movements">Movements</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-6">
+          <div class="footer-heading">Learn</div>
+          <ul class="footer-links">
+            <li><a href="knowledge.html">Knowledge Base</a></li>
+            <li><a href="guides.html">Curated Guides</a></li>
+            <li><a href="videos.html">Video Masterclasses</a></li>
+            <li><a href="resources.html">Resources</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="footer-heading">Editorial Dispatch</div>
+          <div class="footer-newsletter-box">
+            <p class="small text-secondary mb-3">Subscribe for peer-reviewed technical teardowns and gemstone grading papers.</p>
+            <form class="newsletter-form">
+              <div class="input-group">
+                <input type="email" class="aurelis-input" placeholder="Your email" required>
+                <button class="btn-aurelis btn-aurelis-primary" type="submit">Subscribe</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>© 2026 AURELIS Knowledge Network.</div>
+        <div class="footer-legal-links">
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+          <a href="about.html#privacy">Privacy</a>
+          <a href="about.html#terms">Terms</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="assets/js/theme.js"></script>
+  <script src="assets/js/notifications.js"></script>
+  <script src="assets/js/auth.js"></script>
+  <script src="assets/js/favorites.js"></script>
+  <script src="assets/js/downloads.js"></script>
+  <script src="assets/js/filters.js"></script>
+  <script src="assets/js/search.js"></script>
+  <script src="assets/js/recommendations.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // Initialize Explore Filters
+      AurelisFilters.init({
+        filterContainerId: 'exploreFilterSidebar',
+        itemsSelector: '.filterable-item',
+        resultsContainerId: 'exploreResultsGrid',
+        counterId: 'exploreResultsCount'
+      });
+
+      // Check URL query parameters for initial filters (e.g. ?cat=jewelry or ?q=automatic)
+      const params = new URLSearchParams(window.location.search);
+      const cat = params.get('cat');
+      const q = params.get('q');
+      if (cat) {
+        const cb = document.querySelector(`input[data-filter="category"][value="${cat}"]`);
+        if (cb) {
+          cb.checked = true;
+          cb.dispatchEvent(new Event('change'));
+        }
+      }
+      if (q) {
+        const input = document.querySelector('.filter-search-input');
+        if (input) {
+          input.value = q;
+          input.dispatchEvent(new Event('input'));
+        }
+      }
+    });
+  </script>
+</body>
+</html>

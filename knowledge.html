@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Knowledge Base & Technical Encyclopedia — AURELIS</title>
+  <meta name="description" content="Structured knowledge repository covering fine jewelry anatomy, gemstone grading, precious metal metallurgy, horological movements, and preservation.">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+
+  <!-- Mandatory Navbar -->
+  <header class="aurelis-header">
+    <div class="container-custom nav-wrapper">
+      <a href="index.html" class="brand-logo" aria-label="Aurelis Homepage">
+        <span class="brand-name">AURELIS</span>
+        <span class="brand-tagline-micro">Knowledge Network</span>
+      </a>
+
+      <nav aria-label="Main Navigation" class="d-none d-lg-block">
+        <ul class="nav-menu-desktop">
+          <li class="nav-item"><a href="index.html" class="nav-link-custom">Home</a></li>
+          <li class="nav-item"><a href="explore.html" class="nav-link-custom">Explore</a></li>
+          
+          <li class="nav-item">
+            <a href="knowledge.html" class="nav-link-custom active" aria-expanded="false">
+              Knowledge <i class="bi bi-chevron-down dropdown-arrow"></i>
+            </a>
+            <div class="dropdown-menu-custom dropdown-grid-2col">
+              <a href="#jewelry" class="dropdown-item-custom"><i class="bi bi-gem"></i> Jewelry Encyclopedia</a>
+              <a href="#watches" class="dropdown-item-custom"><i class="bi bi-watch"></i> Watch Encyclopedia</a>
+              <a href="#gemstones" class="dropdown-item-custom"><i class="bi bi-prism"></i> Gemstone Guide</a>
+              <a href="#materials" class="dropdown-item-custom"><i class="bi bi-shield-check"></i> Metal Guide</a>
+              <a href="#movements" class="dropdown-item-custom"><i class="bi bi-gear-wide-connected"></i> Movement Guide</a>
+              <a href="glossary.html" class="dropdown-item-custom"><i class="bi bi-translate"></i> Terminology Glossary</a>
+            </div>
+          </li>
+
+          <li class="nav-item"><a href="resources.html" class="nav-link-custom">Resources</a></li>
+          <li class="nav-item"><a href="videos.html" class="nav-link-custom">Videos</a></li>
+          <li class="nav-item"><a href="community.html" class="nav-link-custom">Community</a></li>
+          <li class="nav-item"><a href="guides.html" class="nav-link-custom">Guides</a></li>
+          <li class="nav-item"><a href="about.html" class="nav-link-custom">About</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button type="button" class="search-trigger-btn" aria-label="Open search engine">
+          <i class="bi bi-search text-bronze"></i>
+          <span>Search</span>
+          <kbd>/</kbd>
+        </button>
+        <button type="button" class="btn-icon-action theme-toggle-btn" aria-label="Toggle Theme">
+          <i class="bi bi-moon-stars-fill"></i>
+        </button>
+        <div class="auth-nav-container d-none d-sm-block">
+          <a href="login.html" class="btn-aurelis btn-aurelis-outline btn-aurelis-sm">Login</a>
+          <a href="signup.html" class="btn-aurelis btn-aurelis-primary btn-aurelis-sm">Sign Up</a>
+        </div>
+        <button type="button" class="hamburger-btn" id="hamburgerBtn" aria-label="Open mobile menu">
+          <i class="bi bi-list"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-nav-backdrop" id="mobileNavBackdrop"></div>
+  <div class="mobile-nav-drawer" id="mobileNavDrawer">
+    <div class="mobile-drawer-header">
+      <div class="brand-logo">
+        <span class="brand-name">AURELIS</span>
+        <span class="brand-tagline-micro">Knowledge Network</span>
+      </div>
+      <button type="button" class="btn-icon-action" id="closeMobileDrawerBtn"><i class="bi bi-x-lg"></i></button>
+    </div>
+    <div class="mobile-drawer-body">
+      <ul class="mobile-menu-list">
+        <li class="mobile-menu-item"><a href="index.html" class="mobile-menu-link">Home</a></li>
+        <li class="mobile-menu-item"><a href="explore.html" class="mobile-menu-link">Explore Discovery</a></li>
+        <li class="mobile-menu-item"><a href="knowledge.html" class="mobile-menu-link active">Knowledge Base</a></li>
+        <li class="mobile-menu-item"><a href="resources.html" class="mobile-menu-link">Resources</a></li>
+        <li class="mobile-menu-item"><a href="videos.html" class="mobile-menu-link">Videos</a></li>
+        <li class="mobile-menu-item"><a href="community.html" class="mobile-menu-link">Community</a></li>
+        <li class="mobile-menu-item"><a href="glossary.html" class="mobile-menu-link">Glossary</a></li>
+        <li class="mobile-menu-item"><a href="guides.html" class="mobile-menu-link">Guides</a></li>
+        <li class="mobile-menu-item"><a href="about.html" class="mobile-menu-link">About</a></li>
+        <li class="mobile-menu-item"><a href="contact.html" class="mobile-menu-link">Contact</a></li>
+      </ul>
+      <div class="mobile-auth-container mt-auto pt-3 border-top border-subtle-custom"></div>
+    </div>
+  </div>
+
+  <main>
+    <!-- HEADER -->
+    <section class="section-padding-sm bg-secondary-custom border-bottom border-subtle-custom">
+      <div class="container-custom">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb small font-ui mb-2">
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Knowledge Base</li>
+          </ol>
+        </nav>
+        <span class="eyebrow">Structured Encyclopedia</span>
+        <h1>The AURELIS Knowledge Base</h1>
+        <p class="lead mb-0" style="max-width: 860px;">An authoritative, peer-reviewed knowledge framework spanning jewelry construction, gemological physics, metallurgy standards, and horological engineering.</p>
+      </div>
+    </section>
+
+    <!-- SECTION JUMP NAVIGATION -->
+    <section class="py-3 bg-surface-custom border-bottom border-subtle-custom sticky-top" style="top: var(--header-height); z-index: 900;">
+      <div class="container-custom">
+        <div class="d-flex align-items-center gap-2 overflow-x-auto pb-1" style="white-space: nowrap;">
+          <a href="#jewelry" class="btn-aurelis btn-aurelis-outline btn-aurelis-sm"><i class="bi bi-gem"></i> Jewelry</a>
+          <a href="#gemstones" class="btn-aurelis btn-aurelis-outline btn-aurelis-sm"><i class="bi bi-prism"></i> Gemstones</a>
+          <a href="#materials" class="btn-aurelis btn-aurelis-outline btn-aurelis-sm"><i class="bi bi-shield-check"></i> Materials & Metals</a>
+          <a href="#watches" class="btn-aurelis btn-aurelis-outline btn-aurelis-sm"><i class="bi bi-watch"></i> Watches</a>
+          <a href="#movements" class="btn-aurelis btn-aurelis-outline btn-aurelis-sm"><i class="bi bi-gear-wide-connected"></i> Movements</a>
+          <a href="#care" class="btn-aurelis btn-aurelis-outline btn-aurelis-sm"><i class="bi bi-heart-pulse"></i> Care & Preservation</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 1. JEWELRY ENCYCLOPEDIA -->
+    <section class="section-padding border-bottom border-subtle-custom" id="jewelry">
+      <div class="container-custom">
+        <div class="d-flex align-items-end justify-content-between flex-wrap gap-2 mb-4">
+          <div>
+            <span class="eyebrow">Domain 01</span>
+            <h2>Fine Jewelry Encyclopedia</h2>
+            <p class="text-secondary mb-0">Structural anatomy, stone setting methodologies, hallmarks, and artisanal fabrication.</p>
+          </div>
+          <a href="explore.html?cat=jewelry" class="btn-aurelis btn-aurelis-outline btn-aurelis-sm">All Jewelry Articles →</a>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-3">
+            <div class="topic-card">
+              <div class="topic-icon-wrapper"><i class="bi bi-circle"></i></div>
+              <h4>Rings & Bands</h4>
+              <p>Solitaire shanks, eternity settings, halo geometry, comfort fit radii, and prong stress tolerances.</p>
+              <a href="knowledge-details.html?id=jewelry-settings" class="text-bronze small fw-semibold">Read Topic →</a>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="topic-card">
+              <div class="topic-icon-wrapper"><i class="bi bi-gem"></i></div>
+              <h4>Stone Settings</h4>
+              <p>Prong (4 vs 6), Bezel, Micro-Pavé, Channel, Tension, and Flush setting mechanical security.</p>
+              <a href="knowledge-details.html?id=jewelry-settings" class="text-bronze small fw-semibold">Read Topic →</a>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="topic-card">
+              <div class="topic-icon-wrapper"><i class="bi bi-stamp"></i></div>
+              <h4>Hallmarks & Assays</h4>
+              <p>750 (18K), 585 (14K), 950 Pt, Assay office punch marks, and maker responsibility sponsor marks.</p>
+              <a href="knowledge-details.html?id=gold-purity" class="text-bronze small fw-semibold">Read Topic →</a>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="topic-card">
+              <div class="topic-icon-wrapper"><i class="bi bi-hammer"></i></div>
+              <h4>Jewelry Fabrication</h4>
+              <p>Lost-wax CAD casting vs hand-forged fabrication, laser micro-welding, milgrain, and filigree wire.</p>
+              <a href="knowledge-details.html?id=jewelry-settings" class="text-bronze small fw-semibold">Read Topic →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. GEMSTONES -->
+    <section class="section-padding bg-surface-custom border-bottom border-subtle-custom" id="gemstones">
+      <div class="container-custom">
+        <div class="d-flex align-items-end justify-content-between flex-wrap gap-2 mb-4">
+          <div>
+            <span class="eyebrow">Domain 02</span>
+            <h2>Gemstone Grading & Mineralogy</h2>
+            <p class="text-secondary mb-0">The 4Cs, crystal habit, thermal treatments, origin spectrometry, and laboratory certificates.</p>
+          </div>
+          <a href="explore.html?cat=gemstones" class="btn-aurelis btn-aurelis-outline btn-aurelis-sm">All Gemstone Articles →</a>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4">
+            <div class="knowledge-card">
+              <div class="knowledge-card-media d-flex align-items-center justify-content-center p-3 bg-secondary-custom">
+                <i class="bi bi-suit-diamond text-bronze" style="font-size: 2.5rem;"></i>
+              </div>
+              <div class="knowledge-card-body">
+                <span class="aurelis-badge mb-2">Diamond Science</span>
+                <h5><a href="knowledge-details.html?id=gemstone-reports" class="text-primary">The 4Cs & Cut Proportions</a></h5>
+                <p class="small text-secondary mb-3">Table percentages, pavilion angles, crown height ratios, and light dispersion metrics.</p>
+                <a href="knowledge-details.html?id=gemstone-reports" class="small text-bronze fw-semibold">Explore Gemology →</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="knowledge-card">
+              <div class="knowledge-card-media d-flex align-items-center justify-content-center p-3 bg-secondary-custom">
+                <i class="bi bi-prism text-bronze" style="font-size: 2.5rem;"></i>
+              </div>
+              <div class="knowledge-card-body">
+                <span class="aurelis-badge mb-2">Colored Gemstones</span>
+                <h5><a href="knowledge-details.html?id=gemstone-reports" class="text-primary">Sapphire, Ruby & Emerald Verification</a></h5>
+                <p class="small text-secondary mb-3">Ceylon vs Burmese corundum silk, Colombian 3-phase inclusions, and oil clarity disclosure.</p>
+                <a href="knowledge-details.html?id=gemstone-reports" class="small text-bronze fw-semibold">Explore Gemology →</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="knowledge-card">
+              <div class="knowledge-card-media d-flex align-items-center justify-content-center p-3 bg-secondary-custom">
+                <i class="bi bi-file-earmark-medical text-bronze" style="font-size: 2.5rem;"></i>
+              </div>
+              <div class="knowledge-card-body">
+                <span class="aurelis-badge mb-2">Lab Reports</span>
+                <h5><a href="knowledge-details.html?id=gemstone-reports" class="text-primary">Decoding GIA, SSEF & Gübelin Reports</a></h5>
+                <p class="small text-secondary mb-3">Interpreting clarity plot symbols, origin opinions, laser inscriptions, and heat treatments.</p>
+                <a href="knowledge-details.html?id=gemstone-reports" class="small text-bronze fw-semibold">Explore Gemology →</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. MATERIALS & PRECIOUS METALS -->
+    <section class="section-padding border-bottom border-subtle-custom" id="materials">
+      <div class="container-custom">
+        <div class="d-flex align-items-end justify-content-between flex-wrap gap-2 mb-4">
+          <div>
+            <span class="eyebrow">Domain 03</span>
+            <h2>Materials, Metallurgy & Alloys</h2>
+            <p class="text-secondary mb-0">Tensile properties, fineness ratios, hardness on the Vickers scale, and oxidation behaviors.</p>
+          </div>
+          <a href="explore.html?cat=metals" class="btn-aurelis btn-aurelis-outline btn-aurelis-sm">All Metallurgy Articles →</a>
+        </div>
+
+        <div class="table-responsive-custom">
+          <table class="aurelis-table">
+            <thead>
+              <tr>
+                <th>Precious Metal / Alloy</th>
+                <th>Standard Hallmark</th>
+                <th>Fineness (%)</th>
+                <th>Density (g/cm³)</th>
+                <th>Vickers Hardness (HV)</th>
+                <th>Common Application</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>24K Pure Yellow Gold</strong></td>
+                <td><span class="font-mono text-bronze">999</span></td>
+                <td>99.9% Au</td>
+                <td>19.32</td>
+                <td>25 - 30 HV</td>
+                <td>Bullion, Investment Chains</td>
+              </tr>
+              <tr>
+                <td><strong>18K Yellow Gold Alloy</strong></td>
+                <td><span class="font-mono text-bronze">750</span></td>
+                <td>75.0% Au + 12.5% Ag + 12.5% Cu</td>
+                <td>15.58</td>
+                <td>130 - 160 HV</td>
+                <td>Luxury Watch Cases, Fine Rings</td>
+              </tr>
+              <tr>
+                <td><strong>18K White Gold (Palladium)</strong></td>
+                <td><span class="font-mono text-bronze">750</span></td>
+                <td>75.0% Au + 13.0% Pd + 12.0% Ag</td>
+                <td>15.90</td>
+                <td>170 - 210 HV</td>
+                <td>High-Wear Diamond Settings</td>
+              </tr>
+              <tr>
+                <td><strong>950 Pure Platinum</strong></td>
+                <td><span class="font-mono text-bronze">950 Pt</span></td>
+                <td>95.0% Pt + 5.0% Ru / Ir</td>
+                <td>21.45</td>
+                <td>120 - 140 HV (Work hardens)</td>
+                <td>Engagement Rings, Grand Complications</td>
+              </tr>
+              <tr>
+                <td><strong>Grade 5 Titanium</strong></td>
+                <td><span class="font-mono text-bronze">Ti-6Al-4V</span></td>
+                <td>90% Ti + 6% Al + 4% V</td>
+                <td>4.43</td>
+                <td>350 HV</td>
+                <td>Tourbillon Cages, Sports Cases</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="text-end mt-2">
+          <a href="knowledge-details.html?id=gold-purity" class="btn-aurelis btn-aurelis-primary btn-aurelis-sm">Read Full Metallurgy Guide <i class="bi bi-arrow-right"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. WATCHES & MOVEMENTS -->
+    <section class="section-padding bg-surface-custom" id="movements">
+      <div class="container-custom">
+        <div class="d-flex align-items-end justify-content-between flex-wrap gap-2 mb-4">
+          <div>
+            <span class="eyebrow">Domain 04 & 05</span>
+            <h2>Horology & Mechanical Watch Movements</h2>
+            <p class="text-secondary mb-0">Caliber architecture, escapements, isochronism, chronometers, and high complications.</p>
+          </div>
+          <a href="explore.html?cat=movements" class="btn-aurelis btn-aurelis-outline btn-aurelis-sm">All Horology Articles →</a>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-lg-6">
+            <div class="p-4 bg-secondary-custom border border-subtle-custom rounded h-100 d-flex flex-column justify-content-between">
+              <div>
+                <span class="aurelis-badge badge-difficulty-intermediate mb-2">Kinetic Regulation</span>
+                <h3 class="mb-3">Automatic Calibers & Escapements</h3>
+                <p class="text-secondary">
+                  How kinetic rotors wind the mainspring via bi-directional reverser wheels, translating continuous energy into controlled 28,800 vph impulses via ruby pallet stones and glucydur balance wheels.
+                </p>
+                <ul class="small font-ui text-secondary ps-3 mb-4">
+                  <li class="mb-1">Mainspring torque curve and slipping spring safety bridle</li>
+                  <li class="mb-1">Swiss lever vs George Daniels Co-Axial escapement mechanics</li>
+                  <li class="mb-1">Anti-magnetic silicon hairsprings (Silinvar/Syloxi)</li>
+                </ul>
+              </div>
+              <div>
+                <a href="knowledge-details.html?id=automatic-movements" class="btn-aurelis btn-aurelis-primary">Read Complete Teardown →</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="p-4 bg-secondary-custom border border-subtle-custom rounded h-100 d-flex flex-column justify-content-between">
+              <div>
+                <span class="aurelis-badge badge-difficulty-advanced mb-2">High Complications</span>
+                <h3 class="mb-3">Tourbillons, Chronographs & Calendars</h3>
+                <p class="text-secondary">
+                  Examine multi-axis tourbillon carriage balancing, column wheel vs horizontal cam chronograph actuation, and perpetual calendar 1,461-day mechanical memory cams.
+                </p>
+                <ul class="small font-ui text-secondary ps-3 mb-4">
+                  <li class="mb-1">Single-axis, double-axis and triple-axis tourbillon mechanics</li>
+                  <li class="mb-1">Flyback and split-seconds (rattrapante) chronograph clamps</li>
+                  <li class="mb-1">Equation of time and minute repeater strike trains</li>
+                </ul>
+              </div>
+              <div>
+                <a href="knowledge-details.html?id=tourbillon-complications" class="btn-aurelis btn-aurelis-primary">Read Complications Guide →</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="aurelis-footer">
+    <div class="container-custom">
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6 footer-brand">
+          <a href="index.html" class="brand-logo mb-3">
+            <span class="brand-name">AURELIS</span>
+            <span class="brand-tagline-micro">Knowledge Network</span>
+          </a>
+          <p>“Understand What You Wear. Know What You Own.” An independent, authoritative resource and documentation network.</p>
+        </div>
+        <div class="col-lg-2 col-md-6">
+          <div class="footer-heading">Explore</div>
+          <ul class="footer-links">
+            <li><a href="explore.html?cat=jewelry">Fine Jewelry</a></li>
+            <li><a href="explore.html?cat=watches">Luxury Watches</a></li>
+            <li><a href="explore.html?cat=gemstones">Gemstones</a></li>
+            <li><a href="explore.html?cat=movements">Movements</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-6">
+          <div class="footer-heading">Learn</div>
+          <ul class="footer-links">
+            <li><a href="knowledge.html">Knowledge Base</a></li>
+            <li><a href="guides.html">Curated Guides</a></li>
+            <li><a href="videos.html">Video Masterclasses</a></li>
+            <li><a href="resources.html">Resources</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="footer-heading">Editorial Dispatch</div>
+          <div class="footer-newsletter-box">
+            <p class="small text-secondary mb-3">Subscribe for peer-reviewed technical teardowns and gemstone grading papers.</p>
+            <form class="newsletter-form">
+              <div class="input-group">
+                <input type="email" class="aurelis-input" placeholder="Your email" required>
+                <button class="btn-aurelis btn-aurelis-primary" type="submit">Subscribe</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>© 2026 AURELIS Knowledge Network.</div>
+        <div class="footer-legal-links">
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+          <a href="about.html#privacy">Privacy</a>
+          <a href="about.html#terms">Terms</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="assets/js/theme.js"></script>
+  <script src="assets/js/notifications.js"></script>
+  <script src="assets/js/auth.js"></script>
+  <script src="assets/js/favorites.js"></script>
+  <script src="assets/js/downloads.js"></script>
+  <script src="assets/js/search.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

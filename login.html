@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign In — AURELIS Knowledge Network</title>
+  <meta name="description" content="Access your personalized AURELIS knowledge library, saved checklists, and community discussions.">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+
+  <!-- Mandatory Navbar -->
+  <header class="aurelis-header">
+    <div class="container-custom nav-wrapper">
+      <a href="index.html" class="brand-logo" aria-label="Aurelis Homepage">
+        <span class="brand-name">AURELIS</span>
+        <span class="brand-tagline-micro">Knowledge Network</span>
+      </a>
+
+      <div class="nav-actions ms-auto">
+        <button type="button" class="btn-icon-action theme-toggle-btn" aria-label="Toggle Theme">
+          <i class="bi bi-moon-stars-fill"></i>
+        </button>
+        <a href="signup.html" class="btn-aurelis btn-aurelis-outline btn-aurelis-sm">Create Account</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="d-flex align-items-center justify-content-center py-5" style="min-height: calc(100vh - 160px);">
+    <div class="container-custom" style="max-width: 480px;">
+      <div class="p-4 p-md-5 bg-surface-custom border border-subtle-custom rounded shadow-lg">
+        
+        <div class="text-center mb-4">
+          <span class="eyebrow justify-content-center">Member Portal</span>
+          <h2 class="mb-1">Welcome to AURELIS</h2>
+          <p class="small text-secondary mb-0">Sign in to access your saved knowledge & bookmarks</p>
+        </div>
+
+        <!-- Quick Demo Fill Helper -->
+        <div class="p-2 mb-4 bg-secondary-custom border border-subtle-custom rounded d-flex align-items-center justify-content-between font-ui small">
+          <span class="text-muted-custom"><i class="bi bi-person-badge text-bronze me-1"></i> Quick Demo Access:</span>
+          <button type="button" class="btn btn-sm btn-link text-bronze p-0 text-decoration-none fw-semibold" id="fillDemoLoginBtn">
+            Auto-Fill
+          </button>
+        </div>
+
+        <form id="loginForm">
+          <div class="mb-3">
+            <label class="aurelis-label" for="loginEmail">Email Address</label>
+            <input type="email" id="loginEmail" class="aurelis-input" placeholder="collector@aurelis.org" required autocomplete="username">
+          </div>
+
+          <div class="mb-3">
+            <div class="d-flex justify-content-between align-items-center mb-1">
+              <label class="aurelis-label mb-0" for="loginPassword">Password</label>
+              <a href="forgot-password.html" class="small text-bronze text-decoration-none">Forgot password?</a>
+            </div>
+            <input type="password" id="loginPassword" class="aurelis-input" placeholder="••••••••" required autocomplete="current-password">
+          </div>
+
+          <div class="d-flex align-items-center justify-content-between mb-4 small font-ui">
+            <label class="d-flex align-items-center gap-2 cursor-pointer mb-0">
+              <input type="checkbox" id="rememberMe" class="form-check-input mt-0" checked>
+              <span>Remember this session</span>
+            </label>
+          </div>
+
+          <button type="submit" class="btn-aurelis btn-aurelis-primary w-100 justify-content-center py-2 mb-3">
+            Sign In to Knowledge Network
+          </button>
+        </form>
+
+        <div class="text-center pt-3 border-top border-subtle-custom small text-secondary">
+          Don't have an account yet? <a href="signup.html" class="text-bronze fw-semibold">Create an account</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Minimal Footer -->
+  <footer class="py-3 text-center border-top border-subtle-custom small text-muted-custom bg-secondary-custom">
+    © 2026 AURELIS. Understand What You Wear. Know What You Own.
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/theme.js"></script>
+  <script src="assets/js/notifications.js"></script>
+  <script src="assets/js/auth.js"></script>
+  <script src="assets/js/favorites.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const emailInput = document.getElementById('loginEmail');
+      const passwordInput = document.getElementById('loginPassword');
+      const form = document.getElementById('loginForm');
+      const demoBtn = document.getElementById('fillDemoLoginBtn');
+
+      if (demoBtn) {
+        demoBtn.addEventListener('click', () => {
+          emailInput.value = 'alexander.vance@horology-fellow.org';
+          passwordInput.value = 'AurelisMaster2026!';
+          AurelisNotifications.show('Demo credentials populated.', 'info');
+        });
+      }
+
+      if (form) {
+        form.addEventListener('submit', (e) => {
+          e.preventDefault();
+          const email = emailInput.value.trim();
+          const password = passwordInput.value;
+          const remember = document.getElementById('rememberMe').checked;
+
+          if (email && password) {
+            AurelisAuth.login(email, password, remember);
+            const params = new URLSearchParams(window.location.search);
+            const redirect = params.get('redirect') || 'saved.html';
+            setTimeout(() => {
+              window.location.href = redirect;
+            }, 600);
+          }
+        });
+      }
+    });
+  </script>
+</body>
+</html>

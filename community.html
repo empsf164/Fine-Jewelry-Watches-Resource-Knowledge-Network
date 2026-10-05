@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Community Discussions & Peer Forum — AURELIS</title>
+  <meta name="description" content="Engage with horologists, gemologists, and collectors in peer-reviewed fine jewelry and luxury watch discussions.">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+
+  <!-- Mandatory Navbar -->
+  <header class="aurelis-header">
+    <div class="container-custom nav-wrapper">
+      <a href="index.html" class="brand-logo" aria-label="Aurelis Homepage">
+        <span class="brand-name">AURELIS</span>
+        <span class="brand-tagline-micro">Knowledge Network</span>
+      </a>
+
+      <nav aria-label="Main Navigation" class="d-none d-lg-block">
+        <ul class="nav-menu-desktop">
+          <li class="nav-item"><a href="index.html" class="nav-link-custom">Home</a></li>
+          <li class="nav-item"><a href="explore.html" class="nav-link-custom">Explore</a></li>
+          <li class="nav-item"><a href="knowledge.html" class="nav-link-custom">Knowledge</a></li>
+          <li class="nav-item"><a href="resources.html" class="nav-link-custom">Resources</a></li>
+          <li class="nav-item"><a href="videos.html" class="nav-link-custom">Videos</a></li>
+          <li class="nav-item"><a href="community.html" class="nav-link-custom active">Community</a></li>
+          <li class="nav-item"><a href="guides.html" class="nav-link-custom">Guides</a></li>
+          <li class="nav-item"><a href="about.html" class="nav-link-custom">About</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button type="button" class="search-trigger-btn" aria-label="Open search engine">
+          <i class="bi bi-search text-bronze"></i>
+          <span>Search</span>
+          <kbd>/</kbd>
+        </button>
+        <button type="button" class="btn-icon-action theme-toggle-btn" aria-label="Toggle Theme">
+          <i class="bi bi-moon-stars-fill"></i>
+        </button>
+        <div class="auth-nav-container d-none d-sm-block">
+          <a href="login.html" class="btn-aurelis btn-aurelis-outline btn-aurelis-sm">Login</a>
+          <a href="signup.html" class="btn-aurelis btn-aurelis-primary btn-aurelis-sm">Sign Up</a>
+        </div>
+        <button type="button" class="hamburger-btn" id="hamburgerBtn" aria-label="Open mobile menu">
+          <i class="bi bi-list"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-nav-backdrop" id="mobileNavBackdrop"></div>
+  <div class="mobile-nav-drawer" id="mobileNavDrawer">
+    <div class="mobile-drawer-header">
+      <div class="brand-logo">
+        <span class="brand-name">AURELIS</span>
+        <span class="brand-tagline-micro">Knowledge Network</span>
+      </div>
+      <button type="button" class="btn-icon-action" id="closeMobileDrawerBtn"><i class="bi bi-x-lg"></i></button>
+    </div>
+    <div class="mobile-drawer-body">
+      <ul class="mobile-menu-list">
+        <li class="mobile-menu-item"><a href="index.html" class="mobile-menu-link">Home</a></li>
+        <li class="mobile-menu-item"><a href="explore.html" class="mobile-menu-link">Explore Discovery</a></li>
+        <li class="mobile-menu-item"><a href="knowledge.html" class="mobile-menu-link">Knowledge Base</a></li>
+        <li class="mobile-menu-item"><a href="resources.html" class="mobile-menu-link">Resources</a></li>
+        <li class="mobile-menu-item"><a href="videos.html" class="mobile-menu-link">Videos</a></li>
+        <li class="mobile-menu-item"><a href="community.html" class="mobile-menu-link active">Community</a></li>
+        <li class="mobile-menu-item"><a href="glossary.html" class="mobile-menu-link">Glossary</a></li>
+        <li class="mobile-menu-item"><a href="guides.html" class="mobile-menu-link">Guides</a></li>
+        <li class="mobile-menu-item"><a href="about.html" class="mobile-menu-link">About</a></li>
+        <li class="mobile-menu-item"><a href="contact.html" class="mobile-menu-link">Contact</a></li>
+      </ul>
+      <div class="mobile-auth-container mt-auto pt-3 border-top border-subtle-custom"></div>
+    </div>
+  </div>
+
+  <main>
+    <!-- HEADER -->
+    <section class="section-padding-sm bg-secondary-custom border-bottom border-subtle-custom">
+      <div class="container-custom">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb small font-ui mb-2">
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Community Discussions</li>
+          </ol>
+        </nav>
+        <div class="row align-items-center g-3">
+          <div class="col-lg-8">
+            <span class="eyebrow">Peer Forum & Inquiries</span>
+            <h1>AURELIS Community Discussions</h1>
+            <p class="lead mb-0">Ask questions, share bench insights, verify hallmarks, and discuss horological preservation with verified specialists.</p>
+          </div>
+          <div class="col-lg-4 text-lg-end">
+            <button type="button" class="btn-aurelis btn-aurelis-primary btn-aurelis-lg" id="openNewDiscussionModalBtn">
+              <i class="bi bi-pencil-square"></i> Start a Discussion
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DISCUSSIONS FEED -->
+    <section class="section-padding">
+      <div class="container-custom">
+        <div class="row g-4">
+          <!-- Sidebar Filters -->
+          <div class="col-lg-3 filter-sidebar-wrapper">
+            <div class="p-3 bg-surface-custom border border-subtle-custom rounded sticky-top" style="top: 100px;" id="communityFilterSidebar">
+              <div class="d-flex align-items-center justify-content-between mb-3 pb-2 border-bottom border-subtle-custom">
+                <h5 class="mb-0 font-ui fw-bold"><i class="bi bi-chat-left-dots me-1 text-bronze"></i> Categories</h5>
+                <button type="button" class="btn btn-sm btn-link text-bronze p-0 clear-all-filters-btn text-decoration-none">Clear</button>
+              </div>
+
+              <!-- Keyword -->
+              <div class="mb-3">
+                <label class="aurelis-label">Search Discussions</label>
+                <input type="text" class="aurelis-input filter-search-input" placeholder="Search threads...">
+              </div>
+
+              <!-- Categories -->
+              <div class="d-flex flex-column gap-2 small font-ui">
+                <label class="d-flex align-items-center gap-2 cursor-pointer">
+                  <input type="checkbox" data-filter="category" value="watch care" class="form-check-input mt-0"> Watch Care & Servicing
+                </label>
+                <label class="d-flex align-items-center gap-2 cursor-pointer">
+                  <input type="checkbox" data-filter="category" value="precious metals" class="form-check-input mt-0"> Precious Metals
+                </label>
+                <label class="d-flex align-items-center gap-2 cursor-pointer">
+                  <input type="checkbox" data-filter="category" value="gemstones" class="form-check-input mt-0"> Gemstone Identification
+                </label>
+                <label class="d-flex align-items-center gap-2 cursor-pointer">
+                  <input type="checkbox" data-filter="category" value="watch specifications" class="form-check-input mt-0"> Specifications & Crystals
+                </label>
+                <label class="d-flex align-items-center gap-2 cursor-pointer">
+                  <input type="checkbox" data-filter="category" value="collecting" class="form-check-input mt-0"> Vintage Collecting
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <!-- Discussions List -->
+          <div class="col-lg-9">
+            <div class="d-flex align-items-center justify-content-between mb-4 p-3 bg-surface-custom border border-subtle-custom rounded">
+              <div class="font-mono small text-secondary" id="discussionsCount">Showing 4 active discussions</div>
+              <span class="aurelis-badge"><i class="bi bi-people text-bronze"></i> Expert Moderated</span>
+            </div>
+
+            <div class="d-flex flex-column gap-3" id="discussionsList">
+              
+              <!-- Discussion 1 -->
+              <div class="discussion-card discussion-card-item" data-category="watch care" data-title="How often should a modern mechanical watch really be serviced?">
+                <div class="discussion-upvote-box">
+                  <button class="btn-upvote-action btn-icon-action border-0" data-id="dis-servicing-interval" aria-label="Upvote discussion">
+                    <i class="bi bi-caret-up-fill text-bronze"></i>
+                  </button>
+                  <span class="count upvote-count">42</span>
+                </div>
+                <div class="discussion-content">
+                  <div class="d-flex align-items-center gap-2 mb-1">
+                    <span class="aurelis-badge">Watch Care</span>
+                    <span class="text-muted-custom font-mono small">• 2 hours ago</span>
+                  </div>
+                  <h4><a href="discussion-details.html?id=servicing-interval" class="text-primary">How often should a modern mechanical watch really be serviced?</a></h4>
+                  <p class="text-secondary small mb-2">Modern synthetic oils resist gumming longer than animal oils. Should we rely on 5-year intervals or timegrapher amplitude indicators?</p>
+                  <div class="discussion-author-meta">
+                    <i class="bi bi-person-circle text-bronze"></i>
+                    <span>Started by <strong class="text-primary">HorologyMaster_Geneva</strong> (Senior Watchmaker)</span>
+                  </div>
+                </div>
+                <div class="d-none d-md-flex align-items-center gap-3 text-muted-custom font-mono small">
+                  <span><i class="bi bi-chat-left-text me-1"></i> 24 replies</span>
+                  <span><i class="bi bi-eye me-1"></i> 1.4k views</span>
+                </div>
+              </div>
+
+              <!-- Discussion 2 -->
+              <div class="discussion-card discussion-card-item" data-category="precious metals" data-title="Is 950 Platinum really superior to 18K White Gold for everyday rings?">
+                <div class="discussion-upvote-box">
+                  <button class="btn-upvote-action btn-icon-action border-0" data-id="dis-platinum-vs-white-gold" aria-label="Upvote discussion">
+                    <i class="bi bi-caret-up-fill text-bronze"></i>
+                  </button>
+                  <span class="count upvote-count">35</span>
+                </div>
+                <div class="discussion-content">
+                  <div class="d-flex align-items-center gap-2 mb-1">
+                    <span class="aurelis-badge">Precious Metals</span>
+                    <span class="text-muted-custom font-mono small">• 5 hours ago</span>
+                  </div>
+                  <h4><a href="discussion-details.html?id=platinum-vs-white-gold" class="text-primary">Is 950 Platinum really superior to 18K White Gold for everyday rings?</a></h4>
+                  <p class="text-secondary small mb-2">Comparing density, metal displacement patina vs rhodium replating, and lifetime prong retention costs.</p>
+                  <div class="discussion-author-meta">
+                    <i class="bi bi-person-circle text-bronze"></i>
+                    <span>Started by <strong class="text-primary">AureliaGemologist</strong> (GIA GG)</span>
+                  </div>
+                </div>
+                <div class="d-none d-md-flex align-items-center gap-3 text-muted-custom font-mono small">
+                  <span><i class="bi bi-chat-left-text me-1"></i> 18 replies</span>
+                  <span><i class="bi bi-eye me-1"></i> 980 views</span>
+                </div>
+              </div>
+
+              <!-- Discussion 3 -->
+              <div class="discussion-card discussion-card-item" data-category="watch specifications" data-title="Understanding Sapphire vs Mineral Crystal scratch & impact resistance">
+                <div class="discussion-upvote-box">
+                  <button class="btn-upvote-action btn-icon-action border-0" data-id="dis-sapphire-vs-mineral" aria-label="Upvote discussion">
+                    <i class="bi bi-caret-up-fill text-bronze"></i>
+                  </button>
+                  <span class="count upvote-count">29</span>
+                </div>
+                <div class="discussion-content">
+                  <div class="d-flex align-items-center gap-2 mb-1">
+                    <span class="aurelis-badge">Watch Specifications</span>
+                    <span class="text-muted-custom font-mono small">• 1 day ago</span>
+                  </div>
+                  <h4><a href="discussion-details.html?id=sapphire-vs-mineral" class="text-primary">Understanding Sapphire vs Mineral Crystal scratch & impact resistance</a></h4>
+                  <p class="text-secondary small mb-2">Synthetic corundum Mohs 9 scratch immunity vs brittle crystal lattice under sharp impacts in field environments.</p>
+                  <div class="discussion-author-meta">
+                    <i class="bi bi-person-circle text-bronze"></i>
+                    <span>Started by <strong class="text-primary">Collector_Vanguard</strong></span>
+                  </div>
+                </div>
+                <div class="d-none d-md-flex align-items-center gap-3 text-muted-custom font-mono small">
+                  <span><i class="bi bi-chat-left-text me-1"></i> 15 replies</span>
+                  <span><i class="bi bi-eye me-1"></i> 840 views</span>
+                </div>
+              </div>
+
+              <!-- Discussion 4 -->
+              <div class="discussion-card discussion-card-item" data-category="gemstones" data-title="Disclosing Cedarwood Oil vs Polymer Resin in Colombian Emeralds">
+                <div class="discussion-upvote-box">
+                  <button class="btn-upvote-action btn-icon-action border-0" data-id="dis-emerald-oiling" aria-label="Upvote discussion">
+                    <i class="bi bi-caret-up-fill text-bronze"></i>
+                  </button>
+                  <span class="count upvote-count">56</span>
+                </div>
+                <div class="discussion-content">
+                  <div class="d-flex align-items-center gap-2 mb-1">
+                    <span class="aurelis-badge">Gemstones</span>
+                    <span class="text-muted-custom font-mono small">• 2 days ago</span>
+                  </div>
+                  <h4><a href="discussion-details.html?id=emerald-oiling" class="text-primary">Disclosing Cedarwood Oil vs Polymer Resin in Colombian Emeralds</a></h4>
+                  <p class="text-secondary small mb-2">Traditional cedarwood oil is accepted worldwide as minor clarity enhancement, whereas epoxy resins can degrade over decades.</p>
+                  <div class="discussion-author-meta">
+                    <i class="bi bi-person-circle text-bronze"></i>
+                    <span>Started by <strong class="text-primary">BogotaBeryl_Expert</strong></span>
+                  </div>
+                </div>
+                <div class="d-none d-md-flex align-items-center gap-3 text-muted-custom font-mono small">
+                  <span><i class="bi bi-chat-left-text me-1"></i> 31 replies</span>
+                  <span><i class="bi bi-eye me-1"></i> 2.1k views</span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Start New Discussion Modal -->
+  <div class="aurelis-modal-backdrop" id="newDiscussionModalBackdrop">
+    <div class="aurelis-modal-card">
+      <button type="button" class="modal-close-btn" aria-label="Close modal"><i class="bi bi-x-lg"></i></button>
+      <span class="eyebrow">Community Exchange</span>
+      <h4 class="mb-3">Start a New Discussion</h4>
+      
+      <form id="newDiscussionForm">
+        <div class="mb-3">
+          <label class="aurelis-label">Discussion Title / Question</label>
+          <input type="text" name="discussionTitle" class="aurelis-input" placeholder="e.g. How to verify 1970s Omega Speedmaster stepped dials?" required>
+        </div>
+
+        <div class="mb-3">
+          <label class="aurelis-label">Category</label>
+          <select name="discussionCategory" class="aurelis-input">
+            <option value="Watches">Watches</option>
+            <option value="Fine Jewelry">Fine Jewelry</option>
+            <option value="Gemstones">Gemstones</option>
+            <option value="Precious Metals">Precious Metals</option>
+            <option value="Watch Care">Watch Care & Maintenance</option>
+            <option value="Collecting">Collecting & Provenance</option>
+          </select>
+        </div>
+
+        <div class="mb-3">
+          <label class="aurelis-label">Discussion Content & Context</label>
+          <textarea name="discussionBody" class="aurelis-input" rows="4" placeholder="Provide technical details, reference numbers, or your specific question..." required></textarea>
+        </div>
+
+        <div class="text-end pt-2 border-top border-subtle-custom">
+          <button type="submit" class="btn-aurelis btn-aurelis-primary">Publish Discussion</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="aurelis-footer">
+    <div class="container-custom">
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6 footer-brand">
+          <a href="index.html" class="brand-logo mb-3">
+            <span class="brand-name">AURELIS</span>
+            <span class="brand-tagline-micro">Knowledge Network</span>
+          </a>
+          <p>“Understand What You Wear. Know What You Own.” An independent, authoritative resource and documentation network.</p>
+        </div>
+        <div class="col-lg-2 col-md-6">
+          <div class="footer-heading">Explore</div>
+          <ul class="footer-links">
+            <li><a href="explore.html?cat=jewelry">Fine Jewelry</a></li>
+            <li><a href="explore.html?cat=watches">Luxury Watches</a></li>
+            <li><a href="explore.html?cat=gemstones">Gemstones</a></li>
+            <li><a href="explore.html?cat=movements">Movements</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-6">
+          <div class="footer-heading">Learn</div>
+          <ul class="footer-links">
+            <li><a href="knowledge.html">Knowledge Base</a></li>
+            <li><a href="guides.html">Curated Guides</a></li>
+            <li><a href="videos.html">Video Masterclasses</a></li>
+            <li><a href="resources.html">Resources</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="footer-heading">Editorial Dispatch</div>
+          <div class="footer-newsletter-box">
+            <p class="small text-secondary mb-3">Subscribe for peer-reviewed technical teardowns and gemstone grading papers.</p>
+            <form class="newsletter-form">
+              <div class="input-group">
+                <input type="email" class="aurelis-input" placeholder="Your email" required>
+                <button class="btn-aurelis btn-aurelis-primary" type="submit">Subscribe</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>© 2026 AURELIS Knowledge Network.</div>
+        <div class="footer-legal-links">
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+          <a href="about.html#privacy">Privacy</a>
+          <a href="about.html#terms">Terms</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="assets/js/theme.js"></script>
+  <script src="assets/js/notifications.js"></script>
+  <script src="assets/js/auth.js"></script>
+  <script src="assets/js/favorites.js"></script>
+  <script src="assets/js/filters.js"></script>
+  <script src="assets/js/community.js"></script>
+  <script src="assets/js/search.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

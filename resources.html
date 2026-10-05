@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resource Library & Downloadable Guides — AURELIS</title>
+  <meta name="description" content="Download technical reference sheets, watch buying due diligence checklists, ring sizing calibration charts, and gemstone care matrices.">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+
+  <!-- Mandatory Navbar -->
+  <header class="aurelis-header">
+    <div class="container-custom nav-wrapper">
+      <a href="index.html" class="brand-logo" aria-label="Aurelis Homepage">
+        <span class="brand-name">AURELIS</span>
+        <span class="brand-tagline-micro">Knowledge Network</span>
+      </a>
+
+      <nav aria-label="Main Navigation" class="d-none d-lg-block">
+        <ul class="nav-menu-desktop">
+          <li class="nav-item"><a href="index.html" class="nav-link-custom">Home</a></li>
+          <li class="nav-item"><a href="explore.html" class="nav-link-custom">Explore</a></li>
+          <li class="nav-item"><a href="knowledge.html" class="nav-link-custom">Knowledge</a></li>
+          <li class="nav-item"><a href="resources.html" class="nav-link-custom active">Resources</a></li>
+          <li class="nav-item"><a href="videos.html" class="nav-link-custom">Videos</a></li>
+          <li class="nav-item"><a href="community.html" class="nav-link-custom">Community</a></li>
+          <li class="nav-item"><a href="guides.html" class="nav-link-custom">Guides</a></li>
+          <li class="nav-item"><a href="about.html" class="nav-link-custom">About</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button type="button" class="search-trigger-btn" aria-label="Open search engine">
+          <i class="bi bi-search text-bronze"></i>
+          <span>Search</span>
+          <kbd>/</kbd>
+        </button>
+        <button type="button" class="btn-icon-action theme-toggle-btn" aria-label="Toggle Theme">
+          <i class="bi bi-moon-stars-fill"></i>
+        </button>
+        <div class="auth-nav-container d-none d-sm-block">
+          <a href="login.html" class="btn-aurelis btn-aurelis-outline btn-aurelis-sm">Login</a>
+          <a href="signup.html" class="btn-aurelis btn-aurelis-primary btn-aurelis-sm">Sign Up</a>
+        </div>
+        <button type="button" class="hamburger-btn" id="hamburgerBtn" aria-label="Open mobile menu">
+          <i class="bi bi-list"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-nav-backdrop" id="mobileNavBackdrop"></div>
+  <div class="mobile-nav-drawer" id="mobileNavDrawer">
+    <div class="mobile-drawer-header">
+      <div class="brand-logo">
+        <span class="brand-name">AURELIS</span>
+        <span class="brand-tagline-micro">Knowledge Network</span>
+      </div>
+      <button type="button" class="btn-icon-action" id="closeMobileDrawerBtn"><i class="bi bi-x-lg"></i></button>
+    </div>
+    <div class="mobile-drawer-body">
+      <ul class="mobile-menu-list">
+        <li class="mobile-menu-item"><a href="index.html" class="mobile-menu-link">Home</a></li>
+        <li class="mobile-menu-item"><a href="explore.html" class="mobile-menu-link">Explore Discovery</a></li>
+        <li class="mobile-menu-item"><a href="knowledge.html" class="mobile-menu-link">Knowledge Base</a></li>
+        <li class="mobile-menu-item"><a href="resources.html" class="mobile-menu-link active">Resources</a></li>
+        <li class="mobile-menu-item"><a href="videos.html" class="mobile-menu-link">Videos</a></li>
+        <li class="mobile-menu-item"><a href="community.html" class="mobile-menu-link">Community</a></li>
+        <li class="mobile-menu-item"><a href="glossary.html" class="mobile-menu-link">Glossary</a></li>
+        <li class="mobile-menu-item"><a href="guides.html" class="mobile-menu-link">Guides</a></li>
+        <li class="mobile-menu-item"><a href="about.html" class="mobile-menu-link">About</a></li>
+        <li class="mobile-menu-item"><a href="contact.html" class="mobile-menu-link">Contact</a></li>
+      </ul>
+      <div class="mobile-auth-container mt-auto pt-3 border-top border-subtle-custom"></div>
+    </div>
+  </div>
+
+  <main>
+    <!-- HEADER -->
+    <section class="section-padding-sm bg-secondary-custom border-bottom border-subtle-custom">
+      <div class="container-custom">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb small font-ui mb-2">
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Resources Library</li>
+          </ol>
+        </nav>
+        <div class="row align-items-center g-3">
+          <div class="col-lg-8">
+            <span class="eyebrow">Downloadable Library</span>
+            <h1>Technical Resources & Checklists</h1>
+            <p class="lead mb-0">High-resolution reference sheets, inspection protocols, printable ring sizers, and timing log worksheets.</p>
+          </div>
+          <div class="col-lg-4 text-lg-end">
+            <button type="button" class="btn-aurelis btn-aurelis-outline mobile-filter-trigger d-lg-none" id="openFilterDrawerBtn">
+              <i class="bi bi-funnel"></i> Filters
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTENT & FILTERS -->
+    <section class="section-padding">
+      <div class="container-custom">
+        <div class="row g-4">
+          <!-- Filter Sidebar -->
+          <div class="col-lg-3 filter-sidebar-wrapper">
+            <div class="p-3 bg-surface-custom border border-subtle-custom rounded sticky-top" style="top: 100px;" id="resourcesFilterSidebar">
+              <div class="d-flex align-items-center justify-content-between mb-3 pb-2 border-bottom border-subtle-custom">
+                <h5 class="mb-0 font-ui fw-bold"><i class="bi bi-funnel me-1 text-bronze"></i> Filter Library</h5>
+                <button type="button" class="btn btn-sm btn-link text-bronze p-0 clear-all-filters-btn text-decoration-none">Clear</button>
+                <button type="button" class="btn-icon-action d-lg-none" id="closeFilterDrawerBtn"><i class="bi bi-x-lg"></i></button>
+              </div>
+
+              <!-- Keyword -->
+              <div class="mb-3">
+                <label class="aurelis-label">Search Resources</label>
+                <input type="text" class="aurelis-input filter-search-input" placeholder="Search templates...">
+              </div>
+
+              <!-- Category -->
+              <div class="mb-4">
+                <label class="aurelis-label">Resource Type</label>
+                <div class="d-flex flex-column gap-2 small">
+                  <label class="d-flex align-items-center gap-2 cursor-pointer">
+                    <input type="checkbox" data-filter="category" value="checklists" class="form-check-input mt-0"> Checklists
+                  </label>
+                  <label class="d-flex align-items-center gap-2 cursor-pointer">
+                    <input type="checkbox" data-filter="category" value="reference" class="form-check-input mt-0"> Reference Sheets
+                  </label>
+                  <label class="d-flex align-items-center gap-2 cursor-pointer">
+                    <input type="checkbox" data-filter="category" value="measurement" class="form-check-input mt-0"> Measurement Guides
+                  </label>
+                  <label class="d-flex align-items-center gap-2 cursor-pointer">
+                    <input type="checkbox" data-filter="category" value="templates" class="form-check-input mt-0"> Worksheets & Logs
+                  </label>
+                </div>
+              </div>
+
+              <!-- Topic -->
+              <div class="mb-4">
+                <label class="aurelis-label">Topic Area</label>
+                <div class="d-flex flex-column gap-2 small">
+                  <label class="d-flex align-items-center gap-2 cursor-pointer">
+                    <input type="checkbox" data-filter="topic" value="watches" class="form-check-input mt-0"> Watches & Movements
+                  </label>
+                  <label class="d-flex align-items-center gap-2 cursor-pointer">
+                    <input type="checkbox" data-filter="topic" value="gemstones" class="form-check-input mt-0"> Gemstones
+                  </label>
+                  <label class="d-flex align-items-center gap-2 cursor-pointer">
+                    <input type="checkbox" data-filter="topic" value="jewelry" class="form-check-input mt-0"> Fine Jewelry
+                  </label>
+                  <label class="d-flex align-items-center gap-2 cursor-pointer">
+                    <input type="checkbox" data-filter="topic" value="metals" class="form-check-input mt-0"> Precious Metals
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Resource Grid -->
+          <div class="col-lg-9">
+            <div class="d-flex align-items-center justify-content-between mb-4 p-3 bg-surface-custom border border-subtle-custom rounded">
+              <div class="font-mono small text-secondary" id="resourcesCount">Showing 6 technical documents</div>
+              <span class="aurelis-badge"><i class="bi bi-file-earmark-check text-bronze"></i> Vector Calibrated</span>
+            </div>
+
+            <div class="row g-4" id="resourcesGrid">
+              
+              <!-- Res 1 -->
+              <div class="col-md-6 resource-card-item" data-category="checklists" data-topic="watches" data-title="Pre-Owned Watch Buying Due Diligence Checklist">
+                <div class="resource-card">
+                  <div class="d-flex align-items-center justify-content-between mb-3">
+                    <span class="resource-format-tag"><i class="bi bi-file-earmark-pdf"></i> PDF Guide</span>
+                    <button class="btn-bookmark-action" data-id="res-watch-checklist" data-type="resource" data-title="Watch Buying Checklist" data-category="Collector Resources"><i class="bi bi-bookmark"></i></button>
+                  </div>
+                  <h4><a href="resource-details.html?id=watch-checklist" class="text-primary">Pre-Owned & Vintage Watch Due Diligence Checklist</a></h4>
+                  <p class="small text-secondary mb-3">18-point verification protocol covering case polishing, movement serial verification, dial patina, and amplitude metrics.</p>
+                  <div class="resource-specs">
+                    <span class="font-mono text-muted-custom">2.4 MB • Oct 2026</span>
+                    <div class="ms-auto d-flex gap-2">
+                      <a href="resource-details.html?id=watch-checklist" class="btn-aurelis btn-aurelis-outline btn-aurelis-sm">View Details</a>
+                      <button type="button" class="btn-aurelis btn-aurelis-primary btn-aurelis-sm btn-download-trigger" data-id="res-watch-checklist" data-title="Watch Due Diligence Checklist" data-format="PDF">
+                        <i class="bi bi-download"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Res 2 -->
+              <div class="col-md-6 resource-card-item" data-category="reference" data-topic="gemstones" data-title="Gemstone Hardness & Ultrasonic Cleaning Protocol Matrix">
+                <div class="resource-card">
+                  <div class="d-flex align-items-center justify-content-between mb-3">
+                    <span class="resource-format-tag"><i class="bi bi-file-earmark-pdf"></i> PDF Sheet</span>
+                    <button class="btn-bookmark-action" data-id="res-gemstone-compatibility" data-type="resource" data-title="Gemstone Cleaning Protocol" data-category="Reference Sheets"><i class="bi bi-bookmark"></i></button>
+                  </div>
+                  <h4><a href="resource-details.html?id=gemstone-compatibility" class="text-primary">Gemstone Hardness & Ultrasonic Protocol Matrix</a></h4>
+                  <p class="small text-secondary mb-3">Mohs scale ratings, cleavage plane vulnerabilities, and solvent safety reference for 32 precious and semi-precious stones.</p>
+                  <div class="resource-specs">
+                    <span class="font-mono text-muted-custom">1.8 MB • Sep 2026</span>
+                    <div class="ms-auto d-flex gap-2">
+                      <a href="resource-details.html?id=gemstone-compatibility" class="btn-aurelis btn-aurelis-outline btn-aurelis-sm">View Details</a>
+                      <button type="button" class="btn-aurelis btn-aurelis-primary btn-aurelis-sm btn-download-trigger" data-id="res-gemstone-compatibility" data-title="Gemstone Cleaning Matrix" data-format="PDF">
+                        <i class="bi bi-download"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Res 3 -->
+              <div class="col-md-6 resource-card-item" data-category="measurement" data-topic="jewelry" data-title="International Ring & Bangle Sizing Calibration Sheet">
+                <div class="resource-card">
+                  <div class="d-flex align-items-center justify-content-between mb-3">
+                    <span class="resource-format-tag"><i class="bi bi-rulers"></i> PDF Chart</span>
+                    <button class="btn-bookmark-action" data-id="res-ring-sizing-guide" data-type="resource" data-title="Ring Sizing Guide" data-category="Measurement Guides"><i class="bi bi-bookmark"></i></button>
+                  </div>
+                  <h4><a href="resource-details.html?id=ring-sizing-guide" class="text-primary">Ring & Bangle Sizing Master Calibration Guide</a></h4>
+                  <p class="small text-secondary mb-3">1:1 scale printable circumference and internal diameter conversion tables for US, UK, EU, and Japanese standards.</p>
+                  <div class="resource-specs">
+                    <span class="font-mono text-muted-custom">3.1 MB • Aug 2026</span>
+                    <div class="ms-auto d-flex gap-2">
+                      <a href="resource-details.html?id=ring-sizing-guide" class="btn-aurelis btn-aurelis-outline btn-aurelis-sm">View Details</a>
+                      <button type="button" class="btn-aurelis btn-aurelis-primary btn-aurelis-sm btn-download-trigger" data-id="res-ring-sizing-guide" data-title="Ring Sizing Guide" data-format="PDF">
+                        <i class="bi bi-download"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Res 4 -->
+              <div class="col-md-6 resource-card-item" data-category="reference" data-topic="metals" data-title="Precious Metal Hallmark Identification Reference">
+                <div class="resource-card">
+                  <div class="d-flex align-items-center justify-content-between mb-3">
+                    <span class="resource-format-tag"><i class="bi bi-shield-check"></i> PDF Sheet</span>
+                    <button class="btn-bookmark-action" data-id="res-hallmark-reference" data-type="resource" data-title="Hallmark Reference Sheet" data-category="Reference Sheets"><i class="bi bi-bookmark"></i></button>
+                  </div>
+                  <h4><a href="resource-details.html?id=hallmark-reference" class="text-primary">European & Swiss Hallmark Identification Chart</a></h4>
+                  <p class="small text-secondary mb-3">Visual catalog of national assay marks, convention common control marks (CCM), and historic gold/platinum hallmarks.</p>
+                  <div class="resource-specs">
+                    <span class="font-mono text-muted-custom">4.2 MB • Oct 2026</span>
+                    <div class="ms-auto d-flex gap-2">
+                      <a href="resource-details.html?id=hallmark-reference" class="btn-aurelis btn-aurelis-outline btn-aurelis-sm">View Details</a>
+                      <button type="button" class="btn-aurelis btn-aurelis-primary btn-aurelis-sm btn-download-trigger" data-id="res-hallmark-reference" data-title="Hallmark Reference Sheet" data-format="PDF">
+                        <i class="bi bi-download"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Res 5 -->
+              <div class="col-md-6 resource-card-item" data-category="templates" data-topic="watches" data-title="Mechanical Watch Timing & Isochronism Log">
+                <div class="resource-card">
+                  <div class="d-flex align-items-center justify-content-between mb-3">
+                    <span class="resource-format-tag"><i class="bi bi-file-earmark-spreadsheet"></i> CSV Sheet</span>
+                    <button class="btn-bookmark-action" data-id="res-movement-accuracy-log" data-type="resource" data-title="Timing Log Sheet" data-category="Templates"><i class="bi bi-bookmark"></i></button>
+                  </div>
+                  <h4><a href="resource-details.html?id=movement-accuracy-log" class="text-primary">Watch Timing & Isochronism Daily Log Sheet</a></h4>
+                  <p class="small text-secondary mb-3">6-position ISO 3159 COSC standard rate tracking template for monitoring mechanical caliber performance.</p>
+                  <div class="resource-specs">
+                    <span class="font-mono text-muted-custom">840 KB • Jul 2026</span>
+                    <div class="ms-auto d-flex gap-2">
+                      <a href="resource-details.html?id=movement-accuracy-log" class="btn-aurelis btn-aurelis-outline btn-aurelis-sm">View Details</a>
+                      <button type="button" class="btn-aurelis btn-aurelis-primary btn-aurelis-sm btn-download-trigger" data-id="res-movement-accuracy-log" data-title="Timing Log Sheet" data-format="CSV">
+                        <i class="bi bi-download"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Res 6 -->
+              <div class="col-md-6 resource-card-item" data-category="templates" data-topic="jewelry" data-title="Fine Jewelry Insurance Valuation Register">
+                <div class="resource-card">
+                  <div class="d-flex align-items-center justify-content-between mb-3">
+                    <span class="resource-format-tag"><i class="bi bi-file-earmark-text"></i> Template</span>
+                    <button class="btn-bookmark-action" data-id="res-jewelry-inventory-template" data-type="resource" data-title="Insurance Valuation Register" data-category="Templates"><i class="bi bi-bookmark"></i></button>
+                  </div>
+                  <h4><a href="resource-details.html?id=jewelry-inventory-template" class="text-primary">Jewelry Insurance Valuation & Provenance Register</a></h4>
+                  <p class="small text-secondary mb-3">Structured archival template to itemize certificate numbers, metal weights, replacement appraisals, and storage details.</p>
+                  <div class="resource-specs">
+                    <span class="font-mono text-muted-custom">1.2 MB • Sep 2026</span>
+                    <div class="ms-auto d-flex gap-2">
+                      <a href="resource-details.html?id=jewelry-inventory-template" class="btn-aurelis btn-aurelis-outline btn-aurelis-sm">View Details</a>
+                      <button type="button" class="btn-aurelis btn-aurelis-primary btn-aurelis-sm btn-download-trigger" data-id="res-jewelry-inventory-template" data-title="Jewelry Valuation Register" data-format="PDF">
+                        <i class="bi bi-download"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Empty State -->
+            <div id="filterEmptyState" class="text-center py-5" style="display: none;">
+              <i class="bi bi-file-earmark-x text-muted-custom" style="font-size: 2.5rem;"></i>
+              <h4 class="mt-3">No matching resources found</h4>
+              <p class="small text-muted-custom">Try resetting your filter selection.</p>
+              <button class="btn-aurelis btn-aurelis-outline btn-aurelis-sm clear-all-filters-btn">Clear Filters</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Download Preparation Modal -->
+  <div class="aurelis-modal-backdrop" id="downloadModalBackdrop">
+    <div class="aurelis-modal-card">
+      <button type="button" class="modal-close-btn" aria-label="Close modal"><i class="bi bi-x-lg"></i></button>
+      <span class="eyebrow">Document Generator</span>
+      <h4 id="downloadModalTitle" class="mb-3">Preparing Resource</h4>
+      <div class="progress mb-3" style="height: 6px; background-color: var(--bg-secondary);">
+        <div class="progress-bar" id="downloadModalProgressBar" role="progressbar" style="width: 0%; background-color: var(--accent-bronze) !important;"></div>
+      </div>
+      <p class="small text-secondary" id="downloadModalStatus">Compiling high-resolution vector diagrams...</p>
+      <div class="mt-4 pt-3 border-top border-subtle-custom text-end">
+        <button type="button" class="btn-aurelis btn-aurelis-primary" id="downloadModalActionBtn" style="display: none;">Save Document</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="aurelis-footer">
+    <div class="container-custom">
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6 footer-brand">
+          <a href="index.html" class="brand-logo mb-3">
+            <span class="brand-name">AURELIS</span>
+            <span class="brand-tagline-micro">Knowledge Network</span>
+          </a>
+          <p>“Understand What You Wear. Know What You Own.” An independent, authoritative resource and documentation network.</p>
+        </div>
+        <div class="col-lg-2 col-md-6">
+          <div class="footer-heading">Explore</div>
+          <ul class="footer-links">
+            <li><a href="explore.html?cat=jewelry">Fine Jewelry</a></li>
+            <li><a href="explore.html?cat=watches">Luxury Watches</a></li>
+            <li><a href="explore.html?cat=gemstones">Gemstones</a></li>
+            <li><a href="explore.html?cat=movements">Movements</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-6">
+          <div class="footer-heading">Learn</div>
+          <ul class="footer-links">
+            <li><a href="knowledge.html">Knowledge Base</a></li>
+            <li><a href="guides.html">Curated Guides</a></li>
+            <li><a href="videos.html">Video Masterclasses</a></li>
+            <li><a href="resources.html">Resources</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="footer-heading">Editorial Dispatch</div>
+          <div class="footer-newsletter-box">
+            <p class="small text-secondary mb-3">Subscribe for peer-reviewed technical teardowns and gemstone grading papers.</p>
+            <form class="newsletter-form">
+              <div class="input-group">
+                <input type="email" class="aurelis-input" placeholder="Your email" required>
+                <button class="btn-aurelis btn-aurelis-primary" type="submit">Subscribe</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>© 2026 AURELIS Knowledge Network.</div>
+        <div class="footer-legal-links">
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+          <a href="about.html#privacy">Privacy</a>
+          <a href="about.html#terms">Terms</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="assets/js/theme.js"></script>
+  <script src="assets/js/notifications.js"></script>
+  <script src="assets/js/auth.js"></script>
+  <script src="assets/js/favorites.js"></script>
+  <script src="assets/js/downloads.js"></script>
+  <script src="assets/js/filters.js"></script>
+  <script src="assets/js/resources.js"></script>
+  <script src="assets/js/search.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
