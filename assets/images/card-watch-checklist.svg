@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 380" width="100%" height="100%">
+  <defs>
+    <linearGradient id="check-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E293B" />
+      <stop offset="100%" stop-color="#0F172A" />
+    </linearGradient>
+    <linearGradient id="paper-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#E2E8F0" />
+    </linearGradient>
+  </defs>
+
+  <rect width="600" height="380" fill="url(#check-bg)" />
+
+  <!-- Technical Clipboard / Document Sheet -->
+  <g transform="translate(150, 40)">
+    <!-- Document Base -->
+    <rect x="0" y="0" width="300" height="300" rx="8" fill="url(#paper-grad)" stroke="#94A3B8" stroke-width="1.5" />
+    
+    <!-- Clipboard Top Clip -->
+    <rect x="90" y="-12" width="120" height="24" rx="4" fill="#334155" stroke="#CBD5E1" stroke-width="1" />
+    <circle cx="150" cy="0" r="4" fill="#94A3B8" />
+
+    <!-- Checklist Title -->
+    <text x="30" y="45" fill="#0F172A" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="700" letter-spacing="1">DUE DILIGENCE RUBRIC (18-PT)</text>
+    <line x1="30" y1="55" x2="270" y2="55" stroke="#CBD5E1" stroke-width="1.5" />
+
+    <!-- Checklist Items with Green Checkmarks -->
+    <g transform="translate(30, 75)">
+      <!-- Item 1 -->
+      <circle cx="8" cy="8" r="8" fill="#22C55E" />
+      <path d="M 5,8 L 8,11 L 12,5" fill="none" stroke="#FFF" stroke-width="1.8" />
+      <text x="25" y="12" fill="#334155" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="600">Bevel Chamfer Integrity &amp; Polish</text>
+      <line x1="25" y1="20" x2="240" y2="20" stroke="#E2E8F0" stroke-width="1" />
+
+      <!-- Item 2 -->
+      <g transform="translate(0, 32)">
+        <circle cx="8" cy="8" r="8" fill="#22C55E" />
+        <path d="M 5,8 L 8,11 L 12,5" fill="none" stroke="#FFF" stroke-width="1.8" />
+        <text x="25" y="12" fill="#334155" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="600">Tritium vs Luminova Patina Check</text>
+        <line x1="25" y1="20" x2="240" y2="20" stroke="#E2E8F0" stroke-width="1" />
+      </g>
+
+      <!-- Item 3 -->
+      <g transform="translate(0, 64)">
+        <circle cx="8" cy="8" r="8" fill="#22C55E" />
+        <path d="M 5,8 L 8,11 L 12,5" fill="none" stroke="#FFF" stroke-width="1.8" />
+        <text x="25" y="12" fill="#334155" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="600">Caseback Reference &amp; Serial Serial</text>
+        <line x1="25" y1="20" x2="240" y2="20" stroke="#E2E8F0" stroke-width="1" />
+      </g>
+
+      <!-- Item 4 -->
+      <g transform="translate(0, 96)">
+        <circle cx="8" cy="8" r="8" fill="#22C55E" />
+        <path d="M 5,8 L 8,11 L 12,5" fill="none" stroke="#FFF" stroke-width="1.8" />
+        <text x="25" y="12" fill="#334155" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="600">Amplitude &gt; 270° &amp; Beat Error</text>
+        <line x1="25" y1="20" x2="240" y2="20" stroke="#E2E8F0" stroke-width="1" />
+      </g>
+
+      <!-- Item 5 -->
+      <g transform="translate(0, 128)">
+        <circle cx="8" cy="8" r="8" fill="#22C55E" />
+        <path d="M 5,8 L 8,11 L 12,5" fill="none" stroke="#FFF" stroke-width="1.8" />
+        <text x="25" y="12" fill="#334155" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="600">Service History &amp; Water Resistance</text>
+      </g>
+    </g>
+
+    <!-- PDF Badge Stamp -->
+    <rect x="180" y="240" width="85" height="26" rx="3" fill="#DC2626" />
+    <text x="222" y="257" fill="#FFF" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="700" text-anchor="middle">PDF PRINTABLE</text>
+  </g>
+</svg>

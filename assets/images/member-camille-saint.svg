@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgCamille" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#231E24"/>
+      <stop offset="100%" stop-color="#120E14"/>
+    </linearGradient>
+    <linearGradient id="goldCamille" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#DFC298"/>
+      <stop offset="100%" stop-color="#9E7D52"/>
+    </linearGradient>
+  </defs>
+  <rect width="160" height="160" rx="80" fill="url(#bgCamille)"/>
+  <circle cx="80" cy="80" r="76" fill="none" stroke="url(#goldCamille)" stroke-width="2"/>
+
+  <!-- Jewelry Curator & Historian Portrait -->
+  <g fill="#C8A67B">
+    <!-- Velvet Silk Dress & Shawl -->
+    <path d="M 30 150 C 30 120, 50 112, 80 112 C 110 112, 130 120, 130 150 Z" fill="#3B1824"/>
+    <!-- Pearl Necklace -->
+    <path d="M 68 112 Q 80 124 92 112" fill="none" stroke="#F8FAFC" stroke-width="3" stroke-linecap="round" stroke-dasharray="1,5"/>
+    <!-- Head & Neck -->
+    <rect x="73" y="96" width="14" height="18" fill="#F3D5C0"/>
+    <ellipse cx="80" cy="74" rx="20" ry="26" fill="#F3D5C0"/>
+    <!-- Hair (Wavy Bob) -->
+    <path d="M 56 74 C 54 48, 68 38, 80 38 C 96 38, 106 48, 104 78 C 100 86, 94 88, 92 82 C 90 70, 88 52, 80 52 C 72 52, 66 65, 64 82 C 60 88, 56 86, 56 74 Z" fill="#2D1B1E"/>
+    <!-- Art Deco Earring Drop -->
+    <polygon points="57,84 61,92 57,98 53,92" fill="url(#goldCamille)"/>
+    <polygon points="103,84 107,92 103,98 99,92" fill="url(#goldCamille)"/>
+    <!-- Features -->
+    <path d="M 68 72 Q 73 69 77 72" fill="none" stroke="#2D1B1E" stroke-width="1.5"/>
+    <path d="M 83 72 Q 87 69 92 72" fill="none" stroke="#2D1B1E" stroke-width="1.5"/>
+  </g>
+</svg>

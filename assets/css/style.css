@@ -71,27 +71,27 @@
   --bg-contrast: #FAF8F5;
   --text-contrast: #0D0E12;
 
-  --text-primary: #F4F1EA;
-  --text-secondary: #B5B0A6;
-  --text-muted: #7D786F;
-  --text-light: #524E48;
+  --text-primary: #F8F6F2;
+  --text-secondary: #D8D3C8;
+  --text-muted: #AAA498;
+  --text-light: #8E887D;
 
-  --border-subtle: rgba(214, 187, 149, 0.14);
-  --border-medium: rgba(214, 187, 149, 0.28);
-  --border-strong: rgba(214, 187, 149, 0.5);
+  --border-subtle: rgba(214, 187, 149, 0.20);
+  --border-medium: rgba(214, 187, 149, 0.35);
+  --border-strong: rgba(214, 187, 149, 0.60);
 
-  --accent-bronze: #C8A67B;
-  --accent-bronze-hover: #DFC29C;
-  --accent-bronze-subtle: rgba(200, 166, 123, 0.12);
-  --accent-gold: #DFC298;
-  --accent-olive: #768B7A;
-  --accent-olive-subtle: rgba(118, 139, 122, 0.15);
-  --accent-ruby: #B84756;
-  --accent-sapphire: #3E6E9E;
-  --accent-emerald: #39825E;
+  --accent-bronze: #DFC298;
+  --accent-bronze-hover: #EED6B5;
+  --accent-bronze-subtle: rgba(223, 194, 152, 0.16);
+  --accent-gold: #ECCFA6;
+  --accent-olive: #92B599;
+  --accent-olive-subtle: rgba(146, 181, 153, 0.18);
+  --accent-ruby: #E57381;
+  --accent-sapphire: #6BA4D8;
+  --accent-emerald: #4EBE89;
 
-  --badge-bg: #27231E;
-  --badge-text: #E5C9A6;
+  --badge-bg: #29241E;
+  --badge-text: #EED8BD;
 
   --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
   --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.45);
@@ -216,10 +216,189 @@ code, pre, .tech-spec {
 
 .text-bronze { color: var(--accent-bronze) !important; }
 .text-olive { color: var(--accent-olive) !important; }
+.text-primary-custom { color: var(--text-primary) !important; }
+.text-secondary-custom { color: var(--text-secondary) !important; }
 .text-muted-custom { color: var(--text-muted) !important; }
 .bg-surface-custom { background-color: var(--bg-surface) !important; }
 .bg-secondary-custom { background-color: var(--bg-secondary) !important; }
 .border-subtle-custom { border-color: var(--border-subtle) !important; }
+
+/* Breadcrumbs System */
+.breadcrumb {
+  --bs-breadcrumb-divider-color: var(--text-muted);
+  --bs-breadcrumb-item-active-color: var(--text-secondary);
+  font-family: var(--font-ui);
+  font-size: 0.84rem;
+  margin-bottom: 0.75rem;
+}
+
+.breadcrumb-item {
+  color: var(--text-secondary);
+  display: inline-flex;
+  align-items: center;
+}
+
+.breadcrumb-item a {
+  color: var(--accent-bronze);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color var(--transition-fast);
+}
+
+.breadcrumb-item a:hover {
+  color: var(--accent-bronze-hover);
+  text-decoration: underline;
+}
+
+.breadcrumb-item.active {
+  color: var(--text-secondary) !important;
+  font-weight: 500;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  color: var(--text-muted) !important;
+  padding: 0 0.5rem;
+}
+
+/* Global Dark Mode High-Contrast Overrides */
+[data-theme="dark"] .breadcrumb {
+  --bs-breadcrumb-divider-color: var(--text-muted);
+  --bs-breadcrumb-item-active-color: var(--text-secondary);
+}
+
+[data-theme="dark"] .breadcrumb-item.active {
+  color: var(--text-secondary) !important;
+}
+
+[data-theme="dark"] .breadcrumb-item + .breadcrumb-item::before {
+  color: var(--text-muted) !important;
+}
+
+[data-theme="dark"] .breadcrumb-item a {
+  color: var(--accent-bronze) !important;
+}
+
+[data-theme="dark"] .text-muted,
+[data-theme="dark"] .text-muted-custom,
+[data-theme="dark"] .text-body-secondary,
+[data-theme="dark"] .text-black-50 {
+  color: var(--text-muted) !important;
+}
+
+[data-theme="dark"] .text-secondary {
+  color: var(--text-secondary) !important;
+}
+
+[data-theme="dark"] .text-dark,
+[data-theme="dark"] .text-body {
+  color: var(--text-primary) !important;
+}
+
+[data-theme="dark"] p {
+  color: var(--text-secondary);
+}
+
+[data-theme="dark"] p.lead {
+  color: var(--text-secondary);
+}
+
+[data-theme="dark"] .form-text {
+  color: var(--text-muted) !important;
+}
+
+[data-theme="dark"] .form-label,
+[data-theme="dark"] .aurelis-label {
+  color: var(--text-secondary);
+}
+
+[data-theme="dark"] .form-check-label {
+  color: var(--text-primary);
+}
+
+[data-theme="dark"] .form-check-input {
+  background-color: var(--bg-surface);
+  border-color: var(--border-medium);
+}
+
+[data-theme="dark"] .form-check-input:checked {
+  background-color: var(--accent-bronze);
+  border-color: var(--accent-bronze);
+}
+
+[data-theme="dark"] .card {
+  background-color: var(--bg-surface);
+  border-color: var(--border-subtle);
+  color: var(--text-primary);
+}
+
+[data-theme="dark"] .card-body {
+  color: var(--text-primary);
+}
+
+[data-theme="dark"] .card-title {
+  color: var(--text-primary);
+}
+
+[data-theme="dark"] .card-text {
+  color: var(--text-secondary);
+}
+
+[data-theme="dark"] .table {
+  --bs-table-color: var(--text-secondary);
+  --bs-table-bg: var(--bg-surface);
+  --bs-table-border-color: var(--border-subtle);
+  color: var(--text-secondary);
+}
+
+[data-theme="dark"] .table th {
+  color: var(--text-primary);
+  background-color: var(--bg-secondary);
+  border-color: var(--border-subtle);
+}
+
+[data-theme="dark"] .table td {
+  color: var(--text-secondary);
+  border-color: var(--border-subtle);
+}
+
+[data-theme="dark"] .aurelis-input,
+[data-theme="dark"] .form-control,
+[data-theme="dark"] .form-select {
+  background-color: var(--bg-surface);
+  border-color: var(--border-subtle);
+  color: var(--text-primary);
+}
+
+[data-theme="dark"] .aurelis-input::placeholder,
+[data-theme="dark"] .form-control::placeholder {
+  color: var(--text-muted);
+  opacity: 1;
+}
+
+[data-theme="dark"] hr {
+  border-color: var(--border-subtle);
+  opacity: 1;
+}
+
+[data-theme="dark"] .border {
+  border-color: var(--border-subtle) !important;
+}
+
+[data-theme="dark"] .border-top {
+  border-top-color: var(--border-subtle) !important;
+}
+
+[data-theme="dark"] .border-bottom {
+  border-bottom-color: var(--border-subtle) !important;
+}
+
+[data-theme="dark"] .border-start {
+  border-left-color: var(--border-subtle) !important;
+}
+
+[data-theme="dark"] .border-end {
+  border-right-color: var(--border-subtle) !important;
+}
 
 .section-padding {
   padding: clamp(3.5rem, 7vw, 6.5rem) 0;
@@ -365,6 +544,24 @@ code, pre, .tech-spec {
   background-color: rgba(142, 43, 56, 0.12);
   color: var(--accent-ruby);
   border-color: rgba(142, 43, 56, 0.25);
+}
+
+[data-theme="dark"] .badge-difficulty-beginner {
+  background-color: rgba(146, 181, 153, 0.18);
+  color: #A6DDB0;
+  border-color: rgba(146, 181, 153, 0.38);
+}
+
+[data-theme="dark"] .badge-difficulty-intermediate {
+  background-color: rgba(223, 194, 152, 0.18);
+  color: #F0DCBF;
+  border-color: rgba(223, 194, 152, 0.38);
+}
+
+[data-theme="dark"] .badge-difficulty-advanced {
+  background-color: rgba(229, 115, 129, 0.18);
+  color: #FFAAB5;
+  border-color: rgba(229, 115, 129, 0.38);
 }
 
 /* Form Controls */

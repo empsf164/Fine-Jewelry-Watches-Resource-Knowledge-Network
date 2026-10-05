@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgHenriette" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#19222E"/>
+      <stop offset="100%" stop-color="#0E121A"/>
+    </linearGradient>
+    <linearGradient id="goldHenriette" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#DFC298"/>
+      <stop offset="100%" stop-color="#9E7D52"/>
+    </linearGradient>
+  </defs>
+  <rect width="160" height="160" rx="80" fill="url(#bgHenriette)"/>
+  <circle cx="80" cy="80" r="76" fill="none" stroke="url(#goldHenriette)" stroke-width="2"/>
+
+  <!-- Master Watchmaker Portrait -->
+  <g fill="#C8A67B">
+    <!-- Watchmaker Coat (Atelier Lab Coat) -->
+    <path d="M 30 150 C 30 120, 50 112, 80 112 C 110 112, 130 120, 130 150 Z" fill="#F8FAFC"/>
+    <polygon points="72,112 80,126 88,112" fill="#334155"/>
+    <!-- Head & Neck -->
+    <rect x="73" y="96" width="14" height="18" fill="#E8CDB2"/>
+    <ellipse cx="80" cy="74" rx="20" ry="26" fill="#E8CDB2"/>
+    <!-- Hair (Refined Chignon) -->
+    <path d="M 58 74 C 56 50, 70 40, 80 40 C 94 40, 104 50, 102 74 C 100 60, 90 52, 80 52 C 68 52, 60 62, 58 74 Z" fill="#3E2723"/>
+    <circle cx="80" cy="38" r="10" fill="#3E2723"/>
+    <!-- Watchmaker's Loupe on Right Eye -->
+    <polygon points="85,68 100,64 100,78 85,76" fill="#1E293B"/>
+    <circle cx="100" cy="71" r="7" fill="none" stroke="url(#goldHenriette)" stroke-width="1.8"/>
+    <circle cx="100" cy="71" r="5" fill="#38BDF8" fill-opacity="0.3"/>
+    <!-- Left Eye -->
+    <path d="M 68 72 Q 73 70 76 73" fill="none" stroke="#334155" stroke-width="1.5"/>
+  </g>
+</svg>

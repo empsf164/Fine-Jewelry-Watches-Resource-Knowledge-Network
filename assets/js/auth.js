@@ -89,9 +89,6 @@ const AurelisAuth = (() => {
       if (user) {
         container.innerHTML = `
           <div class="d-flex align-items-center gap-2">
-            <a href="saved.html" class="btn-icon-action" title="Saved Library" aria-label="Saved Library">
-              <i class="bi bi-bookmark-check"></i>
-            </a>
             <div class="dropdown d-inline-block position-relative user-nav-dropdown">
               <button class="btn-aurelis btn-aurelis-outline btn-aurelis-sm dropdown-toggle d-flex align-items-center gap-2" id="userMenuBtn" type="button" aria-expanded="false">
                 <i class="bi bi-person-circle text-bronze"></i>
@@ -102,8 +99,8 @@ const AurelisAuth = (() => {
                   <div class="small fw-bold text-truncate">${user.name}</div>
                   <div class="text-muted-custom" style="font-size: 0.75rem;">${user.email}</div>
                 </div>
-                <a href="saved.html" class="dropdown-item-custom"><i class="bi bi-bookmark"></i> My Saved Knowledge</a>
                 <a href="explore.html" class="dropdown-item-custom"><i class="bi bi-compass"></i> Discover Topics</a>
+                <a href="knowledge.html" class="dropdown-item-custom"><i class="bi bi-book"></i> Knowledge Base</a>
                 <div class="divider-subtle my-2"></div>
                 <button class="dropdown-item-custom w-100 text-start border-0 bg-transparent text-danger logout-btn-trigger">
                   <i class="bi bi-box-arrow-right text-danger"></i> Sign Out
@@ -115,7 +112,6 @@ const AurelisAuth = (() => {
       } else {
         container.innerHTML = `
           <div class="d-flex align-items-center gap-2">
-            <a href="login.html" class="btn-aurelis btn-aurelis-outline btn-aurelis-sm">Login</a>
             <a href="signup.html" class="btn-aurelis btn-aurelis-primary btn-aurelis-sm">Sign Up</a>
           </div>
         `;
@@ -139,9 +135,6 @@ const AurelisAuth = (() => {
             <div class="fw-bold">${user.name}</div>
             <div class="small text-muted-custom mb-3">${user.email}</div>
             <div class="d-flex flex-column gap-2">
-              <a href="saved.html" class="btn-aurelis btn-aurelis-outline btn-aurelis-sm w-100 justify-content-center">
-                <i class="bi bi-bookmark"></i> Saved Knowledge
-              </a>
               <button class="btn-aurelis btn-aurelis-dark btn-aurelis-sm w-100 justify-content-center logout-btn-trigger">
                 <i class="bi bi-box-arrow-right"></i> Sign Out
               </button>
@@ -151,8 +144,7 @@ const AurelisAuth = (() => {
       } else {
         mContainer.innerHTML = `
           <div class="d-grid gap-2">
-            <a href="login.html" class="btn-aurelis btn-aurelis-outline w-100 justify-content-center">Login</a>
-            <a href="signup.html" class="btn-aurelis btn-aurelis-primary w-100 justify-content-center">Create Account</a>
+            <a href="signup.html" class="btn-aurelis btn-aurelis-primary w-100 justify-content-center">Sign Up</a>
           </div>
         `;
       }

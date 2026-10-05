@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 270" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGradEsc" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#15171C"/>
+      <stop offset="50%" stop-color="#1A1E27"/>
+      <stop offset="100%" stop-color="#0E1015"/>
+    </linearGradient>
+    <linearGradient id="goldGradEsc" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#DFC298"/>
+      <stop offset="50%" stop-color="#C8A67B"/>
+      <stop offset="100%" stop-color="#9E7D52"/>
+    </linearGradient>
+    <linearGradient id="rubyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F43F5E"/>
+      <stop offset="100%" stop-color="#9F1239"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="480" height="270" fill="url(#bgGradEsc)"/>
+
+  <!-- Motion Blur Radial Lines (Stroboscopic Effect) -->
+  <g stroke="#C8A67B" stroke-opacity="0.12" stroke-width="1.2">
+    <line x1="240" y1="135" x2="60" y2="40"/>
+    <line x1="240" y1="135" x2="420" y2="40"/>
+    <line x1="240" y1="135" x2="60" y2="230"/>
+    <line x1="240" y1="135" x2="420" y2="230"/>
+    <circle cx="240" cy="135" r="110" fill="none" stroke="#C8A67B" stroke-opacity="0.08" stroke-dasharray="6,6"/>
+  </g>
+
+  <!-- High Beat Escapement Wheel (Club Tooth Wheel) -->
+  <g transform="translate(190, 135)">
+    <!-- Wheel Rim & Spokes -->
+    <circle cx="0" cy="0" r="65" fill="none" stroke="url(#goldGradEsc)" stroke-width="3"/>
+    <circle cx="0" cy="0" r="20" fill="none" stroke="url(#goldGradEsc)" stroke-width="2"/>
+    <!-- 3 Spoke Lines -->
+    <line x1="0" y1="-20" x2="0" y2="-65" stroke="url(#goldGradEsc)" stroke-width="2.5"/>
+    <line x1="17" y1="10" x2="56" y2="33" stroke="url(#goldGradEsc)" stroke-width="2.5"/>
+    <line x1="-17" y1="10" x2="-56" y2="33" stroke="url(#goldGradEsc)" stroke-width="2.5"/>
+    <!-- Club Teeth -->
+    <g stroke="url(#goldGradEsc)" stroke-width="2" fill="none">
+      <path d="M 0 -65 L 6 -74 L 14 -72 L 8 -65"/>
+      <path d="M 46 -46 L 56 -52 L 62 -45 L 53 -40"/>
+      <path d="M 65 0 L 74 6 L 72 14 L 65 8"/>
+      <path d="M 46 46 L 52 56 L 45 62 L 40 53"/>
+      <path d="M 0 65 L -6 74 L -14 72 L -8 65"/>
+      <path d="M -46 46 L -56 52 L -62 45 L -53 40"/>
+      <path d="M -65 0 L -74 -6 L -72 -14 L -65 -8"/>
+      <path d="M -46 -46 L -52 -56 L -45 -62 L -40 -53"/>
+    </g>
+    <!-- Center Pivot Jewel -->
+    <circle cx="0" cy="0" r="6" fill="url(#rubyGrad)"/>
+    <circle cx="0" cy="0" r="2" fill="#FFFFFF"/>
+  </g>
+
+  <!-- Swiss Lever Pallet Fork with Synthetic Ruby Jewels -->
+  <g transform="translate(290, 110)">
+    <!-- Pallet Body -->
+    <path d="M -20 -15 L 0 0 L -25 35" fill="none" stroke="#94A3B8" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="0" cy="0" r="5" fill="#64748B"/>
+    <!-- Entry Pallet Jewel (Ruby) -->
+    <rect x="-35" y="-20" width="14" height="6" rx="1" transform="rotate(25 -35 -20)" fill="url(#rubyGrad)" stroke="#FDA4AF" stroke-width="1"/>
+    <!-- Exit Pallet Jewel (Ruby) -->
+    <rect x="-38" y="30" width="14" height="6" rx="1" transform="rotate(-30 -38 30)" fill="url(#rubyGrad)" stroke="#FDA4AF" stroke-width="1"/>
+    <!-- Fork Horns and Dart -->
+    <path d="M 0 0 L 35 5 L 45 -5 M 35 5 L 45 15 M 35 5 L 48 5" fill="none" stroke="#94A3B8" stroke-width="2"/>
+  </g>
+
+  <!-- Oscilloscope Waveform Graphic -->
+  <g transform="translate(350, 45)">
+    <rect x="0" y="0" width="95" height="45" rx="4" fill="#0B0E14" stroke="#C8A67B" stroke-width="1"/>
+    <path d="M 5 22 Q 15 5 25 22 T 45 22 T 65 22 T 85 22" fill="none" stroke="#10B981" stroke-width="1.5"/>
+    <text x="50" y="38" font-family="'JetBrains Mono', monospace" font-size="7" fill="#10B981" text-anchor="middle">5.00 Hz (36k)</text>
+  </g>
+
+  <!-- Technical Readouts -->
+  <text x="35" y="40" font-family="'JetBrains Mono', monospace" font-size="11" fill="#DFC298" letter-spacing="1.5">HIGH-FREQUENCY ESCAPEMENT DYNAMICS</text>
+  <text x="35" y="245" font-family="'JetBrains Mono', monospace" font-size="10" fill="#94A3B8">36,000 VPH (5 Hz) • IMPULSE LOCK ANGLE &amp; EPILAME BARRIER</text>
+  <text x="445" y="245" font-family="'JetBrains Mono', monospace" font-size="10" fill="#DFC298" text-anchor="end">STROBOSCOPIC 4K</text>
+</svg>

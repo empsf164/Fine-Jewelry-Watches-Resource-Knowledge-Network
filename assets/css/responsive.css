@@ -29,7 +29,117 @@
   }
 }
 
-/* Tablet & Mobile (991.98px and below) */
+/* Tablet & 1024px View Grid System (768px - 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* All card grid rows center their contents */
+  .row {
+    justify-content: center !important;
+  }
+
+  /* Align 2 cards in one row (50% width) across all sections and pages (except guides page which is 1 card per row) */
+  .row:not(.guides-grid-1col) > .col-lg-3,
+  .row:not(.guides-grid-1col) > .col-lg-4,
+  .row:not(.guides-grid-1col) > .col-lg-6,
+  .row:not(.guides-grid-1col) > .col-md-3,
+  .row:not(.guides-grid-1col) > .col-md-4,
+  .row:not(.guides-grid-1col) > .col-md-6,
+  .row:not(.guides-grid-1col) > .video-card-item,
+  .row:not(.guides-grid-1col) > .resource-card-item,
+  .row:not(.guides-grid-1col) > [class*="col-"]:has(.topic-card),
+  .row:not(.guides-grid-1col) > [class*="col-"]:has(.knowledge-card),
+  .row:not(.guides-grid-1col) > [class*="col-"]:has(.video-card),
+  .row:not(.guides-grid-1col) > [class*="col-"]:has(.resource-card),
+  .row:not(.guides-grid-1col) > [class*="col-"]:has(.glossary-card),
+  .row:not(.guides-grid-1col) > [class*="col-"]:has(.aurelis-card),
+  #videosGrid > div,
+  #resourcesGrid > div,
+  #exploreResultsGrid > div,
+  #glossaryTermsContainer > div {
+    flex: 0 0 50% !important;
+    max-width: 50% !important;
+    width: 50% !important;
+  }
+
+  /* Guides page cards: 1 in one row across all views */
+  .guides-grid-1col > div,
+  .guide-card-col,
+  .guides-section .col-12 {
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+
+  /* Single full-width sections where explicitly needed */
+  .row > .col-12:not(.video-card-item):not(.resource-card-item):not(:has(.topic-card)):not(:has(.knowledge-card)):not(:has(.video-card)):not(:has(.resource-card)) {
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+
+  /* Align last odd number card in center across all sections */
+  .row:not(.guides-grid-1col) > .col-lg-3:last-child:nth-child(odd),
+  .row:not(.guides-grid-1col) > .col-lg-4:last-child:nth-child(odd),
+  .row:not(.guides-grid-1col) > .col-md-4:last-child:nth-child(odd),
+  .row:not(.guides-grid-1col) > .col-md-6:last-child:nth-child(odd),
+  .row:not(.guides-grid-1col) > .video-card-item:last-child:nth-child(odd),
+  .row:not(.guides-grid-1col) > .resource-card-item:last-child:nth-child(odd),
+  .row:not(.guides-grid-1col) > [class*="col-"]:has(.topic-card):last-child:nth-child(odd),
+  .row:not(.guides-grid-1col) > [class*="col-"]:has(.knowledge-card):last-child:nth-child(odd),
+  .row:not(.guides-grid-1col) > [class*="col-"]:has(.video-card):last-child:nth-child(odd),
+  .row:not(.guides-grid-1col) > [class*="col-"]:has(.resource-card):last-child:nth-child(odd),
+  .row:not(.guides-grid-1col) > [class*="col-"]:has(.glossary-card):last-child:nth-child(odd),
+  .row:not(.guides-grid-1col) > [class*="col-"]:has(.aurelis-card):last-child:nth-child(odd),
+  #videosGrid > div:last-child:nth-child(odd),
+  #resourcesGrid > div:last-child:nth-child(odd),
+  #exploreResultsGrid > div:last-child:nth-child(odd),
+  #glossaryTermsContainer > div:last-child:nth-child(odd) {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  /* Filter Sidebar becomes Drawer or Collapsible on <= 1024px */
+  .filter-sidebar-wrapper {
+    display: none;
+  }
+
+  .filter-sidebar-wrapper.mobile-drawer-open {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--bg-surface);
+    z-index: 2200;
+    overflow-y: auto;
+    padding: 1.5rem;
+  }
+
+  .mobile-filter-trigger {
+    display: inline-flex !important;
+  }
+
+  .col-lg-9 {
+    width: 100% !important;
+    max-width: 100% !important;
+    flex: 0 0 100% !important;
+  }
+
+  /* Discussions card on tablet */
+  .discussion-card {
+    grid-template-columns: 1fr;
+    gap: 0.85rem;
+  }
+
+  .discussion-upvote-box {
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 0.5rem;
+    width: fit-content;
+  }
+}
+
+/* Tablet & Mobile Header & Navigation (991.98px and below) */
 @media (max-width: 991.98px) {
   :root {
     --header-height: 70px;
@@ -70,41 +180,6 @@
 
   .explore-layout-grid {
     grid-template-columns: 1fr !important;
-  }
-
-  /* Filter Sidebar becomes Drawer or Collapsible on mobile */
-  .filter-sidebar-wrapper {
-    display: none;
-  }
-
-  .filter-sidebar-wrapper.mobile-drawer-open {
-    display: block;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: var(--bg-surface);
-    z-index: 2200;
-    overflow-y: auto;
-    padding: 1.5rem;
-  }
-
-  .mobile-filter-trigger {
-    display: inline-flex !important;
-  }
-
-  /* Discussions card on tablet */
-  .discussion-card {
-    grid-template-columns: 1fr;
-    gap: 0.85rem;
-  }
-
-  .discussion-upvote-box {
-    flex-direction: row;
-    justify-content: flex-start;
-    gap: 0.5rem;
-    width: fit-content;
   }
 }
 

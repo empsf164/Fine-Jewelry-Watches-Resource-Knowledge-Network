@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 270" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGradRaman" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#181124"/>
+      <stop offset="50%" stop-color="#1C142E"/>
+      <stop offset="100%" stop-color="#0E0A17"/>
+    </linearGradient>
+    <linearGradient id="laserBeam" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#A855F7" stop-opacity="0.9"/>
+      <stop offset="50%" stop-color="#EC4899" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#F43F5E" stop-opacity="0.8"/>
+    </linearGradient>
+    <linearGradient id="rubyGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FB7185"/>
+      <stop offset="50%" stop-color="#E11D48"/>
+      <stop offset="100%" stop-color="#881337"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="480" height="270" fill="url(#bgGradRaman)"/>
+
+  <!-- Spectral Grid -->
+  <g stroke="#A855F7" stroke-opacity="0.08" stroke-width="1">
+    <line x1="40" y1="0" x2="40" y2="270"/>
+    <line x1="160" y1="0" x2="160" y2="270"/>
+    <line x1="280" y1="0" x2="280" y2="270"/>
+    <line x1="400" y1="0" x2="400" y2="270"/>
+    <line x1="0" y1="60" x2="480" y2="60"/>
+    <line x1="0" y1="140" x2="480" y2="140"/>
+    <line x1="0" y1="210" x2="480" y2="210"/>
+  </g>
+
+  <!-- Laser Emitter Objective -->
+  <rect x="50" y="115" width="40" height="40" rx="4" fill="#2E1065" stroke="#A855F7" stroke-width="1.5"/>
+  <circle cx="90" cy="135" r="8" fill="#EC4899"/>
+  <!-- 532nm Laser Beam -->
+  <line x1="90" y1="135" x2="190" y2="135" stroke="url(#laserBeam)" stroke-width="3.5"/>
+  <line x1="90" y1="135" x2="190" y2="135" stroke="#FFFFFF" stroke-width="1" stroke-opacity="0.8"/>
+
+  <!-- Target Corundum Crystal (Ruby / Sapphire) -->
+  <g transform="translate(210, 135)">
+    <!-- Faceted Gemstone -->
+    <polygon points="0,-45 35,-20 35,20 0,45 -35,20 -35,-20" fill="url(#rubyGlow)" stroke="#FDA4AF" stroke-width="1.5"/>
+    <polygon points="0,-45 0,45" stroke="#FDA4AF" stroke-width="0.8" stroke-opacity="0.6"/>
+    <polygon points="-35,-20 35,20" stroke="#FDA4AF" stroke-width="0.8" stroke-opacity="0.6"/>
+    <polygon points="-35,20 35,-20" stroke="#FDA4AF" stroke-width="0.8" stroke-opacity="0.6"/>
+    <!-- Laser Impact Flare -->
+    <circle cx="-15" cy="0" r="10" fill="#FFFFFF" fill-opacity="0.7"/>
+    <circle cx="-15" cy="0" r="22" fill="#EC4899" fill-opacity="0.25"/>
+  </g>
+
+  <!-- Raman Spectroscopic Peak Waveform Graphic -->
+  <g transform="translate(290, 80)">
+    <rect x="0" y="0" width="150" height="110" rx="6" fill="#140D20" stroke="#C8A67B" stroke-width="1"/>
+    <!-- Axes -->
+    <line x1="15" y1="95" x2="135" y2="95" stroke="#64748B" stroke-width="1"/>
+    <line x1="15" y1="95" x2="15" y2="15" stroke="#64748B" stroke-width="1"/>
+    <!-- Spectral Peak Curves -->
+    <path d="M 15 95 L 35 93 L 45 60 L 52 95 L 70 94 L 80 25 L 90 95 L 105 92 L 115 70 L 125 95" fill="none" stroke="#A855F7" stroke-width="2"/>
+    <path d="M 15 95 L 35 93 L 45 60 L 52 95 L 70 94 L 80 25 L 90 95 L 105 92 L 115 70 L 125 95 L 135 95" fill="#A855F7" fill-opacity="0.15"/>
+    <!-- Peak Label -->
+    <text x="80" y="20" font-family="'JetBrains Mono', monospace" font-size="8" fill="#EC4899" text-anchor="middle">418 cm⁻¹</text>
+  </g>
+
+  <!-- Technical Readout Headers -->
+  <text x="35" y="40" font-family="'JetBrains Mono', monospace" font-size="11" fill="#C084FC" letter-spacing="1.5">RAMAN SPECTROSCOPY • CORUNDUM FINGERPRINT</text>
+  <text x="35" y="245" font-family="'JetBrains Mono', monospace" font-size="10" fill="#94A3B8">532nm EXCITATION • NATURAL VS FLUX-HEALED VEILS</text>
+  <text x="445" y="245" font-family="'JetBrains Mono', monospace" font-size="10" fill="#DFC298" text-anchor="end">50x OPTICAL ZOOM</text>
+</svg>

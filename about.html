@@ -1,20 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About AURELIS — Mission & Editorial Standards</title>
-  <meta name="description" content="Discover the mission, editorial standards, and peer-reviewed knowledge philosophy behind the AURELIS Knowledge Network.">
-  
+  <meta name="description"
+    content="Discover the mission, editorial standards, and peer-reviewed knowledge philosophy behind the AURELIS Knowledge Network.">
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/components.css">
   <link rel="stylesheet" href="assets/css/responsive.css">
 </head>
+
 <body>
 
-  <!-- Mandatory Navbar -->
+  <!-- Mandatory Clean Navbar -->
   <header class="aurelis-header">
     <div class="container-custom nav-wrapper">
       <a href="index.html" class="brand-logo" aria-label="Aurelis Homepage">
@@ -29,25 +33,17 @@
           <li class="nav-item"><a href="knowledge.html" class="nav-link-custom">Knowledge</a></li>
           <li class="nav-item"><a href="resources.html" class="nav-link-custom">Resources</a></li>
           <li class="nav-item"><a href="videos.html" class="nav-link-custom">Videos</a></li>
-          <li class="nav-item"><a href="community.html" class="nav-link-custom">Community</a></li>
           <li class="nav-item"><a href="guides.html" class="nav-link-custom">Guides</a></li>
           <li class="nav-item"><a href="about.html" class="nav-link-custom active">About</a></li>
+          <li class="nav-item"><a href="contact.html" class="nav-link-custom">Contact</a></li>
         </ul>
       </nav>
 
       <div class="nav-actions">
-        <button type="button" class="search-trigger-btn" aria-label="Open search engine">
-          <i class="bi bi-search text-bronze"></i>
-          <span>Search</span>
-          <kbd>/</kbd>
-        </button>
-        <button type="button" class="btn-icon-action theme-toggle-btn" aria-label="Toggle Theme">
+        <button type="button" class="btn-icon-action theme-toggle-btn" aria-label="Toggle Theme" title="Toggle Theme">
           <i class="bi bi-moon-stars-fill"></i>
         </button>
-        <div class="auth-nav-container d-none d-sm-block">
-          <a href="login.html" class="btn-aurelis btn-aurelis-outline btn-aurelis-sm">Login</a>
-          <a href="signup.html" class="btn-aurelis btn-aurelis-primary btn-aurelis-sm">Sign Up</a>
-        </div>
+        <a href="signup.html" class="btn-aurelis btn-aurelis-primary btn-aurelis-sm d-none d-sm-inline-flex">Sign Up</a>
         <button type="button" class="hamburger-btn" id="hamburgerBtn" aria-label="Open mobile menu">
           <i class="bi bi-list"></i>
         </button>
@@ -68,33 +64,35 @@
     <div class="mobile-drawer-body">
       <ul class="mobile-menu-list">
         <li class="mobile-menu-item"><a href="index.html" class="mobile-menu-link">Home</a></li>
-        <li class="mobile-menu-item"><a href="explore.html" class="mobile-menu-link">Explore Discovery</a></li>
-        <li class="mobile-menu-item"><a href="knowledge.html" class="mobile-menu-link">Knowledge Base</a></li>
+        <li class="mobile-menu-item"><a href="explore.html" class="mobile-menu-link">Explore</a></li>
+        <li class="mobile-menu-item"><a href="knowledge.html" class="mobile-menu-link">Knowledge</a></li>
         <li class="mobile-menu-item"><a href="resources.html" class="mobile-menu-link">Resources</a></li>
         <li class="mobile-menu-item"><a href="videos.html" class="mobile-menu-link">Videos</a></li>
-        <li class="mobile-menu-item"><a href="community.html" class="mobile-menu-link">Community</a></li>
-        <li class="mobile-menu-item"><a href="glossary.html" class="mobile-menu-link">Glossary</a></li>
         <li class="mobile-menu-item"><a href="guides.html" class="mobile-menu-link">Guides</a></li>
         <li class="mobile-menu-item"><a href="about.html" class="mobile-menu-link active">About</a></li>
         <li class="mobile-menu-item"><a href="contact.html" class="mobile-menu-link">Contact</a></li>
+        <li class="mobile-menu-item mt-3 pt-3 border-top border-subtle-custom">
+          <a href="signup.html" class="btn-aurelis btn-aurelis-primary w-100 justify-content-center">Sign Up</a>
+        </li>
       </ul>
-      <div class="mobile-auth-container mt-auto pt-3 border-top border-subtle-custom"></div>
     </div>
   </div>
 
   <main>
-    <!-- HERO -->
-    <section class="section-padding-sm bg-secondary-custom border-bottom border-subtle-custom">
-      <div class="container-custom">
+    <!-- ABOUT HERO HEADER (CENTER ALIGNED) -->
+    <section class="section-padding-sm bg-secondary-custom border-bottom border-subtle-custom text-center">
+      <div class="container-custom" style="max-width: 880px;">
         <nav aria-label="breadcrumb">
-          <ol class="breadcrumb small font-ui mb-2">
+          <ol class="breadcrumb small font-ui mb-2 justify-content-center">
             <li class="breadcrumb-item"><a href="index.html">Home</a></li>
             <li class="breadcrumb-item active" aria-current="page">About AURELIS</li>
           </ol>
         </nav>
-        <span class="eyebrow">The Editorial Mission</span>
-        <h1>Understand What You Wear. Know What You Own.</h1>
-        <p class="lead mb-0" style="max-width: 860px;">AURELIS was founded on a simple conviction: true appreciation of fine jewelry and mechanical watches begins with profound, unfiltered technical knowledge.</p>
+        <span class="eyebrow justify-content-center">The Editorial Mission</span>
+        <h1 class="mb-3">Understand What You Wear. Know What You Own.</h1>
+        <p class="lead mb-0 text-secondary mx-auto" style="max-width: 780px;">AURELIS was founded on a simple
+          conviction: true appreciation of fine jewelry and mechanical watches begins with profound, unfiltered
+          technical knowledge.</p>
       </div>
     </section>
 
@@ -105,10 +103,15 @@
           <div class="col-lg-6">
             <h2 class="mb-4">Why AURELIS Exists</h2>
             <p class="text-secondary">
-              In an era saturated with superficial marketing slogans and luxury lifestyle influencer hype, deep technical understanding is increasingly obscured. Collectors and enthusiasts often purchase precious objects without comprehending the underlying metallurgy, physical tolerances, escapement mechanics, or gemological treatments.
+              In an era saturated with superficial marketing slogans and luxury lifestyle influencer hype, deep
+              technical understanding is increasingly obscured. Collectors and enthusiasts often purchase precious
+              objects without comprehending the underlying metallurgy, physical tolerances, escapement mechanics, or
+              gemological treatments.
             </p>
             <p class="text-secondary">
-              AURELIS is not an ecommerce boutique. We sell no inventory, host no affiliate banners, and remain steadfastly independent. We exist solely as a specialized knowledge network, combining the visual sophistication of a luxury editorial publication with the rigor of an engineering documentation library.
+              AURELIS is not an ecommerce boutique. We sell no inventory, host no affiliate banners, and remain
+              steadfastly independent. We exist solely as a specialized knowledge network, combining the visual
+              sophistication of a luxury editorial publication with the rigor of an engineering documentation library.
             </p>
           </div>
           <div class="col-lg-6">
@@ -118,7 +121,9 @@
                 <div class="font-display fst-italic h5 mb-0">“Knowledge makes every piece more meaningful.”</div>
               </div>
               <p class="small text-secondary mb-3">
-                When you understand how a tourbillon counteracts gravitational variance, or why 18K white gold alloyed with palladium maintains integrity better than nickel, wearing your pieces transforms from passive luxury into active intellectual appreciation.
+                When you understand how a tourbillon counteracts gravitational variance, or why 18K white gold alloyed
+                with palladium maintains integrity better than nickel, wearing your pieces transforms from passive
+                luxury into active intellectual appreciation.
               </p>
               <div class="pt-2 border-top border-subtle-custom text-end font-ui small fw-semibold text-bronze">
                 — AURELIS Editorial Directorate
@@ -134,29 +139,107 @@
             <div class="topic-card">
               <div class="topic-icon-wrapper"><i class="bi bi-shield-check"></i></div>
               <h4>01. Technical Rigor</h4>
-              <p>Every article is verified by certified gemologists, metallurgists, or master watchmakers before archival release.</p>
+              <p>Every article is verified by certified gemologists, metallurgists, or master watchmakers before
+                archival release.</p>
             </div>
           </div>
           <div class="col-md-6 col-lg-3">
             <div class="topic-card">
               <div class="topic-icon-wrapper"><i class="bi bi-eye"></i></div>
               <h4>02. Total Objectivity</h4>
-              <p>No brand sponsorships, sponsored rankings, or pay-to-play reviews. Unbiased physical and mechanical truth.</p>
+              <p>No brand sponsorships, sponsored rankings, or pay-to-play reviews. Unbiased physical and mechanical
+                truth.</p>
             </div>
           </div>
           <div class="col-md-6 col-lg-3">
             <div class="topic-card">
               <div class="topic-icon-wrapper"><i class="bi bi-file-earmark-code"></i></div>
               <h4>03. Calibrated Resources</h4>
-              <p>Our checklists and measurement guides conform to international standards (ISO 3159, GIA 4Cs, ISO 9202).</p>
+              <p>Our checklists and measurement guides conform to international standards (ISO 3159, GIA 4Cs, ISO 9202).
+              </p>
             </div>
           </div>
           <div class="col-md-6 col-lg-3">
             <div class="topic-card">
               <div class="topic-icon-wrapper"><i class="bi bi-people"></i></div>
               <h4>04. Community Exchange</h4>
-              <p>Fostering respectful, peer-reviewed discussions between new enthusiasts, seasoned collectors, and master artisans.</p>
+              <p>Fostering respectful, peer-reviewed discussions between new enthusiasts, seasoned collectors, and
+                master artisans.</p>
             </div>
+          </div>
+        </div>
+
+        <!-- NEW SECTION: EDITORIAL BOARD & ADVISORY COUNCIL -->
+        <div class="divider-subtle my-5"></div>
+        <div class="mb-5">
+          <div class="text-center max-w-700 mx-auto mb-5">
+            <span class="eyebrow justify-content-center">Peer-Reviewed Governance</span>
+            <h2 class="mb-3">Editorial Board & Curatorial Directorate</h2>
+            <p class="text-secondary">
+              AURELIS technical teardowns and grading documentation are authored, peer-reviewed, and verified by
+              credentialed fellows across gemology, horology, and metallurgical science.
+            </p>
+          </div>
+
+          <div class="row g-4">
+            <!-- Member 1 -->
+            <div class="col-md-6 col-lg-3">
+              <div class="p-4 bg-surface-custom border border-subtle-custom rounded h-100 d-flex flex-column">
+                <div class="d-flex align-items-center gap-3 mb-3">
+                  <img src="assets/images/member-julian-vance.svg" alt="Dr. Julian Vance" class="rounded-circle" style="width: 58px; height: 58px; object-fit: cover; border: 1px solid var(--border-subtle);" loading="lazy">
+                  <div>
+                    <h5 class="mb-0 font-ui fw-bold">Dr. Julian Vance</h5>
+                    <span class="small font-mono text-bronze">FGA • DGA Fellow</span>
+                  </div>
+                </div>
+                <div class="badge bg-secondary-custom text-primary font-ui small align-self-start mb-2 px-2 py-1">Chief Gemological Director</div>
+                <p class="small text-secondary mb-0">Specialist in FTIR and Raman spectroscopy, corundum origin determination, and synthetic diamond diagnostic screening.</p>
+              </div>
+            </div>
+
+            <!-- Member 2 -->
+            <div class="col-md-6 col-lg-3">
+              <div class="p-4 bg-surface-custom border border-subtle-custom rounded h-100 d-flex flex-column">
+                <div class="d-flex align-items-center gap-3 mb-3">
+                  <img src="assets/images/member-henriette-dupont.svg" alt="Henriette Dupont" class="rounded-circle" style="width: 58px; height: 58px; object-fit: cover; border: 1px solid var(--border-subtle);" loading="lazy">
+                  <div>
+                    <h5 class="mb-0 font-ui fw-bold">Henriette Dupont</h5>
+                    <span class="small font-mono text-bronze">WOSTEP Neuchâtel</span>
+                  </div>
+                </div>
+                <div class="badge bg-secondary-custom text-primary font-ui small align-self-start mb-2 px-2 py-1">Horological Engineering</div>
+                <p class="small text-secondary mb-0">Master watchmaker with 22 years of experience regulating high-frequency chronographs, escapement physics, and perpetual calendars.</p>
+              </div>
+            </div>
+
+            <!-- Member 3 -->
+            <div class="col-md-6 col-lg-3">
+              <div class="p-4 bg-surface-custom border border-subtle-custom rounded h-100 d-flex flex-column">
+                <div class="d-flex align-items-center gap-3 mb-3">
+                  <img src="assets/images/member-marcus-thorne.svg" alt="Prof. Marcus Thorne" class="rounded-circle" style="width: 58px; height: 58px; object-fit: cover; border: 1px solid var(--border-subtle);" loading="lazy">
+                  <div>
+                    <h5 class="mb-0 font-ui fw-bold">Prof. Marcus Thorne</h5>
+                    <span class="small font-mono text-bronze">Ph.D. Metallurgy</span>
+                  </div>
+                </div>
+                <div class="badge bg-secondary-custom text-primary font-ui small align-self-start mb-2 px-2 py-1">Precious Metal Science</div>
+                <p class="small text-secondary mb-0">Research specialist on precious metal ternary phase diagrams, gold alloy Vickers hardness, and assay verification protocols.</p>
+              </div>
+            </div>
+
+            <!-- Member 4 -->
+            <div class="col-md-6 col-lg-3">
+              <div class="p-4 bg-surface-custom border border-subtle-custom rounded h-100 d-flex flex-column">
+                <div class="d-flex align-items-center gap-3 mb-3">
+                  <img src="assets/images/member-camille-saint.svg" alt="Camille de Saint-Germain" class="rounded-circle" style="width: 58px; height: 58px; object-fit: cover; border: 1px solid var(--border-subtle);" loading="lazy">
+                  <div>
+                    <h5 class="mb-0 font-ui fw-bold">Camille de Saint-Germain</h5>
+                    <span class="small font-mono text-bronze">M.A. Art & Jewelry</span>
+                  </div>
+                </div>
+                <div class="badge bg-secondary-custom text-primary font-ui small align-self-start mb-2 px-2 py-1">Heritage & Conservation</div>
+                <p class="small text-secondary mb-0">Archival curator specializing in Belle Époque and Art Deco platinum mountings, antique hallmarks, and non-destructive jewelry care.</p>
+              </div>
           </div>
         </div>
 
@@ -166,13 +249,17 @@
           <div class="col-md-6">
             <h4 class="mb-3 font-ui fw-bold">Privacy Commitment</h4>
             <p class="small text-secondary">
-              AURELIS respects member privacy. User account details and bookmark libraries are used solely to curate personalized knowledge feeds. We never sell or share user data with third-party auction houses, dealers, or advertising networks.
+              AURELIS respects member privacy. User account details and bookmark libraries are used solely to curate
+              personalized knowledge feeds. We never sell or share user data with third-party auction houses, dealers,
+              or advertising networks.
             </p>
           </div>
           <div class="col-md-6" id="terms">
             <h4 class="mb-3 font-ui fw-bold">Editorial Terms & Reference Disclaimer</h4>
             <p class="small text-secondary">
-              All technical specifications, hallmark identification charts, and timing tolerances provided across AURELIS are compiled for educational and research purposes. Values should be calibrated with your certified local horologist or assay authority.
+              All technical specifications, hallmark identification charts, and timing tolerances provided across
+              AURELIS are compiled for educational and research purposes. Values should be calibrated with your
+              certified local horologist or assay authority.
             </p>
           </div>
         </div>
@@ -180,7 +267,7 @@
     </section>
   </main>
 
-  <!-- Footer -->
+  <!-- Consistent 4-Column Footer -->
   <footer class="aurelis-footer">
     <div class="container-custom">
       <div class="row g-4">
@@ -189,7 +276,11 @@
             <span class="brand-name">AURELIS</span>
             <span class="brand-tagline-micro">Knowledge Network</span>
           </a>
-          <p>“Understand What You Wear. Know What You Own.” An independent, authoritative resource and documentation network.</p>
+          <p>“Understand What You Wear. Know What You Own.” An independent, authoritative resource and documentation
+            network.</p>
+          <div class="mt-3 text-muted-custom small">
+            <i class="bi bi-patch-check text-bronze me-1"></i> Peer-reviewed editorial standards
+          </div>
         </div>
         <div class="col-lg-2 col-md-6">
           <div class="footer-heading">Explore</div>
@@ -197,7 +288,9 @@
             <li><a href="explore.html?cat=jewelry">Fine Jewelry</a></li>
             <li><a href="explore.html?cat=watches">Luxury Watches</a></li>
             <li><a href="explore.html?cat=gemstones">Gemstones</a></li>
-            <li><a href="explore.html?cat=movements">Movements</a></li>
+            <li><a href="explore.html?cat=metals">Precious Metals</a></li>
+            <li><a href="explore.html?cat=movements">Watch Movements</a></li>
+            <li><a href="glossary.html">Glossary</a></li>
           </ul>
         </div>
         <div class="col-lg-2 col-md-6">
@@ -207,12 +300,14 @@
             <li><a href="guides.html">Curated Guides</a></li>
             <li><a href="videos.html">Video Masterclasses</a></li>
             <li><a href="resources.html">Resources</a></li>
+            <li><a href="contact.html">Editorial Inquiries</a></li>
           </ul>
         </div>
         <div class="col-lg-4 col-md-6">
           <div class="footer-heading">Editorial Dispatch</div>
-          <div class="footer-newsletter-box">
-            <p class="small text-secondary mb-3">Subscribe for peer-reviewed technical teardowns and gemstone grading papers.</p>
+          <div class="footer-newsletter-box mb-3">
+            <p class="small text-secondary mb-3">Subscribe for peer-reviewed technical teardowns and gemstone grading
+              papers.</p>
             <form class="newsletter-form">
               <div class="input-group">
                 <input type="email" class="aurelis-input" placeholder="Your email" required>
@@ -220,13 +315,25 @@
               </div>
             </form>
           </div>
+          <div class="footer-social-links">
+            <a href="https://instagram.com" target="_blank" rel="noopener" class="footer-social-btn"
+              aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="https://youtube.com" target="_blank" rel="noopener" class="footer-social-btn"
+              aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+            <a href="https://x.com" target="_blank" rel="noopener" class="footer-social-btn" aria-label="X"><i
+                class="bi bi-twitter-x"></i></a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener" class="footer-social-btn"
+              aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            <a href="https://pinterest.com" target="_blank" rel="noopener" class="footer-social-btn"
+              aria-label="Pinterest"><i class="bi bi-pinterest"></i></a>
+          </div>
         </div>
       </div>
       <div class="footer-bottom">
         <div>© 2026 AURELIS Knowledge Network.</div>
         <div class="footer-legal-links">
           <a href="about.html">About</a>
-          <a href="contact.html">Contact</a>
+          <a href="contact.html">Contact & Inquiries</a>
           <a href="about.html#privacy">Privacy</a>
           <a href="about.html#terms">Terms</a>
         </div>
@@ -238,9 +345,9 @@
   <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
   <script src="assets/js/theme.js"></script>
   <script src="assets/js/notifications.js"></script>
-  <script src="assets/js/auth.js"></script>
   <script src="assets/js/favorites.js"></script>
   <script src="assets/js/search.js"></script>
   <script src="assets/js/main.js"></script>
 </body>
+
 </html>

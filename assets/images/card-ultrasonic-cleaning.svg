@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 270" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGradClean" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#14161C"/>
+      <stop offset="50%" stop-color="#1B1E26"/>
+      <stop offset="100%" stop-color="#0E1015"/>
+    </linearGradient>
+    <linearGradient id="goldGradClean" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#DFC298"/>
+      <stop offset="50%" stop-color="#C8A67B"/>
+      <stop offset="100%" stop-color="#9E7D52"/>
+    </linearGradient>
+    <linearGradient id="waveGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#5B8FB9" stop-opacity="0.1"/>
+      <stop offset="50%" stop-color="#80B3FF" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#5B8FB9" stop-opacity="0.1"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="480" height="270" fill="url(#bgGradClean)"/>
+  
+  <!-- Technical Grid overlay -->
+  <g stroke="#ffffff" stroke-opacity="0.04" stroke-width="1">
+    <line x1="40" y1="0" x2="40" y2="270"/>
+    <line x1="120" y1="0" x2="120" y2="270"/>
+    <line x1="240" y1="0" x2="240" y2="270"/>
+    <line x1="360" y1="0" x2="360" y2="270"/>
+    <line x1="440" y1="0" x2="440" y2="270"/>
+    <line x1="0" y1="45" x2="480" y2="45"/>
+    <line x1="0" y1="135" x2="480" y2="135"/>
+    <line x1="0" y1="225" x2="480" y2="225"/>
+  </g>
+
+  <!-- Ultrasonic Tank Chamber -->
+  <rect x="110" y="60" width="260" height="150" rx="8" fill="#141720" stroke="#C8A67B" stroke-width="1.5" stroke-opacity="0.6"/>
+  <!-- Fluid level line -->
+  <path d="M 120 110 Q 180 102 240 110 T 360 110" fill="none" stroke="#80B3FF" stroke-width="1.5" stroke-opacity="0.6"/>
+  <rect x="120" y="110" width="240" height="90" rx="4" fill="#80B3FF" fill-opacity="0.08"/>
+
+  <!-- Ultrasonic Wave Pulses -->
+  <path d="M 140 190 Q 240 140 340 190" fill="none" stroke="url(#waveGrad)" stroke-width="2" stroke-dasharray="4,4"/>
+  <path d="M 150 170 Q 240 125 330 170" fill="none" stroke="url(#waveGrad)" stroke-width="2"/>
+  <path d="M 165 150 Q 240 115 315 150" fill="none" stroke="url(#waveGrad)" stroke-width="1.5" stroke-dasharray="3,3"/>
+
+  <!-- Cavitation Micro-bubbles -->
+  <circle cx="210" cy="140" r="3" fill="#80B3FF" fill-opacity="0.5"/>
+  <circle cx="270" cy="135" r="4" fill="#80B3FF" fill-opacity="0.6"/>
+  <circle cx="225" cy="160" r="2.5" fill="#80B3FF" fill-opacity="0.4"/>
+  <circle cx="255" cy="155" r="3.5" fill="#80B3FF" fill-opacity="0.5"/>
+  <circle cx="240" cy="175" r="2" fill="#80B3FF" fill-opacity="0.3"/>
+
+  <!-- Submerged Jewelry Ring & Gemstone -->
+  <g transform="translate(240, 135)">
+    <!-- Ring Shank -->
+    <ellipse cx="0" cy="0" rx="35" ry="32" fill="none" stroke="url(#goldGradClean)" stroke-width="5"/>
+    <ellipse cx="0" cy="0" rx="27" ry="24" fill="none" stroke="#141720" stroke-width="2"/>
+    <!-- Setting Prongs -->
+    <path d="M -12 -30 L -8 -42 L 8 -42 L 12 -30" fill="none" stroke="url(#goldGradClean)" stroke-width="3"/>
+    <!-- Diamond Gemstone -->
+    <polygon points="0,-52 14,-42 -14,-42" fill="#DFC298" fill-opacity="0.9"/>
+    <polygon points="0,-52 14,-42 0,-34 -14,-42" fill="none" stroke="#FFFFFF" stroke-width="1.2"/>
+    <!-- Sparkle rays -->
+    <line x1="0" y1="-56" x2="0" y2="-62" stroke="#DFC298" stroke-width="1.5"/>
+    <line x1="-8" y1="-54" x2="-14" y2="-58" stroke="#DFC298" stroke-width="1.5"/>
+    <line x1="8" y1="-54" x2="14" y2="-58" stroke="#DFC298" stroke-width="1.5"/>
+  </g>
+
+  <!-- Transducer Base -->
+  <rect x="170" y="215" width="140" height="12" rx="3" fill="#C8A67B" fill-opacity="0.3" stroke="#C8A67B" stroke-width="1"/>
+  
+  <!-- Technical Labels & Frequency Readout -->
+  <text x="35" y="40" font-family="'JetBrains Mono', monospace" font-size="11" fill="#C8A67B" letter-spacing="1.5">ULTRASONIC CAVITATION PROTOCOL</text>
+  <text x="35" y="245" font-family="'JetBrains Mono', monospace" font-size="10" fill="#7E8B9B">FREQ: 42 kHz • TEMP: 45°C • NON-POROUS ONLY</text>
+  <text x="445" y="245" font-family="'JetBrains Mono', monospace" font-size="10" fill="#DFC298" text-anchor="end">4K MACRO</text>
+</svg>

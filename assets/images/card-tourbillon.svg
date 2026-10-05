@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 380" width="100%" height="100%">
+  <defs>
+    <linearGradient id="tourb-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E1B18" />
+      <stop offset="50%" stop-color="#12100E" />
+      <stop offset="100%" stop-color="#080706" />
+    </linearGradient>
+    <linearGradient id="tourb-gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F59E0B" />
+      <stop offset="50%" stop-color="#D97706" />
+      <stop offset="100%" stop-color="#78350F" />
+    </linearGradient>
+    <linearGradient id="blued-steel" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#60A5FA" />
+      <stop offset="100%" stop-color="#1D4ED8" />
+    </linearGradient>
+  </defs>
+
+  <rect width="600" height="380" fill="url(#tourb-bg)" />
+
+  <!-- Outer Tourbillon Aperture (Dial Cutout) -->
+  <circle cx="300" cy="190" r="135" fill="#0c0a09" stroke="#BD9865" stroke-width="2" />
+  <circle cx="300" cy="190" r="120" fill="none" stroke="rgba(189, 152, 101, 0.3)" stroke-dasharray="4,4" />
+
+  <!-- Tourbillon Bridge Bar (Mirror Polished) -->
+  <path d="M 165 190 Q 230 170 270 180 L 330 180 Q 370 170 435 190 Q 370 210 330 200 L 270 200 Q 230 210 165 190 Z" fill="#E2E8F0" stroke="#94A3B8" stroke-width="1.5" />
+
+  <!-- Rotating 60-Second Cage -->
+  <g transform="translate(300, 190)">
+    <!-- 3-Arm Titanium Cage -->
+    <path d="M 0,0 L 0,-85 M 0,0 L 73,42 M 0,0 L -73,42" stroke="url(#tourb-gold)" stroke-width="3" />
+    <circle cx="0" cy="0" r="85" fill="none" stroke="url(#tourb-gold)" stroke-width="2" stroke-dasharray="12,4" />
+    
+    <!-- Balance Wheel Inside Cage -->
+    <circle cx="0" cy="0" r="65" fill="none" stroke="#FDE047" stroke-width="2.5" />
+    <circle cx="0" cy="-65" r="4" fill="url(#blued-steel)" />
+    <circle cx="56" cy="32" r="4" fill="url(#blued-steel)" />
+    <circle cx="-56" cy="32" r="4" fill="url(#blued-steel)" />
+
+    <!-- Center Cap Ruby -->
+    <circle cx="0" cy="0" r="12" fill="#E11D48" stroke="#FDE047" stroke-width="2" />
+    
+    <!-- Blued Screws on Bridge Ends -->
+    <circle cx="-110" cy="0" r="5" fill="url(#blued-steel)" stroke="#93C5FD" stroke-width="0.8" />
+    <circle cx="110" cy="0" r="5" fill="url(#blued-steel)" stroke="#93C5FD" stroke-width="0.8" />
+  </g>
+
+  <!-- High Complication Badges -->
+  <text x="300" y="45" fill="#BD9865" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="700" letter-spacing="3" text-anchor="middle">FLYING TOURBILLON GRAVITATIONAL ESCAPEMENT</text>
+  <text x="300" y="350" fill="rgba(255,255,255,0.5)" font-family="'JetBrains Mono', monospace" font-size="10" text-anchor="middle">1 REVOLUTION PER MINUTE (1 RPM)</text>
+</svg>

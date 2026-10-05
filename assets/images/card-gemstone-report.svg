@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 380" width="100%" height="100%">
+  <defs>
+    <linearGradient id="gem-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#111827" />
+      <stop offset="100%" stop-color="#030712" />
+    </linearGradient>
+    <linearGradient id="gem-cyan" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#A5F3FC" />
+      <stop offset="50%" stop-color="#38BDF8" />
+      <stop offset="100%" stop-color="#0284C7" />
+    </linearGradient>
+    <linearGradient id="gold-border" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FDE047" />
+      <stop offset="100%" stop-color="#CA8A04" />
+    </linearGradient>
+  </defs>
+
+  <rect width="600" height="380" fill="url(#gem-bg)" />
+
+  <!-- Lab Certificate Frame -->
+  <rect x="50" y="40" width="500" height="300" rx="8" fill="rgba(255,255,255,0.02)" stroke="rgba(158, 125, 82, 0.3)" stroke-width="1.5" />
+  <rect x="60" y="50" width="480" height="280" rx="4" fill="none" stroke="rgba(158, 125, 82, 0.15)" stroke-dasharray="3,3" />
+
+  <!-- Diamond Brilliant Cut Plot (Top View) -->
+  <g transform="translate(180, 190)">
+    <!-- Outer Octagon/Circle -->
+    <polygon points="0,-75 53,-53 75,0 53,53 0,75 -53,53 -75,0 -53,-53" fill="none" stroke="url(#gem-cyan)" stroke-width="2" />
+    <!-- Table Facet (Octagon) -->
+    <polygon points="0,-40 28,-28 40,0 28,28 0,40 -28,28 -40,0 -28,-28" fill="rgba(56, 189, 248, 0.15)" stroke="url(#gem-cyan)" stroke-width="1.5" />
+    <!-- Star & Kite Facet Lines -->
+    <line x1="0" y1="-75" x2="0" y2="-40" stroke="url(#gem-cyan)" stroke-width="1.2" />
+    <line x1="53" y1="-53" x2="28" y2="-28" stroke="url(#gem-cyan)" stroke-width="1.2" />
+    <line x1="75" y1="0" x2="40" y2="0" stroke="url(#gem-cyan)" stroke-width="1.2" />
+    <line x1="53" y1="53" x2="28" y2="28" stroke="url(#gem-cyan)" stroke-width="1.2" />
+    <line x1="0" y1="75" x2="0" y2="40" stroke="url(#gem-cyan)" stroke-width="1.2" />
+    <line x1="-53" y1="53" x2="-28" y2="28" stroke="url(#gem-cyan)" stroke-width="1.2" />
+    <line x1="-75" y1="0" x2="-40" y2="0" stroke="url(#gem-cyan)" stroke-width="1.2" />
+    <line x1="-53" y1="-53" x2="-28" y2="-28" stroke="url(#gem-cyan)" stroke-width="1.2" />
+  </g>
+
+  <!-- Side Profile Diagram -->
+  <g transform="translate(380, 190)">
+    <!-- Crown, Girdle, Pavilion -->
+    <polygon points="-65,0 65,0 35,-35 -35,-35" fill="rgba(56, 189, 248, 0.1)" stroke="url(#gem-cyan)" stroke-width="1.5" />
+    <polygon points="-65,0 65,0 0,65" fill="rgba(56, 189, 248, 0.05)" stroke="url(#gem-cyan)" stroke-width="1.5" />
+    <!-- Light Refraction Rays -->
+    <line x1="0" y1="-55" x2="0" y2="-35" stroke="#FDE047" stroke-width="1.5" stroke-dasharray="2,2" />
+    <line x1="-20" y1="-55" x2="-20" y2="-35" stroke="#FDE047" stroke-width="1.5" stroke-dasharray="2,2" />
+    <line x1="20" y1="-55" x2="20" y2="-35" stroke="#FDE047" stroke-width="1.5" stroke-dasharray="2,2" />
+  </g>
+
+  <!-- Lab Certificate Labels -->
+  <text x="300" y="80" fill="#BD9865" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="700" letter-spacing="3" text-anchor="middle">GIA / SSEF GEMOLOGICAL GRADING RUBRIC</text>
+  <text x="180" y="295" fill="rgba(255,255,255,0.7)" font-family="'JetBrains Mono', monospace" font-size="10" text-anchor="middle">FACET PLOT • 57 FACETS</text>
+  <text x="380" y="295" fill="rgba(255,255,255,0.7)" font-family="'JetBrains Mono', monospace" font-size="10" text-anchor="middle">IDEAL PROPORTIONS (57.5%)</text>
+</svg>

@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AURELIS — Fine Jewelry & Watches Resource & Knowledge Network</title>
   <meta name="description" content="Understand What You Wear. Know What You Own. The authoritative luxury knowledge network for fine jewelry, horology, gemstones, and precious metals.">
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
   
   <!-- CSS Stylesheets -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
@@ -18,7 +19,7 @@
   <!-- Reading Progress Bar -->
   <div id="reading-progress-container"><div id="reading-progress-bar"></div></div>
 
-  <!-- Mandatory Navbar -->
+  <!-- Mandatory Clean Navbar (No Dropdowns, No Community, No Search/Login, With Contact) -->
   <header class="aurelis-header">
     <div class="container-custom nav-wrapper">
       <!-- Brand Logo -->
@@ -30,87 +31,25 @@
       <!-- Desktop Navigation Menu -->
       <nav aria-label="Main Navigation" class="d-none d-lg-block">
         <ul class="nav-menu-desktop">
-          <li class="nav-item">
-            <a href="index.html" class="nav-link-custom active">Home</a>
-          </li>
-          
-          <!-- Explore Dropdown -->
-          <li class="nav-item">
-            <a href="explore.html" class="nav-link-custom" aria-expanded="false">
-              Explore <i class="bi bi-chevron-down dropdown-arrow"></i>
-            </a>
-            <div class="dropdown-menu-custom dropdown-grid-2col">
-              <a href="explore.html?cat=jewelry" class="dropdown-item-custom"><i class="bi bi-gem"></i> Fine Jewelry</a>
-              <a href="explore.html?cat=watches" class="dropdown-item-custom"><i class="bi bi-watch"></i> Watches</a>
-              <a href="explore.html?cat=gemstones" class="dropdown-item-custom"><i class="bi bi-suit-diamond"></i> Gemstones</a>
-              <a href="explore.html?cat=metals" class="dropdown-item-custom"><i class="bi bi-shield-check"></i> Precious Metals</a>
-              <a href="explore.html?cat=movements" class="dropdown-item-custom"><i class="bi bi-gear-wide-connected"></i> Watch Movements</a>
-              <a href="explore.html?cat=jewelry-care" class="dropdown-item-custom"><i class="bi bi-stars"></i> Jewelry Care</a>
-              <a href="explore.html?cat=watch-care" class="dropdown-item-custom"><i class="bi bi-droplet-half"></i> Watch Care</a>
-              <a href="explore.html?cat=buying" class="dropdown-item-custom"><i class="bi bi-journal-check"></i> Buying Knowledge</a>
-            </div>
-          </li>
-
-          <!-- Knowledge Dropdown -->
-          <li class="nav-item">
-            <a href="knowledge.html" class="nav-link-custom" aria-expanded="false">
-              Knowledge <i class="bi bi-chevron-down dropdown-arrow"></i>
-            </a>
-            <div class="dropdown-menu-custom dropdown-grid-2col">
-              <a href="knowledge.html#jewelry" class="dropdown-item-custom"><i class="bi bi-book"></i> Jewelry Encyclopedia</a>
-              <a href="knowledge.html#watches" class="dropdown-item-custom"><i class="bi bi-clock-history"></i> Watch Encyclopedia</a>
-              <a href="knowledge.html#gemstones" class="dropdown-item-custom"><i class="bi bi-prism"></i> Gemstone Guide</a>
-              <a href="knowledge.html#materials" class="dropdown-item-custom"><i class="bi bi-layers"></i> Metal Guide</a>
-              <a href="knowledge.html#movements" class="dropdown-item-custom"><i class="bi bi-cpu"></i> Movement Guide</a>
-              <a href="glossary.html?cat=jewelry" class="dropdown-item-custom"><i class="bi bi-translate"></i> Jewelry Terminology</a>
-              <a href="glossary.html?cat=horology" class="dropdown-item-custom"><i class="bi bi-compass"></i> Horology Terminology</a>
-              <a href="knowledge.html#care" class="dropdown-item-custom"><i class="bi bi-heart-pulse"></i> Care & Maintenance</a>
-            </div>
-          </li>
-
-          <!-- Resources Dropdown -->
-          <li class="nav-item">
-            <a href="resources.html" class="nav-link-custom" aria-expanded="false">
-              Resources <i class="bi bi-chevron-down dropdown-arrow"></i>
-            </a>
-            <div class="dropdown-menu-custom dropdown-grid-2col">
-              <a href="resources.html?type=guides" class="dropdown-item-custom"><i class="bi bi-file-earmark-text"></i> Downloadable Guides</a>
-              <a href="resources.html?type=checklists" class="dropdown-item-custom"><i class="bi bi-check2-square"></i> Checklists</a>
-              <a href="resources.html?type=sheets" class="dropdown-item-custom"><i class="bi bi-table"></i> Reference Sheets</a>
-              <a href="resources.html?type=templates" class="dropdown-item-custom"><i class="bi bi-file-spreadsheet"></i> Templates</a>
-              <a href="resources.html?type=comparison" class="dropdown-item-custom"><i class="bi bi-layout-split"></i> Comparison Sheets</a>
-              <a href="resources.html?type=measurement" class="dropdown-item-custom"><i class="bi bi-rulers"></i> Measurement Guides</a>
-              <a href="resources.html?type=care-cards" class="dropdown-item-custom"><i class="bi bi-card-heading"></i> Care Cards</a>
-              <a href="resources.html?type=collector" class="dropdown-item-custom"><i class="bi bi-award"></i> Collector Resources</a>
-            </div>
-          </li>
-
+          <li class="nav-item"><a href="index.html" class="nav-link-custom active">Home</a></li>
+          <li class="nav-item"><a href="explore.html" class="nav-link-custom">Explore</a></li>
+          <li class="nav-item"><a href="knowledge.html" class="nav-link-custom">Knowledge</a></li>
+          <li class="nav-item"><a href="resources.html" class="nav-link-custom">Resources</a></li>
           <li class="nav-item"><a href="videos.html" class="nav-link-custom">Videos</a></li>
-          <li class="nav-item"><a href="community.html" class="nav-link-custom">Community</a></li>
           <li class="nav-item"><a href="guides.html" class="nav-link-custom">Guides</a></li>
           <li class="nav-item"><a href="about.html" class="nav-link-custom">About</a></li>
+          <li class="nav-item"><a href="contact.html" class="nav-link-custom">Contact</a></li>
         </ul>
       </nav>
 
-      <!-- Nav Actions (Search, Theme, Auth) -->
+      <!-- Nav Actions (Theme Toggle & Mobile Hamburger) -->
       <div class="nav-actions">
-        <!-- Search Trigger -->
-        <button type="button" class="search-trigger-btn" aria-label="Open search engine">
-          <i class="bi bi-search text-bronze"></i>
-          <span>Search</span>
-          <kbd>/</kbd>
-        </button>
-
         <!-- Theme Toggle -->
-        <button type="button" class="btn-icon-action theme-toggle-btn" aria-label="Toggle Theme">
+        <button type="button" class="btn-icon-action theme-toggle-btn" aria-label="Toggle Theme" title="Toggle Theme">
           <i class="bi bi-moon-stars-fill"></i>
         </button>
 
-        <!-- User Auth Container -->
-        <div class="auth-nav-container d-none d-sm-block">
-          <a href="login.html" class="btn-aurelis btn-aurelis-outline btn-aurelis-sm">Login</a>
-          <a href="signup.html" class="btn-aurelis btn-aurelis-primary btn-aurelis-sm">Sign Up</a>
-        </div>
+        <a href="signup.html" class="btn-aurelis btn-aurelis-primary btn-aurelis-sm d-none d-sm-inline-flex">Sign Up</a>
 
         <!-- Mobile Hamburger Toggle -->
         <button type="button" class="hamburger-btn" id="hamburgerBtn" aria-label="Open mobile menu">
@@ -134,73 +73,19 @@
     </div>
     
     <div class="mobile-drawer-body">
-      <!-- Search input in drawer -->
-      <button type="button" class="search-trigger-btn w-100 justify-content-start search-open-btn mb-2">
-        <i class="bi bi-search text-bronze me-2"></i> Search knowledge, movements, metals...
-      </button>
-
       <ul class="mobile-menu-list">
         <li class="mobile-menu-item"><a href="index.html" class="mobile-menu-link active">Home</a></li>
-        
-        <li class="mobile-menu-item">
-          <a href="#" class="mobile-menu-link mobile-submenu-toggle" data-target="mobileExploreSubmenu">
-            Explore <i class="bi bi-chevron-down submenu-arrow-icon"></i>
-          </a>
-          <ul class="mobile-submenu" id="mobileExploreSubmenu">
-            <li><a href="explore.html?cat=jewelry">Fine Jewelry</a></li>
-            <li><a href="explore.html?cat=watches">Watches</a></li>
-            <li><a href="explore.html?cat=gemstones">Gemstones</a></li>
-            <li><a href="explore.html?cat=metals">Precious Metals</a></li>
-            <li><a href="explore.html?cat=movements">Watch Movements</a></li>
-            <li><a href="explore.html?cat=jewelry-care">Jewelry Care</a></li>
-            <li><a href="explore.html?cat=watch-care">Watch Care</a></li>
-            <li><a href="explore.html?cat=buying">Buying Knowledge</a></li>
-          </ul>
-        </li>
-
-        <li class="mobile-menu-item">
-          <a href="#" class="mobile-menu-link mobile-submenu-toggle" data-target="mobileKnowledgeSubmenu">
-            Knowledge <i class="bi bi-chevron-down submenu-arrow-icon"></i>
-          </a>
-          <ul class="mobile-submenu" id="mobileKnowledgeSubmenu">
-            <li><a href="knowledge.html#jewelry">Jewelry Encyclopedia</a></li>
-            <li><a href="knowledge.html#watches">Watch Encyclopedia</a></li>
-            <li><a href="knowledge.html#gemstones">Gemstone Guide</a></li>
-            <li><a href="knowledge.html#materials">Metal Guide</a></li>
-            <li><a href="knowledge.html#movements">Movement Guide</a></li>
-            <li><a href="glossary.html">Jewelry & Horology Terminology</a></li>
-            <li><a href="knowledge.html#care">Care & Maintenance</a></li>
-          </ul>
-        </li>
-
-        <li class="mobile-menu-item">
-          <a href="#" class="mobile-menu-link mobile-submenu-toggle" data-target="mobileResourcesSubmenu">
-            Resources <i class="bi bi-chevron-down submenu-arrow-icon"></i>
-          </a>
-          <ul class="mobile-submenu" id="mobileResourcesSubmenu">
-            <li><a href="resources.html?type=guides">Downloadable Guides</a></li>
-            <li><a href="resources.html?type=checklists">Checklists</a></li>
-            <li><a href="resources.html?type=sheets">Reference Sheets</a></li>
-            <li><a href="resources.html?type=templates">Templates</a></li>
-            <li><a href="resources.html?type=measurement">Measurement Guides</a></li>
-            <li><a href="resources.html?type=collector">Collector Resources</a></li>
-          </ul>
-        </li>
-
+        <li class="mobile-menu-item"><a href="explore.html" class="mobile-menu-link">Explore</a></li>
+        <li class="mobile-menu-item"><a href="knowledge.html" class="mobile-menu-link">Knowledge</a></li>
+        <li class="mobile-menu-item"><a href="resources.html" class="mobile-menu-link">Resources</a></li>
         <li class="mobile-menu-item"><a href="videos.html" class="mobile-menu-link">Videos</a></li>
-        <li class="mobile-menu-item"><a href="community.html" class="mobile-menu-link">Community</a></li>
         <li class="mobile-menu-item"><a href="guides.html" class="mobile-menu-link">Guides</a></li>
-        <li class="mobile-menu-item"><a href="glossary.html" class="mobile-menu-link">Glossary</a></li>
         <li class="mobile-menu-item"><a href="about.html" class="mobile-menu-link">About</a></li>
-        <li class="mobile-menu-item"><a href="contact.html" class="mobile-menu-link">Contact & Help</a></li>
+        <li class="mobile-menu-item"><a href="contact.html" class="mobile-menu-link">Contact</a></li>
+        <li class="mobile-menu-item mt-3 pt-3 border-top border-subtle-custom">
+          <a href="signup.html" class="btn-aurelis btn-aurelis-primary w-100 justify-content-center">Sign Up</a>
+        </li>
       </ul>
-
-      <div class="mobile-auth-container mt-auto pt-3 border-top border-subtle-custom">
-        <div class="d-grid gap-2">
-          <a href="login.html" class="btn-aurelis btn-aurelis-outline w-100 justify-content-center">Login</a>
-          <a href="signup.html" class="btn-aurelis btn-aurelis-primary w-100 justify-content-center">Create Account</a>
-        </div>
-      </div>
     </div>
   </div>
 
@@ -262,19 +147,14 @@
                 
                 <div class="text-center py-4 px-2 my-2 bg-secondary-custom rounded border border-subtle-custom position-relative overflow-hidden">
                   <svg width="220" height="220" viewBox="0 0 200 200" class="img-fluid" style="filter: drop-shadow(0 4px 12px rgba(0,0,0,0.15));">
-                    <!-- Mechanical Watch Caliber Schematic Illustration -->
                     <circle cx="100" cy="100" r="90" fill="none" stroke="var(--border-medium)" stroke-width="2" stroke-dasharray="4 2"/>
                     <circle cx="100" cy="100" r="78" fill="var(--bg-surface)" stroke="var(--accent-bronze)" stroke-width="1.5"/>
-                    <!-- Mainspring Barrel -->
                     <circle cx="65" cy="75" r="28" fill="none" stroke="var(--text-secondary)" stroke-width="2"/>
                     <circle cx="65" cy="75" r="8" fill="var(--accent-bronze-subtle)" stroke="var(--accent-bronze)" stroke-width="2"/>
-                    <!-- Balance Wheel & Hairspring -->
                     <circle cx="130" cy="120" r="32" fill="none" stroke="var(--accent-gold)" stroke-width="2.5"/>
                     <circle cx="130" cy="120" r="16" fill="none" stroke="var(--accent-ruby)" stroke-width="1.5" stroke-dasharray="2 2"/>
                     <circle cx="130" cy="120" r="4" fill="var(--accent-ruby)"/>
-                    <!-- Escapement Wheel -->
                     <circle cx="95" cy="125" r="14" fill="none" stroke="var(--accent-bronze)" stroke-width="1.5"/>
-                    <!-- Rotor Cross Bar -->
                     <path d="M 25 100 Q 100 175 175 100" fill="none" stroke="var(--accent-bronze)" stroke-width="5" opacity="0.85"/>
                     <circle cx="100" cy="100" r="7" fill="var(--text-primary)"/>
                   </svg>
@@ -307,7 +187,6 @@
         </div>
 
         <div class="row g-4">
-          <!-- Fine Jewelry -->
           <div class="col-md-6 col-lg-4">
             <a href="explore.html?cat=jewelry" class="topic-card">
               <div class="topic-icon-wrapper"><i class="bi bi-gem"></i></div>
@@ -317,7 +196,6 @@
             </a>
           </div>
 
-          <!-- Watches -->
           <div class="col-md-6 col-lg-4">
             <a href="explore.html?cat=watches" class="topic-card">
               <div class="topic-icon-wrapper"><i class="bi bi-watch"></i></div>
@@ -327,17 +205,15 @@
             </a>
           </div>
 
-          <!-- Gemstones -->
           <div class="col-md-6 col-lg-4">
             <a href="explore.html?cat=gemstones" class="topic-card">
-              <div class="topic-icon-wrapper"><i class="bi bi-prism"></i></div>
+              <div class="topic-icon-wrapper"><i class="bi bi-gem"></i></div>
               <h4>Gemstones</h4>
               <p>Diamond 4Cs, sapphires, rubies, emeralds, lab-grown analysis, thermal treatments, and origin certificates.</p>
               <div class="topic-meta-count">39 Articles • 12 Guides</div>
             </a>
           </div>
 
-          <!-- Precious Metals -->
           <div class="col-md-6 col-lg-4">
             <a href="explore.html?cat=metals" class="topic-card">
               <div class="topic-icon-wrapper"><i class="bi bi-shield-check"></i></div>
@@ -347,7 +223,6 @@
             </a>
           </div>
 
-          <!-- Watch Movements -->
           <div class="col-md-6 col-lg-4">
             <a href="explore.html?cat=movements" class="topic-card">
               <div class="topic-icon-wrapper"><i class="bi bi-gear-wide-connected"></i></div>
@@ -357,7 +232,6 @@
             </a>
           </div>
 
-          <!-- Care & Maintenance -->
           <div class="col-md-6 col-lg-4">
             <a href="explore.html?cat=care" class="topic-card">
               <div class="topic-icon-wrapper"><i class="bi bi-heart-pulse"></i></div>
@@ -410,11 +284,10 @@
 
         <!-- 3-Column Editorial Grid -->
         <div class="row g-4">
-          <!-- Article 2 -->
           <div class="col-lg-4 col-md-6">
             <div class="knowledge-card">
               <div class="knowledge-card-media d-flex align-items-center justify-content-center p-4">
-                <i class="bi bi-prism text-bronze" style="font-size: 3rem;"></i>
+                <i class="bi bi-gem text-bronze" style="font-size: 3rem;"></i>
               </div>
               <div class="knowledge-card-body">
                 <div class="card-top-meta">
@@ -433,7 +306,6 @@
             </div>
           </div>
 
-          <!-- Article 3 -->
           <div class="col-lg-4 col-md-6">
             <div class="knowledge-card">
               <div class="knowledge-card-media d-flex align-items-center justify-content-center p-4">
@@ -456,7 +328,6 @@
             </div>
           </div>
 
-          <!-- Article 4 -->
           <div class="col-lg-4 col-md-6">
             <div class="knowledge-card">
               <div class="knowledge-card-media d-flex align-items-center justify-content-center p-4">
@@ -495,7 +366,6 @@
         </div>
 
         <div class="row g-4">
-          <!-- Video 1 -->
           <div class="col-lg-4 col-md-6">
             <div class="video-card">
               <div class="video-thumb-container d-flex align-items-center justify-content-center">
@@ -520,7 +390,6 @@
             </div>
           </div>
 
-          <!-- Video 2 -->
           <div class="col-lg-4 col-md-6">
             <div class="video-card">
               <div class="video-thumb-container d-flex align-items-center justify-content-center">
@@ -545,7 +414,6 @@
             </div>
           </div>
 
-          <!-- Video 3 -->
           <div class="col-lg-4 col-md-6">
             <div class="video-card">
               <div class="video-thumb-container d-flex align-items-center justify-content-center">
@@ -586,7 +454,6 @@
         </div>
 
         <div class="row g-4">
-          <!-- Resource 1 -->
           <div class="col-md-6 col-lg-4">
             <div class="resource-card">
               <div class="d-flex align-items-center justify-content-between mb-3">
@@ -603,7 +470,6 @@
             </div>
           </div>
 
-          <!-- Resource 2 -->
           <div class="col-md-6 col-lg-4">
             <div class="resource-card">
               <div class="d-flex align-items-center justify-content-between mb-3">
@@ -620,7 +486,6 @@
             </div>
           </div>
 
-          <!-- Resource 3 -->
           <div class="col-md-6 col-lg-4">
             <div class="resource-card">
               <div class="d-flex align-items-center justify-content-between mb-3">
@@ -640,102 +505,6 @@
       </div>
     </section>
 
-    <!-- COMMUNITY DISCUSSIONS PREVIEW -->
-    <section class="section-padding bg-surface-custom border-top border-bottom border-subtle-custom">
-      <div class="container-custom">
-        <div class="d-flex align-items-end justify-content-between flex-wrap gap-3 mb-4">
-          <div>
-            <span class="eyebrow">Specialist Discussions</span>
-            <h2>Join the AURELIS Collector Network</h2>
-            <p class="mb-0 text-secondary">Exchange insights, verify provenance, and discuss maintenance with collectors and horologists.</p>
-          </div>
-          <a href="community.html" class="btn-aurelis btn-aurelis-primary">
-            <i class="bi bi-chat-left-dots"></i> Join Discussions
-          </a>
-        </div>
-
-        <div class="d-flex flex-column gap-3">
-          <!-- Discussion 1 -->
-          <div class="discussion-card">
-            <div class="discussion-upvote-box">
-              <button class="btn-upvote-action btn-icon-action border-0" data-id="dis-servicing-interval" aria-label="Upvote discussion">
-                <i class="bi bi-caret-up-fill text-bronze"></i>
-              </button>
-              <span class="count upvote-count">42</span>
-            </div>
-            <div class="discussion-content">
-              <div class="d-flex align-items-center gap-2 mb-1">
-                <span class="aurelis-badge">Watch Care</span>
-                <span class="text-muted-custom font-mono small">• 2 hours ago</span>
-              </div>
-              <h4><a href="discussion-details.html?id=servicing-interval" class="text-primary">How often should a modern mechanical watch really be serviced?</a></h4>
-              <p class="text-secondary small mb-2">Synthetic lubricants resist gumming longer than animal oils. Should we rely on 5-year intervals or timegrapher amplitude indicators?</p>
-              <div class="discussion-author-meta">
-                <i class="bi bi-person-circle text-bronze"></i>
-                <span>Started by <strong class="text-primary">HorologyMaster_Geneva</strong> (Senior Watchmaker)</span>
-              </div>
-            </div>
-            <div class="d-none d-md-flex align-items-center gap-3 text-muted-custom font-mono small">
-              <span><i class="bi bi-chat-left-text me-1"></i> 24 replies</span>
-              <span><i class="bi bi-eye me-1"></i> 1.4k views</span>
-            </div>
-          </div>
-
-          <!-- Discussion 2 -->
-          <div class="discussion-card">
-            <div class="discussion-upvote-box">
-              <button class="btn-upvote-action btn-icon-action border-0" data-id="dis-platinum-vs-white-gold" aria-label="Upvote discussion">
-                <i class="bi bi-caret-up-fill text-bronze"></i>
-              </button>
-              <span class="count upvote-count">35</span>
-            </div>
-            <div class="discussion-content">
-              <div class="d-flex align-items-center gap-2 mb-1">
-                <span class="aurelis-badge">Precious Metals</span>
-                <span class="text-muted-custom font-mono small">• 5 hours ago</span>
-              </div>
-              <h4><a href="discussion-details.html?id=platinum-vs-white-gold" class="text-primary">Is 950 Platinum really superior to 18K White Gold for everyday rings?</a></h4>
-              <p class="text-secondary small mb-2">Comparing density, metal displacement patina vs rhodium replating, and lifetime prong retention costs.</p>
-              <div class="discussion-author-meta">
-                <i class="bi bi-person-circle text-bronze"></i>
-                <span>Started by <strong class="text-primary">AureliaGemologist</strong> (GIA GG)</span>
-              </div>
-            </div>
-            <div class="d-none d-md-flex align-items-center gap-3 text-muted-custom font-mono small">
-              <span><i class="bi bi-chat-left-text me-1"></i> 18 replies</span>
-              <span><i class="bi bi-eye me-1"></i> 980 views</span>
-            </div>
-          </div>
-
-          <!-- Discussion 3 -->
-          <div class="discussion-card">
-            <div class="discussion-upvote-box">
-              <button class="btn-upvote-action btn-icon-action border-0" data-id="dis-sapphire-vs-mineral" aria-label="Upvote discussion">
-                <i class="bi bi-caret-up-fill text-bronze"></i>
-              </button>
-              <span class="count upvote-count">29</span>
-            </div>
-            <div class="discussion-content">
-              <div class="d-flex align-items-center gap-2 mb-1">
-                <span class="aurelis-badge">Watch Specifications</span>
-                <span class="text-muted-custom font-mono small">• 1 day ago</span>
-              </div>
-              <h4><a href="discussion-details.html?id=sapphire-vs-mineral" class="text-primary">Understanding Sapphire vs Mineral Crystal scratch & impact resistance</a></h4>
-              <p class="text-secondary small mb-2">Synthetic corundum Mohs 9 scratch immunity vs brittle crystal lattice under sharp impacts in field environments.</p>
-              <div class="discussion-author-meta">
-                <i class="bi bi-person-circle text-bronze"></i>
-                <span>Started by <strong class="text-primary">Collector_Vanguard</strong></span>
-              </div>
-            </div>
-            <div class="d-none d-md-flex align-items-center gap-3 text-muted-custom font-mono small">
-              <span><i class="bi bi-chat-left-text me-1"></i> 15 replies</span>
-              <span><i class="bi bi-eye me-1"></i> 840 views</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <!-- FINAL CALL TO ACTION -->
     <section class="section-padding text-center bg-secondary-custom">
       <div class="container-custom" style="max-width: 820px;">
@@ -743,8 +512,8 @@
         <h2 class="mb-3">Knowledge Makes Every Piece More Meaningful.</h2>
         <p class="lead mb-4">Join thousands of collectors, jewelers, watchmakers, and enthusiasts building their foundational knowledge with AURELIS.</p>
         <div class="d-flex justify-content-center flex-wrap gap-3">
-          <a href="signup.html" class="btn-aurelis btn-aurelis-primary btn-aurelis-lg">Create Free Account</a>
-          <a href="explore.html" class="btn-aurelis btn-aurelis-outline btn-aurelis-lg">Start Exploring</a>
+          <a href="explore.html" class="btn-aurelis btn-aurelis-primary btn-aurelis-lg">Start Exploring Knowledge</a>
+          <a href="guides.html" class="btn-aurelis btn-aurelis-outline btn-aurelis-lg">Browse Editorial Guides</a>
         </div>
       </div>
     </section>
@@ -766,7 +535,7 @@
     </div>
   </div>
 
-  <!-- Mandatory 4-Column Footer -->
+  <!-- Mandatory Consistent 4-Column Footer With Fixed Subscribe Button & Social Icons -->
   <footer class="aurelis-footer">
     <div class="container-custom">
       <div class="row g-4">
@@ -793,7 +562,7 @@
             <li><a href="explore.html?cat=gemstones">Gemstones</a></li>
             <li><a href="explore.html?cat=metals">Precious Metals</a></li>
             <li><a href="explore.html?cat=movements">Watch Movements</a></li>
-            <li><a href="glossary.html">Terminology Glossary</a></li>
+            <li><a href="glossary.html">Glossary</a></li>
           </ul>
         </div>
 
@@ -805,14 +574,14 @@
             <li><a href="guides.html">Curated Guides</a></li>
             <li><a href="videos.html">Video Masterclasses</a></li>
             <li><a href="resources.html">Resource Library</a></li>
-            <li><a href="saved.html">Saved Library</a></li>
+            <li><a href="contact.html">Editorial Inquiries</a></li>
           </ul>
         </div>
 
-        <!-- Col 4: Community & Newsletter -->
+        <!-- Col 4: Editorial Dispatch & Social Icons -->
         <div class="col-lg-4 col-md-6">
           <div class="footer-heading">Editorial Dispatch</div>
-          <div class="footer-newsletter-box">
+          <div class="footer-newsletter-box mb-3">
             <p class="small text-secondary mb-3">Receive monthly peer-reviewed technical teardowns, gemstone grading papers, and horological reference alerts.</p>
             <form class="newsletter-form">
               <div class="input-group">
@@ -821,17 +590,26 @@
               </div>
             </form>
           </div>
+
+          <!-- Social Icons -->
+          <div class="footer-social-links">
+            <a href="https://instagram.com" target="_blank" rel="noopener" class="footer-social-btn" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="https://youtube.com" target="_blank" rel="noopener" class="footer-social-btn" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+            <a href="https://x.com" target="_blank" rel="noopener" class="footer-social-btn" aria-label="X (Twitter)"><i class="bi bi-twitter-x"></i></a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener" class="footer-social-btn" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            <a href="https://pinterest.com" target="_blank" rel="noopener" class="footer-social-btn" aria-label="Pinterest"><i class="bi bi-pinterest"></i></a>
+          </div>
         </div>
       </div>
 
       <!-- Footer Bottom -->
       <div class="footer-bottom">
         <div>
-          © 2026 AURELIS Knowledge Network. All rights reserved. Fictional knowledge brand for educational & reference purposes.
+          © 2026 AURELIS Knowledge Network. All rights reserved.
         </div>
         <div class="footer-legal-links">
           <a href="about.html">About</a>
-          <a href="contact.html">Contact & Corrections</a>
+          <a href="contact.html">Contact & Inquiries</a>
           <a href="about.html#privacy">Privacy Policy</a>
           <a href="about.html#terms">Editorial Terms</a>
         </div>
@@ -844,11 +622,9 @@
   <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
   <script src="assets/js/theme.js"></script>
   <script src="assets/js/notifications.js"></script>
-  <script src="assets/js/auth.js"></script>
   <script src="assets/js/favorites.js"></script>
   <script src="assets/js/downloads.js"></script>
   <script src="assets/js/search.js"></script>
-  <script src="assets/js/recommendations.js"></script>
   <script src="assets/js/main.js"></script>
 </body>
 </html>

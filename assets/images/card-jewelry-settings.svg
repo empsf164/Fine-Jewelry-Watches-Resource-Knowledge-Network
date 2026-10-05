@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 380" width="100%" height="100%">
+  <defs>
+    <linearGradient id="set-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#14171F" />
+      <stop offset="100%" stop-color="#08090C" />
+    </linearGradient>
+    <linearGradient id="gold-prong" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFE885" />
+      <stop offset="50%" stop-color="#C59B27" />
+      <stop offset="100%" stop-color="#785B07" />
+    </linearGradient>
+    <linearGradient id="diamond-glow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E0F2FE" />
+      <stop offset="50%" stop-color="#38BDF8" />
+      <stop offset="100%" stop-color="#0284C7" />
+    </linearGradient>
+  </defs>
+
+  <rect width="600" height="380" fill="url(#set-bg)" />
+
+  <!-- Technical Dimension Lines -->
+  <line x1="80" y1="50" x2="520" y2="50" stroke="rgba(158, 125, 82, 0.2)" stroke-width="1" stroke-dasharray="4,4" />
+  <line x1="80" y1="330" x2="520" y2="330" stroke="rgba(158, 125, 82, 0.2)" stroke-width="1" stroke-dasharray="4,4" />
+
+  <!-- Ring Band (Shank) Architecture -->
+  <path d="M 120 280 Q 300 360 480 280 L 460 250 Q 300 320 140 250 Z" fill="url(#gold-prong)" />
+
+  <!-- 6-Prong Head Structure -->
+  <g transform="translate(300, 160)">
+    <!-- Diamond Center Stone -->
+    <polygon points="-80,0 80,0 45,-50 -45,-50" fill="rgba(224, 242, 254, 0.85)" stroke="url(#diamond-glow)" stroke-width="2" />
+    <polygon points="-80,0 80,0 0,75" fill="rgba(56, 189, 248, 0.45)" stroke="url(#diamond-glow)" stroke-width="2" />
+    
+    <!-- Table & Facet internal lines -->
+    <line x1="-45" y1="-50" x2="-25" y2="0" stroke="#fff" stroke-width="1.5" />
+    <line x1="45" y1="-50" x2="25" y2="0" stroke="#fff" stroke-width="1.5" />
+    <line x1="-25" y1="0" x2="0" y2="75" stroke="#fff" stroke-width="1.5" />
+    <line x1="25" y1="0" x2="0" y2="75" stroke="#fff" stroke-width="1.5" />
+
+    <!-- Left & Right Prongs Claws -->
+    <path d="M -85,-55 Q -80,-60 -70,-50 L -60,60 Q -70,65 -75,55 Z" fill="url(#gold-prong)" stroke="#FFE885" stroke-width="1" />
+    <path d="M 85,-55 Q 80,-60 70,-50 L 60,60 Q 70,65 75,55 Z" fill="url(#gold-prong)" stroke="#FFE885" stroke-width="1" />
+    <path d="M -40,-60 Q -35,-65 -25,-55 L -15,80 Q -25,85 -30,75 Z" fill="url(#gold-prong)" opacity="0.9" />
+    <path d="M 40,-60 Q 35,-65 25,-55 L 15,80 Q 25,85 30,75 Z" fill="url(#gold-prong)" opacity="0.9" />
+  </g>
+
+  <!-- Setting Badges -->
+  <text x="300" y="35" fill="#BD9865" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="700" letter-spacing="3" text-anchor="middle">ANATOMY OF 6-PRONG SOLITAIRE &amp; PAVÉ BEZEL</text>
+  <text x="140" y="220" fill="rgba(255,255,255,0.7)" font-family="'JetBrains Mono', monospace" font-size="10">BEZEL SEAT: 0.8mm</text>
+  <text x="460" y="220" fill="rgba(255,255,255,0.7)" font-family="'JetBrains Mono', monospace" font-size="10" text-anchor="end">PRONG CLAW: 1.2mm</text>
+</svg>

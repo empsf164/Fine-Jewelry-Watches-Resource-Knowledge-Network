@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Video Masterclasses & Tutorials — AURELIS</title>
   <meta name="description" content="Watch 4K macro teardowns, gemological grading tutorials, and jewelry craftsmanship masterclasses.">
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
   
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
@@ -14,7 +15,7 @@
 </head>
 <body>
 
-  <!-- Mandatory Navbar -->
+  <!-- Mandatory Clean Navbar -->
   <header class="aurelis-header">
     <div class="container-custom nav-wrapper">
       <a href="index.html" class="brand-logo" aria-label="Aurelis Homepage">
@@ -29,25 +30,17 @@
           <li class="nav-item"><a href="knowledge.html" class="nav-link-custom">Knowledge</a></li>
           <li class="nav-item"><a href="resources.html" class="nav-link-custom">Resources</a></li>
           <li class="nav-item"><a href="videos.html" class="nav-link-custom active">Videos</a></li>
-          <li class="nav-item"><a href="community.html" class="nav-link-custom">Community</a></li>
           <li class="nav-item"><a href="guides.html" class="nav-link-custom">Guides</a></li>
           <li class="nav-item"><a href="about.html" class="nav-link-custom">About</a></li>
+          <li class="nav-item"><a href="contact.html" class="nav-link-custom">Contact</a></li>
         </ul>
       </nav>
 
       <div class="nav-actions">
-        <button type="button" class="search-trigger-btn" aria-label="Open search engine">
-          <i class="bi bi-search text-bronze"></i>
-          <span>Search</span>
-          <kbd>/</kbd>
-        </button>
-        <button type="button" class="btn-icon-action theme-toggle-btn" aria-label="Toggle Theme">
+        <button type="button" class="btn-icon-action theme-toggle-btn" aria-label="Toggle Theme" title="Toggle Theme">
           <i class="bi bi-moon-stars-fill"></i>
         </button>
-        <div class="auth-nav-container d-none d-sm-block">
-          <a href="login.html" class="btn-aurelis btn-aurelis-outline btn-aurelis-sm">Login</a>
-          <a href="signup.html" class="btn-aurelis btn-aurelis-primary btn-aurelis-sm">Sign Up</a>
-        </div>
+        <a href="signup.html" class="btn-aurelis btn-aurelis-primary btn-aurelis-sm d-none d-sm-inline-flex">Sign Up</a>
         <button type="button" class="hamburger-btn" id="hamburgerBtn" aria-label="Open mobile menu">
           <i class="bi bi-list"></i>
         </button>
@@ -63,46 +56,44 @@
         <span class="brand-name">AURELIS</span>
         <span class="brand-tagline-micro">Knowledge Network</span>
       </div>
-      <button type="button" class="btn-icon-action" id="closeMobileDrawerBtn"><i class="bi bi-x-lg"></i></button>
+      <button type="button" class="btn-icon-action" id="closeMobileDrawerBtn" aria-label="Close menu"><i class="bi bi-x-lg"></i></button>
     </div>
     <div class="mobile-drawer-body">
       <ul class="mobile-menu-list">
         <li class="mobile-menu-item"><a href="index.html" class="mobile-menu-link">Home</a></li>
-        <li class="mobile-menu-item"><a href="explore.html" class="mobile-menu-link">Explore Discovery</a></li>
-        <li class="mobile-menu-item"><a href="knowledge.html" class="mobile-menu-link">Knowledge Base</a></li>
+        <li class="mobile-menu-item"><a href="explore.html" class="mobile-menu-link">Explore</a></li>
+        <li class="mobile-menu-item"><a href="knowledge.html" class="mobile-menu-link">Knowledge</a></li>
         <li class="mobile-menu-item"><a href="resources.html" class="mobile-menu-link">Resources</a></li>
         <li class="mobile-menu-item"><a href="videos.html" class="mobile-menu-link active">Videos</a></li>
-        <li class="mobile-menu-item"><a href="community.html" class="mobile-menu-link">Community</a></li>
-        <li class="mobile-menu-item"><a href="glossary.html" class="mobile-menu-link">Glossary</a></li>
         <li class="mobile-menu-item"><a href="guides.html" class="mobile-menu-link">Guides</a></li>
         <li class="mobile-menu-item"><a href="about.html" class="mobile-menu-link">About</a></li>
         <li class="mobile-menu-item"><a href="contact.html" class="mobile-menu-link">Contact</a></li>
+        <li class="mobile-menu-item mt-3 pt-3 border-top border-subtle-custom">
+          <a href="signup.html" class="btn-aurelis btn-aurelis-primary w-100 justify-content-center">Sign Up</a>
+        </li>
       </ul>
-      <div class="mobile-auth-container mt-auto pt-3 border-top border-subtle-custom"></div>
     </div>
   </div>
 
   <main>
-    <!-- HEADER -->
-    <section class="section-padding-sm bg-secondary-custom border-bottom border-subtle-custom">
-      <div class="container-custom">
+    <!-- VIDEOS HERO HEADER (CENTER ALIGNED) -->
+    <section class="section-padding-sm bg-secondary-custom border-bottom border-subtle-custom text-center">
+      <div class="container-custom" style="max-width: 880px;">
         <nav aria-label="breadcrumb">
-          <ol class="breadcrumb small font-ui mb-2">
+          <ol class="breadcrumb small font-ui mb-2 justify-content-center">
             <li class="breadcrumb-item"><a href="index.html">Home</a></li>
             <li class="breadcrumb-item active" aria-current="page">Video Tutorials</li>
           </ol>
         </nav>
-        <div class="row align-items-center g-3">
-          <div class="col-lg-8">
-            <span class="eyebrow">Visual Learning</span>
-            <h1>Horological & Gemological Masterclasses</h1>
-            <p class="lead mb-0">High-definition macro video teardowns, gemstone grading demonstrations, and jewelry fabrication techniques.</p>
-          </div>
-          <div class="col-lg-4 text-lg-end">
-            <button type="button" class="btn-aurelis btn-aurelis-outline mobile-filter-trigger d-lg-none" id="openFilterDrawerBtn">
-              <i class="bi bi-funnel"></i> Filters
-            </button>
-          </div>
+        
+        <span class="eyebrow justify-content-center">Visual Learning</span>
+        <h1 class="mb-3">Horological & Gemological Masterclasses</h1>
+        <p class="lead mb-3 text-secondary mx-auto" style="max-width: 780px;">High-definition macro video teardowns, gemstone grading demonstrations, and jewelry fabrication techniques.</p>
+
+        <div class="d-lg-none mt-3">
+          <button type="button" class="btn-aurelis btn-aurelis-outline mobile-filter-trigger" id="openFilterDrawerBtn">
+            <i class="bi bi-funnel"></i> Filter Videos
+          </button>
         </div>
       </div>
     </section>
@@ -175,17 +166,17 @@
               <!-- Video 1 -->
               <div class="col-md-6 video-card-item" data-topic="movements" data-difficulty="intermediate" data-title="How an Automatic Watch Movement Works: Mechanical Teardown">
                 <div class="video-card">
-                  <div class="video-thumb-container d-flex align-items-center justify-content-center">
-                    <i class="bi bi-gear-wide-connected text-muted-custom" style="font-size: 3.5rem;"></i>
+                  <div class="video-thumb-container position-relative overflow-hidden">
+                    <img src="assets/images/card-movement-video.svg" alt="Automatic Movement Teardown" class="w-100 h-100 object-fit-cover" loading="lazy">
                     <a href="video-details.html?id=movement-works" class="video-play-badge"><i class="bi bi-play-fill"></i></a>
-                    <span class="video-duration-pill">14:28</span>
+                    <span class="video-duration-pill"><i class="bi bi-clock me-1"></i> 14:28</span>
                   </div>
                   <div class="knowledge-card-body">
                     <div class="card-top-meta">
-                      <span class="aurelis-badge badge-difficulty-intermediate">Intermediate</span>
+                      <span class="aurelis-badge badge-difficulty-intermediate"><i class="bi bi-gear me-1"></i> Intermediate</span>
                       <button class="btn-bookmark-action" data-id="vid-1" data-type="video" data-title="How a Mechanical Movement Works" data-category="Movements"><i class="bi bi-bookmark"></i></button>
                     </div>
-                    <h5><a href="video-details.html?id=movement-works" class="text-primary">How an Automatic Watch Movement Works: Teardown</a></h5>
+                    <h5><a href="video-details.html?id=movement-works" class="text-primary"><i class="bi bi-camera-video text-bronze me-1"></i>How an Automatic Movement Works: Teardown</a></h5>
                     <p class="small text-secondary mb-3">Macro 4K exploration of the kinetic rotor, gear train, Swiss lever escapement, and balance wheel.</p>
                     <div class="mt-auto pt-2 border-top border-subtle-custom d-flex justify-content-between align-items-center">
                       <span class="small font-mono text-muted-custom"><i class="bi bi-eye me-1"></i> 48.2K</span>
@@ -198,17 +189,17 @@
               <!-- Video 2 -->
               <div class="col-md-6 video-card-item" data-topic="gemstones" data-difficulty="beginner" data-title="Diamond 4Cs Masterclass: Color, Clarity, Cut & Carat">
                 <div class="video-card">
-                  <div class="video-thumb-container d-flex align-items-center justify-content-center">
-                    <i class="bi bi-suit-diamond text-muted-custom" style="font-size: 3.5rem;"></i>
+                  <div class="video-thumb-container position-relative overflow-hidden">
+                    <img src="assets/images/card-diamond-4cs.svg" alt="Diamond 4Cs Masterclass" class="w-100 h-100 object-fit-cover" loading="lazy">
                     <a href="video-details.html?id=diamond-4cs" class="video-play-badge"><i class="bi bi-play-fill"></i></a>
-                    <span class="video-duration-pill">18:50</span>
+                    <span class="video-duration-pill"><i class="bi bi-clock me-1"></i> 18:50</span>
                   </div>
                   <div class="knowledge-card-body">
                     <div class="card-top-meta">
-                      <span class="aurelis-badge badge-difficulty-beginner">Beginner</span>
+                      <span class="aurelis-badge badge-difficulty-beginner"><i class="bi bi-gem me-1"></i> Beginner</span>
                       <button class="btn-bookmark-action" data-id="vid-2" data-type="video" data-title="Diamond 4Cs Masterclass" data-category="Gemstones"><i class="bi bi-bookmark"></i></button>
                     </div>
-                    <h5><a href="video-details.html?id=diamond-4cs" class="text-primary">Diamond 4Cs Masterclass: Under 40x Zoom</a></h5>
+                    <h5><a href="video-details.html?id=diamond-4cs" class="text-primary"><i class="bi bi-gem text-bronze me-1"></i>Diamond 4Cs Masterclass: Under 40x Zoom</a></h5>
                     <p class="small text-secondary mb-3">Visual examination of VVS1 vs SI2 inclusions, natural fluorescence, and light performance.</p>
                     <div class="mt-auto pt-2 border-top border-subtle-custom d-flex justify-content-between align-items-center">
                       <span class="small font-mono text-muted-custom"><i class="bi bi-eye me-1"></i> 62.4K</span>
@@ -221,17 +212,17 @@
               <!-- Video 3 -->
               <div class="col-md-6 video-card-item" data-topic="jewelry" data-difficulty="intermediate" data-title="Anatomy of Jewelry Settings: Prong, Bezel, Pavé">
                 <div class="video-card">
-                  <div class="video-thumb-container d-flex align-items-center justify-content-center">
-                    <i class="bi bi-gem text-muted-custom" style="font-size: 3.5rem;"></i>
+                  <div class="video-thumb-container position-relative overflow-hidden">
+                    <img src="assets/images/card-jewelry-settings.svg" alt="Anatomy of Fine Jewelry Settings" class="w-100 h-100 object-fit-cover" loading="lazy">
                     <a href="video-details.html?id=jewelry-settings" class="video-play-badge"><i class="bi bi-play-fill"></i></a>
-                    <span class="video-duration-pill">11:15</span>
+                    <span class="video-duration-pill"><i class="bi bi-clock me-1"></i> 11:15</span>
                   </div>
                   <div class="knowledge-card-body">
                     <div class="card-top-meta">
-                      <span class="aurelis-badge badge-difficulty-intermediate">Intermediate</span>
+                      <span class="aurelis-badge badge-difficulty-intermediate"><i class="bi bi-tools me-1"></i> Intermediate</span>
                       <button class="btn-bookmark-action" data-id="vid-3-set" data-type="video" data-title="Anatomy of Jewelry Settings" data-category="Fine Jewelry"><i class="bi bi-bookmark"></i></button>
                     </div>
-                    <h5><a href="video-details.html?id=jewelry-settings" class="text-primary">Anatomy of Settings: Prong, Bezel & Pavé</a></h5>
+                    <h5><a href="video-details.html?id=jewelry-settings" class="text-primary"><i class="bi bi-shield-shaded text-bronze me-1"></i>Anatomy of Settings: Prong, Bezel & Pavé</a></h5>
                     <p class="small text-secondary mb-3">Compare security, stone exposure, and fabrication methods for five major setting architectures.</p>
                     <div class="mt-auto pt-2 border-top border-subtle-custom d-flex justify-content-between align-items-center">
                       <span class="small font-mono text-muted-custom"><i class="bi bi-eye me-1"></i> 31.8K</span>
@@ -244,17 +235,17 @@
               <!-- Video 4 -->
               <div class="col-md-6 video-card-item" data-topic="care" data-difficulty="beginner" data-title="Professional Ultrasonic & Steam Cleaning Protocols">
                 <div class="video-card">
-                  <div class="video-thumb-container d-flex align-items-center justify-content-center">
-                    <i class="bi bi-stars text-muted-custom" style="font-size: 3.5rem;"></i>
+                  <div class="video-thumb-container position-relative overflow-hidden">
+                    <img src="assets/images/card-ultrasonic-cleaning.svg" alt="Ultrasonic & Steam Cleaning Protocols" class="w-100 h-100 object-fit-cover" loading="lazy">
                     <a href="video-details.html?id=jewelry-cleaning" class="video-play-badge"><i class="bi bi-play-fill"></i></a>
-                    <span class="video-duration-pill">09:40</span>
+                    <span class="video-duration-pill"><i class="bi bi-clock me-1"></i> 09:40</span>
                   </div>
                   <div class="knowledge-card-body">
                     <div class="card-top-meta">
-                      <span class="aurelis-badge badge-difficulty-beginner">Beginner</span>
+                      <span class="aurelis-badge badge-difficulty-beginner"><i class="bi bi-stars me-1"></i> Beginner</span>
                       <button class="btn-bookmark-action" data-id="vid-3" data-type="video" data-title="Ultrasonic Cleaning Protocols" data-category="Care"><i class="bi bi-bookmark"></i></button>
                     </div>
-                    <h5><a href="video-details.html?id=jewelry-cleaning" class="text-primary">Ultrasonic & Steam Cleaning Protocols</a></h5>
+                    <h5><a href="video-details.html?id=jewelry-cleaning" class="text-primary"><i class="bi bi-shield-check text-bronze me-1"></i>Ultrasonic & Steam Cleaning Protocols</a></h5>
                     <p class="small text-secondary mb-3">Which gemstones can survive ultrasonic cavitation and which risk catastrophic oil stripping.</p>
                     <div class="mt-auto pt-2 border-top border-subtle-custom d-flex justify-content-between align-items-center">
                       <span class="small font-mono text-muted-custom"><i class="bi bi-eye me-1"></i> 27.5K</span>
@@ -267,17 +258,17 @@
               <!-- Video 5 -->
               <div class="col-md-6 video-card-item" data-topic="movements" data-difficulty="advanced" data-title="The Tourbillon Cage: Micro-Engineering Kinetic Precision">
                 <div class="video-card">
-                  <div class="video-thumb-container d-flex align-items-center justify-content-center">
-                    <i class="bi bi-cpu text-muted-custom" style="font-size: 3.5rem;"></i>
+                  <div class="video-thumb-container position-relative overflow-hidden">
+                    <img src="assets/images/card-tourbillon.svg" alt="Tourbillon Cage Micro-Engineering" class="w-100 h-100 object-fit-cover" loading="lazy">
                     <a href="video-details.html?id=tourbillon-assembly" class="video-play-badge"><i class="bi bi-play-fill"></i></a>
-                    <span class="video-duration-pill">22:10</span>
+                    <span class="video-duration-pill"><i class="bi bi-clock me-1"></i> 22:10</span>
                   </div>
                   <div class="knowledge-card-body">
                     <div class="card-top-meta">
-                      <span class="aurelis-badge badge-difficulty-advanced">Advanced</span>
+                      <span class="aurelis-badge badge-difficulty-advanced"><i class="bi bi-cpu me-1"></i> Advanced</span>
                       <button class="btn-bookmark-action" data-id="vid-tourbillon" data-type="video" data-title="The Tourbillon Cage Assembly" data-category="Movements"><i class="bi bi-bookmark"></i></button>
                     </div>
-                    <h5><a href="video-details.html?id=tourbillon-assembly" class="text-primary">The Tourbillon Cage: Micro-Engineering</a></h5>
+                    <h5><a href="video-details.html?id=tourbillon-assembly" class="text-primary"><i class="bi bi-cpu text-bronze me-1"></i>The Tourbillon Cage: Micro-Engineering</a></h5>
                     <p class="small text-secondary mb-3">Assembling a 0.3-gram titanium tourbillon carriage containing over 70 individual parts.</p>
                     <div class="mt-auto pt-2 border-top border-subtle-custom d-flex justify-content-between align-items-center">
                       <span class="small font-mono text-muted-custom"><i class="bi bi-eye me-1"></i> 54.1K</span>
@@ -290,17 +281,17 @@
               <!-- Video 6 -->
               <div class="col-md-6 video-card-item" data-topic="movements" data-difficulty="beginner" data-title="Watch Water Resistance Explained: ATM, Bars & Gaskets">
                 <div class="video-card">
-                  <div class="video-thumb-container d-flex align-items-center justify-content-center">
-                    <i class="bi bi-droplet-half text-muted-custom" style="font-size: 3.5rem;"></i>
+                  <div class="video-thumb-container position-relative overflow-hidden">
+                    <img src="assets/images/card-water-resistance.svg" alt="Watch Water Resistance Testing" class="w-100 h-100 object-fit-cover" loading="lazy">
                     <a href="video-details.html?id=watch-water-resistance" class="video-play-badge"><i class="bi bi-play-fill"></i></a>
-                    <span class="video-duration-pill">08:45</span>
+                    <span class="video-duration-pill"><i class="bi bi-clock me-1"></i> 08:45</span>
                   </div>
                   <div class="knowledge-card-body">
                     <div class="card-top-meta">
-                      <span class="aurelis-badge badge-difficulty-beginner">Beginner</span>
+                      <span class="aurelis-badge badge-difficulty-beginner"><i class="bi bi-droplet-half me-1"></i> Beginner</span>
                       <button class="btn-bookmark-action" data-id="vid-water" data-type="video" data-title="Watch Water Resistance Explained" data-category="Watches"><i class="bi bi-bookmark"></i></button>
                     </div>
-                    <h5><a href="video-details.html?id=watch-water-resistance" class="text-primary">Watch Water Resistance: ATM & Gaskets</a></h5>
+                    <h5><a href="video-details.html?id=watch-water-resistance" class="text-primary"><i class="bi bi-moisture text-bronze me-1"></i>Watch Water Resistance: ATM & Gaskets</a></h5>
                     <p class="small text-secondary mb-3">Why 30m does not mean 30m depth. ISO 22810 vs ISO 6425 pressure ratings.</p>
                     <div class="mt-auto pt-2 border-top border-subtle-custom d-flex justify-content-between align-items-center">
                       <span class="small font-mono text-muted-custom"><i class="bi bi-eye me-1"></i> 19.9K</span>
@@ -323,9 +314,90 @@
         </div>
       </div>
     </section>
+
+    <!-- NEW SECTION: 50x MICROSCOPIC DIAGNOSTICS & LABORATORY TEARDOWNS -->
+    <section class="section-padding bg-secondary-custom border-top border-subtle-custom">
+      <div class="container-custom">
+        <div class="text-center max-w-700 mx-auto mb-5">
+          <span class="eyebrow justify-content-center">Laboratory Teardowns</span>
+          <h2 class="mb-3">50x Microscopic Analysis & Diagnostic Series</h2>
+          <p class="text-secondary">
+            Forensic optical microscopy capturing escapement friction, synthetic inclusion signatures, and haute horlogerie bevel mirror-polishing.
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <!-- Teardown Video 1 -->
+          <div class="col-lg-4">
+            <div class="video-card h-100">
+              <div class="video-thumb-container position-relative overflow-hidden">
+                <img src="assets/images/card-raman-spectroscopy.svg" alt="Raman Spectroscopy Microscopic Diagnostics" class="w-100 h-100 object-fit-cover" loading="lazy">
+                <a href="video-details.html?id=diamond-4cs" class="video-play-badge"><i class="bi bi-play-fill"></i></a>
+                <span class="video-duration-pill"><i class="bi bi-clock me-1"></i> 16:40</span>
+              </div>
+              <div class="knowledge-card-body">
+                <div class="card-top-meta">
+                  <span class="aurelis-badge badge-difficulty-advanced"><i class="bi bi-cpu me-1"></i> Advanced • Spectroscopy</span>
+                </div>
+                <h5><a href="video-details.html?id=diamond-4cs" class="text-primary"><i class="bi bi-file-earmark-medical text-bronze me-1"></i> Raman Spectroscopy: Natural vs Diffusion-Treated Corundum</a></h5>
+                <p class="small text-secondary mb-3">50x optical zoom isolating lattice diffusion halos and synthetic flux-fingerprint healing veils.</p>
+                <div class="mt-auto pt-2 border-top border-subtle-custom d-flex justify-content-between align-items-center">
+                  <span class="small font-mono text-muted-custom"><i class="bi bi-eye me-1"></i> 34.2K views</span>
+                  <a href="video-details.html?id=diamond-4cs" class="small text-bronze fw-semibold">Watch Teardown →</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Teardown Video 2 -->
+          <div class="col-lg-4">
+            <div class="video-card h-100">
+              <div class="video-thumb-container position-relative overflow-hidden">
+                <img src="assets/images/card-escapement-strobe.svg" alt="36,000 vph Escapement Isochronism" class="w-100 h-100 object-fit-cover" loading="lazy">
+                <a href="video-details.html?id=movement-works" class="video-play-badge"><i class="bi bi-play-fill"></i></a>
+                <span class="video-duration-pill"><i class="bi bi-clock me-1"></i> 21:15</span>
+              </div>
+              <div class="knowledge-card-body">
+                <div class="card-top-meta">
+                  <span class="aurelis-badge badge-difficulty-advanced"><i class="bi bi-gear me-1"></i> Advanced • Isochronism</span>
+                </div>
+                <h5><a href="video-details.html?id=movement-works" class="text-primary"><i class="bi bi-activity text-bronze me-1"></i> Escapement Isochronism & Friction Under 36,000 vph</a></h5>
+                <p class="small text-secondary mb-3">High-speed stroboscopic footage observing Swiss lever impulse pallet lift, lock angle, and epilame barrier decay.</p>
+                <div class="mt-auto pt-2 border-top border-subtle-custom d-flex justify-content-between align-items-center">
+                  <span class="small font-mono text-muted-custom"><i class="bi bi-eye me-1"></i> 68.9K views</span>
+                  <a href="video-details.html?id=movement-works" class="small text-bronze fw-semibold">Watch Teardown →</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Teardown Video 3 -->
+          <div class="col-lg-4">
+            <div class="video-card h-100">
+              <div class="video-thumb-container position-relative overflow-hidden">
+                <img src="assets/images/card-laser-anglage.svg" alt="Laser Micro-Welding & Anglage" class="w-100 h-100 object-fit-cover" loading="lazy">
+                <a href="video-details.html?id=jewelry-settings" class="video-play-badge"><i class="bi bi-play-fill"></i></a>
+                <span class="video-duration-pill"><i class="bi bi-clock me-1"></i> 13:50</span>
+              </div>
+              <div class="knowledge-card-body">
+                <div class="card-top-meta">
+                  <span class="aurelis-badge badge-difficulty-intermediate"><i class="bi bi-tools me-1"></i> Intermediate • Finishing</span>
+                </div>
+                <h5><a href="video-details.html?id=jewelry-settings" class="text-primary"><i class="bi bi-sparkles text-bronze me-1"></i> Laser Micro-Welding & Artisanal Anglage Hand-Polishing</a></h5>
+                <p class="small text-secondary mb-3">Bridge beveling using gentian wood pegs and diamond paste to achieve flawless black mirror polish.</p>
+                <div class="mt-auto pt-2 border-top border-subtle-custom d-flex justify-content-between align-items-center">
+                  <span class="small font-mono text-muted-custom"><i class="bi bi-eye me-1"></i> 41.5K views</span>
+                  <a href="video-details.html?id=jewelry-settings" class="small text-bronze fw-semibold">Watch Teardown →</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 
-  <!-- Footer -->
+  <!-- Consistent 4-Column Footer -->
   <footer class="aurelis-footer">
     <div class="container-custom">
       <div class="row g-4">
@@ -335,6 +407,9 @@
             <span class="brand-tagline-micro">Knowledge Network</span>
           </a>
           <p>“Understand What You Wear. Know What You Own.” An independent, authoritative resource and documentation network.</p>
+          <div class="mt-3 text-muted-custom small">
+            <i class="bi bi-patch-check text-bronze me-1"></i> Peer-reviewed editorial standards
+          </div>
         </div>
         <div class="col-lg-2 col-md-6">
           <div class="footer-heading">Explore</div>
@@ -342,7 +417,9 @@
             <li><a href="explore.html?cat=jewelry">Fine Jewelry</a></li>
             <li><a href="explore.html?cat=watches">Luxury Watches</a></li>
             <li><a href="explore.html?cat=gemstones">Gemstones</a></li>
-            <li><a href="explore.html?cat=movements">Movements</a></li>
+            <li><a href="explore.html?cat=metals">Precious Metals</a></li>
+            <li><a href="explore.html?cat=movements">Watch Movements</a></li>
+            <li><a href="glossary.html">Glossary</a></li>
           </ul>
         </div>
         <div class="col-lg-2 col-md-6">
@@ -352,11 +429,12 @@
             <li><a href="guides.html">Curated Guides</a></li>
             <li><a href="videos.html">Video Masterclasses</a></li>
             <li><a href="resources.html">Resources</a></li>
+            <li><a href="contact.html">Editorial Inquiries</a></li>
           </ul>
         </div>
         <div class="col-lg-4 col-md-6">
           <div class="footer-heading">Editorial Dispatch</div>
-          <div class="footer-newsletter-box">
+          <div class="footer-newsletter-box mb-3">
             <p class="small text-secondary mb-3">Subscribe for peer-reviewed technical teardowns and gemstone grading papers.</p>
             <form class="newsletter-form">
               <div class="input-group">
@@ -365,13 +443,20 @@
               </div>
             </form>
           </div>
+          <div class="footer-social-links">
+            <a href="https://instagram.com" target="_blank" rel="noopener" class="footer-social-btn" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="https://youtube.com" target="_blank" rel="noopener" class="footer-social-btn" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+            <a href="https://x.com" target="_blank" rel="noopener" class="footer-social-btn" aria-label="X"><i class="bi bi-twitter-x"></i></a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener" class="footer-social-btn" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            <a href="https://pinterest.com" target="_blank" rel="noopener" class="footer-social-btn" aria-label="Pinterest"><i class="bi bi-pinterest"></i></a>
+          </div>
         </div>
       </div>
       <div class="footer-bottom">
         <div>© 2026 AURELIS Knowledge Network.</div>
         <div class="footer-legal-links">
           <a href="about.html">About</a>
-          <a href="contact.html">Contact</a>
+          <a href="contact.html">Contact & Inquiries</a>
           <a href="about.html#privacy">Privacy</a>
           <a href="about.html#terms">Terms</a>
         </div>
@@ -383,9 +468,7 @@
   <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
   <script src="assets/js/theme.js"></script>
   <script src="assets/js/notifications.js"></script>
-  <script src="assets/js/auth.js"></script>
   <script src="assets/js/favorites.js"></script>
-  <script src="assets/js/downloads.js"></script>
   <script src="assets/js/filters.js"></script>
   <script src="assets/js/videos.js"></script>
   <script src="assets/js/search.js"></script>

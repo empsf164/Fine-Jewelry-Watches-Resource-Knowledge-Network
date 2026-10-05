@@ -34,7 +34,6 @@ aurelis-knowledge/
 ├── community.html               # Specialist Community Discussions Forum
 ├── discussion-details.html      # Discussion Thread & Reply Composer
 ├── guides.html                  # Curated Expert Editorial Guides
-├── saved.html                   # Saved Knowledge & Bookmarks Library (LocalStorage)
 ├── about.html                   # Mission, Editorial Standards & Privacy
 ├── contact.html                 # Inquiries, Technical Corrections & FAQs
 ├── login.html                   # Authentication Portal with Quick-Fill Demo
@@ -103,7 +102,7 @@ aurelis-knowledge/
 4. **Document Generator & Downloader:** Dynamic generation of reference spec sheets and checklists directly into the browser.
 5. **Interactive Video Chapters:** Video player with chapter navigation that jumps directly to timestamps.
 6. **Reading Progress & TOC:** Real-time top progress bar and sticky Table of Contents scrollspy.
-7. **Unified Bookmarking:** Save articles, videos, resources, glossary terms, and discussions with localStorage persistence into `saved.html`.
+7. **Unified Bookmarking:** Save articles, videos, resources, glossary terms, and discussions with localStorage persistence and interactive status toasts.
 8. **Community Discussions:** Helpful upvoting counter and live reply submission.
 
 ---
