@@ -54,7 +54,12 @@
 
           <div class="mb-3">
             <label class="aurelis-label" for="loginPassword">Password</label>
-            <input type="password" id="loginPassword" class="aurelis-input" placeholder="••••••••" required autocomplete="current-password">
+            <div class="password-input-group">
+              <input type="password" id="loginPassword" class="aurelis-input" placeholder="••••••••" required autocomplete="current-password">
+              <button type="button" class="btn-password-toggle" aria-label="Toggle password visibility" title="Toggle password visibility">
+                <i class="bi bi-eye"></i>
+              </button>
+            </div>
           </div>
 
           <!-- Remember Me and Forgot Password in the Same Line -->
@@ -108,6 +113,7 @@
   <script src="assets/js/notifications.js"></script>
   <script src="assets/js/auth.js"></script>
   <script src="assets/js/favorites.js"></script>
+  <script src="assets/js/main.js"></script>
   <script>
     document.addEventListener('DOMContentLoaded', () => {
       const emailInput = document.getElementById('loginEmail');

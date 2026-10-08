@@ -126,4 +126,58 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
   });
+
+  // 7. Global Back to Top Button
+  let backToTopBtn = document.getElementById('backToTopBtn');
+  if (!backToTopBtn) {
+    backToTopBtn = document.createElement('button');
+    backToTopBtn.id = 'backToTopBtn';
+    backToTopBtn.className = 'back-to-top-btn';
+    backToTopBtn.setAttribute('aria-label', 'Back to top');
+    backToTopBtn.setAttribute('title', 'Back to top');
+    backToTopBtn.innerHTML = '<i class="bi bi-arrow-up"></i>';
+    document.body.appendChild(backToTopBtn);
+  }
+
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 280) {
+      backToTopBtn.classList.add('visible');
+    } else {
+      backToTopBtn.classList.remove('visible');
+    }
+  }, { passive: true });
+
+  backToTopBtn.addEventListener('click', () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  });
+
+  // 8. Password Visibility Eye Toggle
+  document.querySelectorAll('.btn-password-toggle').forEach((toggleBtn) => {
+    toggleBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      const container = toggleBtn.closest('.password-input-group');
+      if (!container) return;
+      const passInput = container.querySelector('input');
+      const icon = toggleBtn.querySelector('i');
+      if (passInput) {
+        if (passInput.type === 'password') {
+          passInput.type = 'text';
+          if (icon) {
+            icon.classList.remove('bi-eye');
+            icon.classList.add('bi-eye-slash');
+          }
+        } else {
+          passInput.type = 'password';
+          if (icon) {
+            icon.classList.remove('bi-eye-slash');
+            icon.classList.add('bi-eye');
+          }
+        }
+      }
+    });
+  });
 });
+

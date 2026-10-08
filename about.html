@@ -29,12 +29,12 @@
       <nav aria-label="Main Navigation" class="d-none d-lg-block">
         <ul class="nav-menu-desktop">
           <li class="nav-item"><a href="index.html" class="nav-link-custom">Home</a></li>
+          <li class="nav-item"><a href="about.html" class="nav-link-custom active">About</a></li>
           <li class="nav-item"><a href="explore.html" class="nav-link-custom">Explore</a></li>
           <li class="nav-item"><a href="knowledge.html" class="nav-link-custom">Knowledge</a></li>
           <li class="nav-item"><a href="resources.html" class="nav-link-custom">Resources</a></li>
           <li class="nav-item"><a href="videos.html" class="nav-link-custom">Videos</a></li>
           <li class="nav-item"><a href="guides.html" class="nav-link-custom">Guides</a></li>
-          <li class="nav-item"><a href="about.html" class="nav-link-custom active">About</a></li>
           <li class="nav-item"><a href="contact.html" class="nav-link-custom">Contact</a></li>
         </ul>
       </nav>
@@ -43,7 +43,7 @@
         <button type="button" class="btn-icon-action theme-toggle-btn" aria-label="Toggle Theme" title="Toggle Theme">
           <i class="bi bi-moon-stars-fill"></i>
         </button>
-        <a href="signup.html" class="btn-aurelis btn-aurelis-primary btn-aurelis-sm d-none d-sm-inline-flex">Sign Up</a>
+        <a href="signup.html" class="btn-aurelis btn-aurelis-primary btn-aurelis-sm d-none d-lg-inline-flex">Sign Up</a>
         <button type="button" class="hamburger-btn" id="hamburgerBtn" aria-label="Open mobile menu">
           <i class="bi bi-list"></i>
         </button>
@@ -64,12 +64,12 @@
     <div class="mobile-drawer-body">
       <ul class="mobile-menu-list">
         <li class="mobile-menu-item"><a href="index.html" class="mobile-menu-link">Home</a></li>
+        <li class="mobile-menu-item"><a href="about.html" class="mobile-menu-link active">About</a></li>
         <li class="mobile-menu-item"><a href="explore.html" class="mobile-menu-link">Explore</a></li>
         <li class="mobile-menu-item"><a href="knowledge.html" class="mobile-menu-link">Knowledge</a></li>
         <li class="mobile-menu-item"><a href="resources.html" class="mobile-menu-link">Resources</a></li>
         <li class="mobile-menu-item"><a href="videos.html" class="mobile-menu-link">Videos</a></li>
         <li class="mobile-menu-item"><a href="guides.html" class="mobile-menu-link">Guides</a></li>
-        <li class="mobile-menu-item"><a href="about.html" class="mobile-menu-link active">About</a></li>
         <li class="mobile-menu-item"><a href="contact.html" class="mobile-menu-link">Contact</a></li>
         <li class="mobile-menu-item mt-3 pt-3 border-top border-subtle-custom">
           <a href="signup.html" class="btn-aurelis btn-aurelis-primary w-100 justify-content-center">Sign Up</a>
@@ -184,14 +184,12 @@
           <div class="row g-4">
             <!-- Member 1 -->
             <div class="col-md-6 col-lg-3">
-              <div class="p-4 bg-surface-custom border border-subtle-custom rounded h-100 d-flex flex-column">
-                <div class="d-flex align-items-center gap-3 mb-3">
-                  <img src="assets/images/member-julian-vance.svg" alt="Dr. Julian Vance" class="rounded-circle" style="width: 58px; height: 58px; object-fit: cover; border: 1px solid var(--border-subtle);" loading="lazy">
-                  <div>
-                    <h5 class="mb-0 font-ui fw-bold">Dr. Julian Vance</h5>
-                    <span class="small font-mono text-bronze">FGA • DGA Fellow</span>
-                  </div>
+              <div class="member-portrait-card">
+                <div class="member-portrait-media">
+                  <img src="assets/images/member-julian-vance.jpg" alt="Dr. Julian Vance, Chief Gemological Director" loading="lazy">
                 </div>
+                <h5 class="mb-1 font-ui fw-bold">Dr. Julian Vance</h5>
+                <span class="small font-mono text-bronze mb-2">FGA • DGA Fellow</span>
                 <div class="badge bg-secondary-custom text-primary font-ui small align-self-start mb-2 px-2 py-1">Chief Gemological Director</div>
                 <p class="small text-secondary mb-0">Specialist in FTIR and Raman spectroscopy, corundum origin determination, and synthetic diamond diagnostic screening.</p>
               </div>
@@ -199,14 +197,12 @@
 
             <!-- Member 2 -->
             <div class="col-md-6 col-lg-3">
-              <div class="p-4 bg-surface-custom border border-subtle-custom rounded h-100 d-flex flex-column">
-                <div class="d-flex align-items-center gap-3 mb-3">
-                  <img src="assets/images/member-henriette-dupont.svg" alt="Henriette Dupont" class="rounded-circle" style="width: 58px; height: 58px; object-fit: cover; border: 1px solid var(--border-subtle);" loading="lazy">
-                  <div>
-                    <h5 class="mb-0 font-ui fw-bold">Henriette Dupont</h5>
-                    <span class="small font-mono text-bronze">WOSTEP Neuchâtel</span>
-                  </div>
+              <div class="member-portrait-card">
+                <div class="member-portrait-media">
+                  <img src="assets/images/member-henriette-dupont.jpg" alt="Henriette Dupont, Horological Engineering" loading="lazy">
                 </div>
+                <h5 class="mb-1 font-ui fw-bold">Henriette Dupont</h5>
+                <span class="small font-mono text-bronze mb-2">WOSTEP Neuchâtel</span>
                 <div class="badge bg-secondary-custom text-primary font-ui small align-self-start mb-2 px-2 py-1">Horological Engineering</div>
                 <p class="small text-secondary mb-0">Master watchmaker with 22 years of experience regulating high-frequency chronographs, escapement physics, and perpetual calendars.</p>
               </div>
@@ -214,14 +210,12 @@
 
             <!-- Member 3 -->
             <div class="col-md-6 col-lg-3">
-              <div class="p-4 bg-surface-custom border border-subtle-custom rounded h-100 d-flex flex-column">
-                <div class="d-flex align-items-center gap-3 mb-3">
-                  <img src="assets/images/member-marcus-thorne.svg" alt="Prof. Marcus Thorne" class="rounded-circle" style="width: 58px; height: 58px; object-fit: cover; border: 1px solid var(--border-subtle);" loading="lazy">
-                  <div>
-                    <h5 class="mb-0 font-ui fw-bold">Prof. Marcus Thorne</h5>
-                    <span class="small font-mono text-bronze">Ph.D. Metallurgy</span>
-                  </div>
+              <div class="member-portrait-card">
+                <div class="member-portrait-media">
+                  <img src="assets/images/member-marcus-thorne.jpg" alt="Prof. Marcus Thorne, Precious Metal Science" loading="lazy">
                 </div>
+                <h5 class="mb-1 font-ui fw-bold">Prof. Marcus Thorne</h5>
+                <span class="small font-mono text-bronze mb-2">Ph.D. Metallurgy</span>
                 <div class="badge bg-secondary-custom text-primary font-ui small align-self-start mb-2 px-2 py-1">Precious Metal Science</div>
                 <p class="small text-secondary mb-0">Research specialist on precious metal ternary phase diagrams, gold alloy Vickers hardness, and assay verification protocols.</p>
               </div>
@@ -229,17 +223,16 @@
 
             <!-- Member 4 -->
             <div class="col-md-6 col-lg-3">
-              <div class="p-4 bg-surface-custom border border-subtle-custom rounded h-100 d-flex flex-column">
-                <div class="d-flex align-items-center gap-3 mb-3">
-                  <img src="assets/images/member-camille-saint.svg" alt="Camille de Saint-Germain" class="rounded-circle" style="width: 58px; height: 58px; object-fit: cover; border: 1px solid var(--border-subtle);" loading="lazy">
-                  <div>
-                    <h5 class="mb-0 font-ui fw-bold">Camille de Saint-Germain</h5>
-                    <span class="small font-mono text-bronze">M.A. Art & Jewelry</span>
-                  </div>
+              <div class="member-portrait-card">
+                <div class="member-portrait-media">
+                  <img src="assets/images/member-camille-saint.jpg" alt="Camille de Saint-Germain, Heritage & Conservation" loading="lazy">
                 </div>
+                <h5 class="mb-1 font-ui fw-bold">Camille de Saint-Germain</h5>
+                <span class="small font-mono text-bronze mb-2">M.A. Art & Jewelry</span>
                 <div class="badge bg-secondary-custom text-primary font-ui small align-self-start mb-2 px-2 py-1">Heritage & Conservation</div>
                 <p class="small text-secondary mb-0">Archival curator specializing in Belle Époque and Art Deco platinum mountings, antique hallmarks, and non-destructive jewelry care.</p>
               </div>
+            </div>
           </div>
         </div>
 

@@ -32,12 +32,12 @@
       <nav aria-label="Main Navigation" class="d-none d-lg-block">
         <ul class="nav-menu-desktop">
           <li class="nav-item"><a href="index.html" class="nav-link-custom active">Home</a></li>
+          <li class="nav-item"><a href="about.html" class="nav-link-custom">About</a></li>
           <li class="nav-item"><a href="explore.html" class="nav-link-custom">Explore</a></li>
           <li class="nav-item"><a href="knowledge.html" class="nav-link-custom">Knowledge</a></li>
           <li class="nav-item"><a href="resources.html" class="nav-link-custom">Resources</a></li>
           <li class="nav-item"><a href="videos.html" class="nav-link-custom">Videos</a></li>
           <li class="nav-item"><a href="guides.html" class="nav-link-custom">Guides</a></li>
-          <li class="nav-item"><a href="about.html" class="nav-link-custom">About</a></li>
           <li class="nav-item"><a href="contact.html" class="nav-link-custom">Contact</a></li>
         </ul>
       </nav>
@@ -49,7 +49,7 @@
           <i class="bi bi-moon-stars-fill"></i>
         </button>
 
-        <a href="signup.html" class="btn-aurelis btn-aurelis-primary btn-aurelis-sm d-none d-sm-inline-flex">Sign Up</a>
+        <a href="signup.html" class="btn-aurelis btn-aurelis-primary btn-aurelis-sm d-none d-lg-inline-flex">Sign Up</a>
 
         <!-- Mobile Hamburger Toggle -->
         <button type="button" class="hamburger-btn" id="hamburgerBtn" aria-label="Open mobile menu">
@@ -75,12 +75,12 @@
     <div class="mobile-drawer-body">
       <ul class="mobile-menu-list">
         <li class="mobile-menu-item"><a href="index.html" class="mobile-menu-link active">Home</a></li>
+        <li class="mobile-menu-item"><a href="about.html" class="mobile-menu-link">About</a></li>
         <li class="mobile-menu-item"><a href="explore.html" class="mobile-menu-link">Explore</a></li>
         <li class="mobile-menu-item"><a href="knowledge.html" class="mobile-menu-link">Knowledge</a></li>
         <li class="mobile-menu-item"><a href="resources.html" class="mobile-menu-link">Resources</a></li>
         <li class="mobile-menu-item"><a href="videos.html" class="mobile-menu-link">Videos</a></li>
         <li class="mobile-menu-item"><a href="guides.html" class="mobile-menu-link">Guides</a></li>
-        <li class="mobile-menu-item"><a href="about.html" class="mobile-menu-link">About</a></li>
         <li class="mobile-menu-item"><a href="contact.html" class="mobile-menu-link">Contact</a></li>
         <li class="mobile-menu-item mt-3 pt-3 border-top border-subtle-custom">
           <a href="signup.html" class="btn-aurelis btn-aurelis-primary w-100 justify-content-center">Sign Up</a>
@@ -110,7 +110,7 @@
             </p>
 
             <!-- Hero Action Buttons -->
-            <div class="d-flex flex-wrap align-items-center gap-3 gsap-reveal mb-4">
+            <div class="d-flex flex-wrap align-items-center gap-3 hero-action-buttons gsap-reveal mb-4">
               <a href="explore.html" class="btn-aurelis btn-aurelis-primary btn-aurelis-lg">
                 <i class="bi bi-compass"></i> Explore Knowledge
               </a>
@@ -189,7 +189,9 @@
         <div class="row g-4">
           <div class="col-md-6 col-lg-4">
             <a href="explore.html?cat=jewelry" class="topic-card">
-              <div class="topic-icon-wrapper"><i class="bi bi-gem"></i></div>
+              <div class="topic-image-wrapper">
+                <img src="assets/images/card-jewelry-settings.svg" alt="Fine Jewelry Settings & Structural Integrity" class="topic-image" loading="lazy">
+              </div>
               <h4>Fine Jewelry</h4>
               <p>Rings, necklaces, earrings, settings, craftsmanship techniques, hand fabrication, and structural integrity.</p>
               <div class="topic-meta-count">48 Articles • 14 Checklists</div>
@@ -198,7 +200,9 @@
 
           <div class="col-md-6 col-lg-4">
             <a href="explore.html?cat=watches" class="topic-card">
-              <div class="topic-icon-wrapper"><i class="bi bi-watch"></i></div>
+              <div class="topic-image-wrapper">
+                <img src="assets/images/card-water-resistance.svg" alt="Luxury Watch Case Architecture & Engineering" class="topic-image" loading="lazy">
+              </div>
               <h4>Luxury Watches</h4>
               <p>Case architecture, water resistance, complications, crystal materials, dial finishing, and brand heritage.</p>
               <div class="topic-meta-count">62 Articles • 18 Diagrams</div>
@@ -207,7 +211,9 @@
 
           <div class="col-md-6 col-lg-4">
             <a href="explore.html?cat=gemstones" class="topic-card">
-              <div class="topic-icon-wrapper"><i class="bi bi-gem"></i></div>
+              <div class="topic-image-wrapper">
+                <img src="assets/images/card-diamond-4cs.svg" alt="Diamond 4Cs and Gemstone Grading Reports" class="topic-image" loading="lazy">
+              </div>
               <h4>Gemstones</h4>
               <p>Diamond 4Cs, sapphires, rubies, emeralds, lab-grown analysis, thermal treatments, and origin certificates.</p>
               <div class="topic-meta-count">39 Articles • 12 Guides</div>
@@ -216,7 +222,9 @@
 
           <div class="col-md-6 col-lg-4">
             <a href="explore.html?cat=metals" class="topic-card">
-              <div class="topic-icon-wrapper"><i class="bi bi-shield-check"></i></div>
+              <div class="topic-image-wrapper">
+                <img src="assets/images/card-precious-metals.svg" alt="Precious Metals & Gold Purity Hallmarks" class="topic-image" loading="lazy">
+              </div>
               <h4>Precious Metals</h4>
               <p>Gold fineness (750/585/999), 950 Platinum, Sterling Silver, Titanium alloys, and international assay hallmarks.</p>
               <div class="topic-meta-count">27 Articles • 8 Reference Sheets</div>
@@ -225,7 +233,9 @@
 
           <div class="col-md-6 col-lg-4">
             <a href="explore.html?cat=movements" class="topic-card">
-              <div class="topic-icon-wrapper"><i class="bi bi-gear-wide-connected"></i></div>
+              <div class="topic-image-wrapper">
+                <img src="assets/images/card-automatic-movement.svg" alt="Mechanical Watch Movement Escapement" class="topic-image" loading="lazy">
+              </div>
               <h4>Watch Movements</h4>
               <p>Automatic rotors, escapements, hairspring balance assemblies, tourbillons, chronographs, and quartz calibers.</p>
               <div class="topic-meta-count">44 Articles • 22 Masterclasses</div>
@@ -234,7 +244,9 @@
 
           <div class="col-md-6 col-lg-4">
             <a href="explore.html?cat=care" class="topic-card">
-              <div class="topic-icon-wrapper"><i class="bi bi-heart-pulse"></i></div>
+              <div class="topic-image-wrapper">
+                <img src="assets/images/card-ultrasonic-cleaning.svg" alt="Ultrasonic Cleaning & Maintenance Protocol" class="topic-image" loading="lazy">
+              </div>
               <h4>Care & Maintenance</h4>
               <p>Ultrasonic safety rules, demagnetization, lubrication life cycles, pressure testing, and secure storage.</p>
               <div class="topic-meta-count">31 Articles • 15 Care Cards</div>
@@ -511,7 +523,7 @@
         <span class="eyebrow justify-content-center">Timeless Knowledge</span>
         <h2 class="mb-3">Knowledge Makes Every Piece More Meaningful.</h2>
         <p class="lead mb-4">Join thousands of collectors, jewelers, watchmakers, and enthusiasts building their foundational knowledge with AURELIS.</p>
-        <div class="d-flex justify-content-center flex-wrap gap-3">
+        <div class="d-flex justify-content-center flex-wrap gap-3 cta-btn-group">
           <a href="explore.html" class="btn-aurelis btn-aurelis-primary btn-aurelis-lg">Start Exploring Knowledge</a>
           <a href="guides.html" class="btn-aurelis btn-aurelis-outline btn-aurelis-lg">Browse Editorial Guides</a>
         </div>

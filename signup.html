@@ -52,12 +52,22 @@
 
             <div class="col-md-6">
               <label class="aurelis-label" for="signupPassword">Create Password</label>
-              <input type="password" id="signupPassword" class="aurelis-input" placeholder="At least 8 characters" required minlength="8">
+              <div class="password-input-group">
+                <input type="password" id="signupPassword" class="aurelis-input" placeholder="At least 8 characters" required minlength="8">
+                <button type="button" class="btn-password-toggle" aria-label="Toggle password visibility" title="Toggle password visibility">
+                  <i class="bi bi-eye"></i>
+                </button>
+              </div>
             </div>
 
             <div class="col-md-6">
               <label class="aurelis-label" for="signupConfirm">Confirm Password</label>
-              <input type="password" id="signupConfirm" class="aurelis-input" placeholder="Repeat password" required minlength="8">
+              <div class="password-input-group">
+                <input type="password" id="signupConfirm" class="aurelis-input" placeholder="Repeat password" required minlength="8">
+                <button type="button" class="btn-password-toggle" aria-label="Toggle password visibility" title="Toggle password visibility">
+                  <i class="bi bi-eye"></i>
+                </button>
+              </div>
             </div>
 
             <!-- Areas of Interest -->
@@ -162,6 +172,7 @@
   <script src="assets/js/notifications.js"></script>
   <script src="assets/js/auth.js"></script>
   <script src="assets/js/favorites.js"></script>
+  <script src="assets/js/main.js"></script>
   <script>
     document.addEventListener('DOMContentLoaded', () => {
       const form = document.getElementById('signupForm');
